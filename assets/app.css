@@ -1,0 +1,357 @@
+/*
+ * One stylesheet for the whole site.
+ *
+ * No framework and no build step: the server serves these files straight off
+ * the classpath, so a change to a headline is a change to one file. The palette
+ * is warm on purpose -- this sells a keepsake, not a toy, and the blue-grey of
+ * a software product makes a $1,800 model of somebody's house look like an app.
+ */
+
+:root {
+  color-scheme: light dark;
+
+  --paper: #faf7f2;
+  --card: #ffffff;
+
+  /* The baseplate the whole site sits on. Warm sand rather than LEGO's blue,
+     so it belongs to the palette above; the three stud tones are close enough
+     together that the studs read as texture and never as pattern. */
+  --plate: #f4eee3;
+  --stud-shadow: #ece5d8;
+  --stud-face: #f7f2ea;
+  --stud-top: #fbf8f2;
+  --ink: #1b1a17;
+  --muted: #6c655b;
+  --line: #e5dfd4;
+  /* The two inks of the wordmark. Green does the work -- buttons, labels,
+     links, the focus ring -- because it carries text at any size. Gold is
+     trim only: at 2.3:1 on the plate it cannot hold small type, so it draws
+     the baseplate rule under the header and fills, never letters. */
+  --accent: #055935;
+  --accent-soft: #e7efe9;
+  --gold: #c69333;
+  --gold-soft: #f7edd7;
+  --gold-ink: #7f5d1c;
+  --good: #2f6b46;
+  --warn: #8a6d1f;
+
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(27, 26, 23, .06), 0 8px 24px rgba(27, 26, 23, .06);
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14130f;
+    --card: #1e1c18;
+    --plate: #16140f;
+    --stud-shadow: #100f0b;
+    --stud-face: #1a1813;
+    --stud-top: #1f1c16;
+    --ink: #f4efe6;
+    --muted: #a9a195;
+    --line: #322e28;
+    --accent: #5bb389;
+    --accent-soft: #14291f;
+    --gold: #d9a94f;
+    --gold-soft: #2b2415;
+    --gold-ink: #e3bd72;
+    --good: #7fc79b;
+    --warn: #d9b45f;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 16px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+
+  /* A LEGO baseplate, drawn in three circles per tile: the shadow the stud
+     casts below it, the face, and the crown the light catches on top. Real
+     proportions -- a stud is 4.8mm across on an 8mm pitch, so 60% of the
+     tile. The tones sit within a few percent of the plate and every circle
+     fades out rather than stopping, so the board reads as texture under a
+     paragraph and never as pattern competing with it. */
+  background-color: var(--plate);
+  background-image:
+    radial-gradient(circle 11px   at 50% 45%, var(--stud-top) 0 45%, transparent 100%),
+    radial-gradient(circle 13.5px at 50% 49%, var(--stud-face) 0 82%, transparent 97%),
+    radial-gradient(circle 13.5px at 50% 57%, var(--stud-shadow) 0 62%, transparent 100%);
+  background-size: 46px 46px;
+}
+
+a { color: inherit; }
+
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- header ---------- */
+
+header.site {
+  border-bottom: 2px solid var(--gold);
+  background: color-mix(in srgb, var(--plate) 82%, transparent);
+  position: sticky; top: 0; z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+header.site .wrap {
+  display: flex; align-items: center; gap: 24px;
+  height: 64px;
+}
+
+/* The wordmark is artwork, not type, so it ships as two inked PNGs and the
+   page picks one by colour scheme. Height is fixed and width follows, so the
+   gold rule under the lettering always lands on the same pixel. */
+.brand { display: block; text-decoration: none; line-height: 0; }
+.brand img { display: block; height: 34px; width: auto; }
+.brand.quiet img { height: 28px; }
+
+/* The line rides with the wordmark, and steps out of the way when the
+   header gets tight. */
+.lockup { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.lockup .line {
+  font: italic 14px/1 var(--serif); color: var(--muted); white-space: nowrap;
+}
+@media (max-width: 1080px) { .lockup .line { display: none; } }
+
+nav.site { margin-left: auto; display: flex; gap: 22px; align-items: center; }
+nav.site a { text-decoration: none; color: var(--muted); font-size: 15px; white-space: nowrap; }
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--ink); }
+
+/* ---------- type ---------- */
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0 0 12px; }
+h1 { font-size: clamp(34px, 5vw, 54px); letter-spacing: -.5px; }
+h2 { font-size: clamp(25px, 3.2vw, 34px); }
+h3 { font-size: 19px; }
+p { margin: 0 0 14px; }
+.lead { font-size: 19px; color: var(--muted); max-width: 54ch; }
+.tagline {
+  font: italic 20px/1.3 var(--serif); color: var(--accent);
+  margin: -4px 0 16px;
+}
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+section { padding: 64px 0; }
+section + section { border-top: 1px solid var(--line); }
+.eyebrow {
+  text-transform: uppercase; letter-spacing: .12em; font-size: 12px;
+  color: var(--accent); font-weight: 600; margin-bottom: 10px;
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 20px; border-radius: 999px; border: 1px solid transparent;
+  font: 500 15px/1 var(--sans); text-decoration: none; cursor: pointer;
+  background: var(--card); color: var(--ink); border-color: var(--line);
+}
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.06); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.small { padding: 8px 14px; font-size: 14px; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+
+/* ---------- cards and grids ---------- */
+
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 22px;
+}
+.grid { display: grid; gap: 20px; }
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.grid.three { grid-template-columns: repeat(3, 1fr); }
+.grid.four { grid-template-columns: repeat(4, 1fr); }
+
+.shot {
+  width: 100%; aspect-ratio: 7 / 5; object-fit: contain;
+  border-radius: 10px; background: var(--paper); display: block;
+}
+
+/* A whole card is a link to the design; underlining the title as well just
+   makes the card look like a list of links. */
+figure.card a { text-decoration: none; }
+figure.card h3 a:hover { text-decoration: underline; }
+
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+  font-size: 12px; font-weight: 600; letter-spacing: .02em;
+}
+.badge.grey { background: var(--line); color: var(--muted); }
+.badge.gold { background: var(--gold-soft); color: var(--gold-ink); }
+.badge.good { background: color-mix(in srgb, var(--good) 15%, transparent); color: var(--good); }
+
+/* ---------- hero ---------- */
+
+.hero { padding: 72px 0 56px; }
+.hero .grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 44px; }
+.hero img {
+  width: 100%; height: auto; max-height: 460px; object-fit: contain;
+  background: var(--paper); border-radius: var(--radius);
+  box-shadow: var(--shadow); display: block;
+}
+
+/* ---------- steps and tiers ---------- */
+
+.step { display: flex; gap: 14px; }
+.step .n {
+  flex: none; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent);
+  display: grid; place-items: center; font-weight: 600; font-size: 14px;
+}
+.tier { display: flex; flex-direction: column; }
+.tier .badge { align-self: flex-start; }   /* a flex child would stretch to the card */
+.tier .price { font: 600 30px/1 var(--serif); margin: 6px 0 2px; }
+.tier ul { margin: 14px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
+.tier li { margin-bottom: 6px; }
+.tier .spacer { flex: 1; min-height: 12px; }
+
+/* ---------- forms ---------- */
+
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+.field .hint { font-size: 13px; color: var(--muted); margin-top: 6px; }
+input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea {
+  width: 100%; padding: 11px 13px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  font: 15px/1.5 var(--sans);
+}
+textarea { min-height: 120px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+fieldset { border: 0; padding: 0; margin: 0 0 16px; }
+.choices { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.choice {
+  border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+  cursor: pointer; background: var(--card); font-size: 14px;
+}
+.choice[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.choice strong { display: block; font-size: 15px; margin-bottom: 2px; }
+
+.drop {
+  border: 1.5px dashed var(--line); border-radius: var(--radius);
+  padding: 22px; text-align: center; color: var(--muted); cursor: pointer;
+}
+.drop:hover { border-color: var(--accent); color: var(--ink); }
+.thumbs { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.thumbs figure { margin: 0; position: relative; }
+.thumbs img { width: 92px; height: 70px; object-fit: cover; border-radius: 8px; }
+.thumbs button {
+  position: absolute; top: -7px; right: -7px; width: 22px; height: 22px;
+  border-radius: 50%; border: 1px solid var(--line); background: var(--card);
+  cursor: pointer; line-height: 1; font-size: 13px; color: var(--ink);
+}
+
+/* ---------- notices ---------- */
+
+.note {
+  border-left: 3px solid var(--accent); background: var(--accent-soft);
+  padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 14px;
+}
+.note.grey { border-color: var(--muted); background: var(--line); }
+.error { color: #a52a1a; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .error { color: #ff9b86; } }
+
+/* ---------- studio ---------- */
+
+.stage { display: grid; grid-template-columns: 360px 1fr; gap: 28px; align-items: start; }
+.viewer { position: relative; }
+/* Renders are square, and saying so up front stops the page jumping when a
+   nineteen-thousand-brick model takes two seconds to draw. */
+.viewer img {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: contain;
+  border-radius: var(--radius); background: var(--card); display: block;
+}
+.viewer .turns { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.progress { display: grid; gap: 10px; margin: 16px 0; }
+.progress .row { display: flex; gap: 10px; align-items: baseline; font-size: 14px; }
+.progress .dot {
+  width: 9px; height: 9px; border-radius: 50%; background: var(--line); flex: none;
+  margin-top: 6px;
+}
+.progress .row.done .dot { background: var(--good); }
+.progress .row.live .dot { background: var(--gold); animation: pulse 1.1s infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; font-size: 15px; margin: 0; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; }
+
+/* ---------- one design, the way the app shows it ---------- */
+
+/* The model gets the wider half: it is the thing being looked at, and the
+   parts list beside it is a list of short lines. */
+.stage.flip { grid-template-columns: 1.08fr .92fr; }
+
+.viewer img { transition: opacity .18s; }
+.viewer img.busy { opacity: .4; }
+
+.peel { margin-top: 18px; }
+.peel label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+.peel input[type=range] { width: 100%; accent-color: var(--accent); }
+
+/* A colour is worth showing rather than naming: "Dark Orange" means nothing
+   until it is next to "Medium Nougat". */
+.chip {
+  display: inline-block; width: 13px; height: 13px; border-radius: 3px;
+  border: 1px solid var(--line); margin-right: 8px; vertical-align: -1px;
+}
+
+/* Three hundred and thirty lines is a scroll, not a page. */
+.scroller { max-height: 540px; overflow: auto; margin-top: 14px; }
+
+.jump { display: flex; gap: 8px; align-items: center; }
+.jump input { width: 120px; }
+
+.step-card {
+  display: grid; grid-template-columns: 118px 1fr; gap: 16px;
+  padding: 16px 0; border-top: 1px solid var(--line); align-items: start;
+}
+.step-card:first-child { border-top: 0; padding-top: 0; }
+.step-card img {
+  width: 100%; border-radius: 8px; background: var(--paper); display: block;
+}
+.step-card strong { display: block; margin: 3px 0 5px; }
+
+/* ---------- tables ---------- */
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 500; }
+tr.pick { cursor: pointer; }
+tr.pick:hover td { background: var(--accent-soft); }
+
+/* ---------- footer ---------- */
+
+footer.site {
+  border-top: 1px solid var(--line); padding: 34px 0 54px;
+  color: var(--muted); font-size: 14px;
+}
+footer.site .cols { display: flex; gap: 28px; flex-wrap: wrap; justify-content: space-between; }
+footer.site a { text-decoration: none; }
+footer.site a:hover { text-decoration: underline; }
+.legal { margin-top: 18px; max-width: 62ch; font-size: 13px; }
+
+/* ---------- narrow ---------- */
+
+@media (max-width: 860px) {
+  .hero .grid, .grid.two, .grid.three, .grid.four, .stage, .stage.flip { grid-template-columns: 1fr; }
+  section { padding: 44px 0; }
+  nav.site { gap: 14px; }
+  nav.site a.hide-sm { display: none; }
+  .brand img { height: 28px; }
+}
+
+/* On a phone the wordmark and three links share 375px, so the logo gives up
+   the room rather than the navigation wrapping to a second line. */
+@media (max-width: 560px) {
+  .brand img { height: 23px; }
+  nav.site { gap: 11px; }
+  nav.site a { font-size: 14px; }
+  .btn.small { padding: 7px 12px; }
+}

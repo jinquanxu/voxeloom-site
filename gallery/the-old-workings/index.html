@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Old Workings — Voxeloom</title>
+<meta name="description" content="A mine nobody has worked in a long time: a propped adit into the hillside and an open cut beside it, ore still showing in both walls, the tramway out of the mouth going to rust and then to nothing, a cart on its side in the dirt, the headframe over the shaft with a brace missing, and weeds through the sleepers.">
+<link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="manifest" href="/assets/manifest.json">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
+<link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="lockup">
+      <a class="brand" href="/">
+        <picture>
+          <source srcset="/assets/voxeloom-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="/assets/voxeloom.png" alt="Voxeloom" width="202" height="34">
+        </picture>
+      </a>
+      <span class="line">Made to build. Meant to keep.</span>
+    </div>
+    <nav class="site">
+      <a href="/gallery">Gallery</a>
+      <a href="/#pricing" class="hide-sm">Prices</a>
+      <a href="mailto:hello@voxeloom.com?subject=A%20model%20of%20my%20house" class="btn small primary">Get a price</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <p class="eyebrow"><a href="/gallery">Gallery</a> · The Old Workings</p>
+    <h2>The Old Workings</h2>
+    <p class="lead">A mine nobody has worked in a long time: a propped adit into the hillside and an open cut beside it, ore still showing in both walls, the tramway out of the mouth going to rust and then to nothing, a cart on its side in the dirt, the headframe over the shaft with a brace missing, and weeds through the sleepers.</p>
+
+    <div class="stage flip">
+      <div>
+        <div class="viewer">
+          <img id="render" src="/img/the-old-workings/turn-0.png" alt="The Old Workings, drawn as bricks">
+          <div class="turns">
+            <button class="btn small" type="button" data-turn="0" aria-pressed="true">Front</button>
+            <button class="btn small" type="button" data-turn="1">Right</button>
+            <button class="btn small" type="button" data-turn="2">Back</button>
+            <button class="btn small" type="button" data-turn="3">Left</button>
+            <button class="btn small" type="button" id="night" aria-pressed="false">Lights on</button>
+          </div>
+          <div class="peel">
+            <label for="layer" id="layerLabel">All 20 courses</label>
+            <input type="range" id="layer" min="0" max="5" value="5" step="1">
+            <p class="hint">Drag to take the model apart and see the rooms inside.</p>
+          </div>
+        </div>
+
+        <dl class="facts" style="margin-top:22px"><dt>Size</dt><dd>48 × 40 studs</dd><dt>Height</dt><dd>20 courses</dd><dt>Pieces</dt><dd>2,327</dd><dt>Different pieces</dt><dd>130</dd><dt>Estimate</dt><dd>$622.82</dd><dt>Stands up</dt><dd>Yes — every piece is held</dd></dl>
+        
+
+        <div class="actions">
+          <a class="btn primary" href="mailto:hello@voxeloom.com?subject=A%20model%20of%20my%20house">Ask about one like this</a>
+          <a class="btn" href="/gallery">Back to the gallery</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="actions" style="margin:0 0 18px">
+          <button class="btn small" type="button" data-tab="parts" aria-pressed="true">Parts</button>
+          <button class="btn small" type="button" data-tab="lights">Lighting</button>
+        </div>
+
+        <div class="card" id="tabParts">
+          <h3>Parts</h3>
+          <p class="small muted">2,327 pieces across 130 lines.</p>
+          <div class="scroller">
+            <table>
+              <thead><tr><th>How many</th><th>Piece</th><th>Colour</th></tr></thead>
+              <tbody><tr><td>181</td><td>Brick 1x1</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>146</td><td>Slope 45 1x1</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>135</td><td>Brick 1x1</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>123</td><td>Brick 1x2</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>117</td><td>Brick 1x1</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>104</td><td>Brick 1x2</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>98</td><td>Slope 45 1x1</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>85</td><td>Brick 1x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>78</td><td>Brick 1x1</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>69</td><td>Brick 2x2</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>62</td><td>Brick 1x2</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>55</td><td>Plate 1x1</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>52</td><td>Slope 45 1x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>49</td><td>Brick 1x1</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>44</td><td>Slope 45 1x2</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>42</td><td>Tile 1x1</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>41</td><td>Brick 1x2</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>41</td><td>Brick 2x3</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>38</td><td>Brick 2x2</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>36</td><td>Brick 1x3</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>33</td><td>Brick 2x8</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>26</td><td>Tile 1x3</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>25</td><td>Brick 1x4</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>23</td><td>Tile 1x4</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>23</td><td>Tile 1x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>21</td><td>Slope 45 1x1</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>19</td><td>Brick 1x8</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>18</td><td>Plate 1x1</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>18</td><td>Plate 2x12</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>17</td><td>Brick 2x6</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>17</td><td>Brick 1x2</td><td><span class="chip" style="background:#e4cd9e"></span>Tan</td></tr><tr><td>16</td><td>Brick 1x8</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>16</td><td>Plate 1x6</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>15</td><td>Plate 2x3</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>14</td><td>Brick 1x6</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>14</td><td>Plate 1x8</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>13</td><td>Brick 2x4</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>13</td><td>Brick 1x6</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>13</td><td>Tile 1x1</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>13</td><td>Plate 1x4</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>12</td><td>Plate 2x6</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>10</td><td>Brick 1x6</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>10</td><td>Brick 1x4</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>10</td><td>Brick 1x3</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>9</td><td>Tile 2x3</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>9</td><td>Brick 2x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>9</td><td>Plate 1x3</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>9</td><td>Plate 1x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>9</td><td>Tile 1x6</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>8</td><td>Brick 1x1</td><td><span class="chip" style="background:#fe8a18"></span>Orange</td></tr><tr><td>8</td><td>Brick 1x6</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>8</td><td>Brick 1x1</td><td><span class="chip" style="background:#184632"></span>Dark Green</td></tr><tr><td>7</td><td>Brick 2x2</td><td><span class="chip" style="background:#e4cd9e"></span>Tan</td></tr><tr><td>7</td><td>Brick 1x1</td><td><span class="chip" style="background:#e4cd9e"></span>Tan</td></tr><tr><td>7</td><td>Tile 1x3</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>7</td><td>Tile 1x1</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>7</td><td>Slope 45 1x2</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>7</td><td>Brick 1x4</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>7</td><td>Cone 1x1</td><td><span class="chip" style="background:#aeefec"></span>Trans-Light Blue</td></tr><tr><td>6</td><td>Brick 1x4</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>6</td><td>Tile 1x8</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>6</td><td>Brick 1x1</td><td><span class="chip" style="background:#a0bcac"></span>Sand Green</td></tr><tr><td>6</td><td>Tile 2x3</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>5</td><td>Brick 1x2</td><td><span class="chip" style="background:#1b2a34"></span>Black</td></tr><tr><td>5</td><td>Slope 45 1x2</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>5</td><td>Pickaxe 1x1</td><td><span class="chip" style="background:#6c6e68"></span>Dark Bluish Gray</td></tr><tr><td>5</td><td>Brick 2x6</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>5</td><td>Brick 2x6</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>5</td><td>Round Brick 1x1</td><td><span class="chip" style="background:#f8f8f8"></span>Trans-Clear</td></tr><tr><td>5</td><td>Plate 2x3</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>5</td><td>Plate 1x5</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>5</td><td>Tile 2x6</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>5</td><td>Tile 2x4</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>4</td><td>Baseplate 32x32</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>4</td><td>Brick 2x4</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>4</td><td>Tile 1x6</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>4</td><td>Brick 2x4</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>4</td><td>Brick 1x3</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>4</td><td>Plate 2x12</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>4</td><td>Plate 1x10</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>4</td><td>Tile 2x2</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>4</td><td>Tile 1x3</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>4</td><td>Tile 1x2</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>4</td><td>Brick 1x1</td><td><span class="chip" style="background:#bbe90b"></span>Lime</td></tr><tr><td>4</td><td>Cone 1x1</td><td><span class="chip" style="background:#c91a09"></span>Trans-Red</td></tr><tr><td>4</td><td>Plate 2x8</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>3</td><td>Brick 1x1</td><td><span class="chip" style="background:#1b2a34"></span>Black</td></tr><tr><td>3</td><td>Brick 2x6</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>3</td><td>Brick 2x2</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>3</td><td>Brick 1x4</td><td><span class="chip" style="background:#720e0f"></span>Dark Red</td></tr><tr><td>3</td><td>Brick 1x1</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>3</td><td>Tile 1x4</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>3</td><td>Tile 1x2</td><td><span class="chip" style="background:#4b9f4a"></span>Bright Green</td></tr><tr><td>3</td><td>Plate 2x3</td><td><span class="chip" style="background:#184632"></span>Dark Green</td></tr><tr><td>3</td><td>Cone 1x1</td><td><span class="chip" style="background:#a5a5cb"></span>Trans-Purple</td></tr><tr><td>2</td><td>Brick 2x4</td><td><span class="chip" style="background:#1b2a34"></span>Black</td></tr><tr><td>2</td><td>Brick 2x8</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>2</td><td>Brick 2x3</td><td><span class="chip" style="background:#a0a5a9"></span>Light Bluish Gray</td></tr><tr><td>2</td><td>Brick 1x3</td><td><span class="chip" style="background:#720e0f"></span>Dark Red</td></tr><tr><td>2</td><td>Brick 1x1</td><td><span class="chip" style="background:#720e0f"></span>Dark Red</td></tr><tr><td>2</td><td>Brick 1x1</td><td><span class="chip" style="background:#f2cd37"></span>Yellow</td></tr><tr><td>2</td><td>Brick 2x4</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>2</td><td>Brick 1x8</td><td><span class="chip" style="background:#582a12"></span>Reddish Brown</td></tr><tr><td>2</td><td>Plate 1x6</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>2</td><td>Plate 1x4</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>2</td><td>Plate 1x3</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>2</td><td>Tile 2x6</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>2</td><td>Tile 1x6</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>2</td><td>Tile 2x3</td><td><span class="chip" style="background:#4b9f4a"></span>Bright Green</td></tr><tr><td>2</td><td>Tile 1x1</td><td><span class="chip" style="background:#184632"></span>Dark Green</td></tr><tr><td>2</td><td>Tile 2x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>1</td><td>Brick 1x4</td><td><span class="chip" style="background:#1b2a34"></span>Black</td></tr><tr><td>1</td><td>Brick 1x3</td><td><span class="chip" style="background:#1b2a34"></span>Black</td></tr><tr><td>1</td><td>Brick 1x2</td><td><span class="chip" style="background:#720e0f"></span>Dark Red</td></tr><tr><td>1</td><td>Brick 1x6</td><td><span class="chip" style="background:#e4cd9e"></span>Tan</td></tr><tr><td>1</td><td>Plate 2x12</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>1</td><td>Tile 1x2</td><td><span class="chip" style="background:#958a73"></span>Dark Tan</td></tr><tr><td>1</td><td>Plate 1x8</td><td><span class="chip" style="background:#237841"></span>Green</td></tr><tr><td>1</td><td>Tile 1x4</td><td><span class="chip" style="background:#4b9f4a"></span>Bright Green</td></tr><tr><td>1</td><td>Tile 1x1</td><td><span class="chip" style="background:#4b9f4a"></span>Bright Green</td></tr><tr><td>1</td><td>Tile 1x3</td><td><span class="chip" style="background:#184632"></span>Dark Green</td></tr><tr><td>1</td><td>Tile 1x2</td><td><span class="chip" style="background:#184632"></span>Dark Green</td></tr><tr><td>1</td><td>Round Brick 1x1</td><td><span class="chip" style="background:#c91a09"></span>Trans-Red</td></tr><tr><td>1</td><td>Round Brick 1x1</td><td><span class="chip" style="background:#f5cd2f"></span>Trans-Yellow</td></tr><tr><td>1</td><td>Cone 1x1</td><td><span class="chip" style="background:#f5cd2f"></span>Trans-Yellow</td></tr><tr><td>1</td><td>Brick 1x6</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>1</td><td>Brick 1x3</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>1</td><td>Plate 1x12</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>1</td><td>Plate 2x4</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr><tr><td>1</td><td>Plate 2x2</td><td><span class="chip" style="background:#aa7d55"></span>Medium Nougat</td></tr></tbody>
+            </table>
+          </div>
+          <p class="small muted" style="margin-top:12px">
+            Every line is a piece LEGO sells today, in a colour they make it in.
+            It is built in 384 numbered steps, and the instructions come in the box.
+          </p>
+        </div>
+
+        <div class="card" id="tabLights" hidden>
+          <h3>Lighting</h3>
+          <p class="muted">21 LEDs, 4 expansion board(s), one USB lead.</p>
+          <p class="small muted">As designed, the spaces behind the glass are closed in, so there is nowhere to run the wiring. Lighting has to be planned into a model from the start — ask for it when you ask for a price.</p>
+          <p class="small muted" style="margin-top:12px">
+            A light kit is bought separately and never appears in the parts list.
+            Press <strong>Lights on</strong> to see the model after dark.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="small"><strong>Voxeloom</strong> — brick models of the places you love. <em>Made to build. Meant to keep.</em></p>
+    <p class="legal">
+      LEGO® is a trademark of the LEGO Group, which does not sponsor, authorise or
+      endorse this site. Models are designed by us and built from genuine LEGO®
+      bricks bought from LEGO's Pick a Brick shop.
+    </p>
+  </div>
+</footer>
+
+<script>
+  var shots = {"turn": ["/img/the-old-workings/turn-0.png", "/img/the-old-workings/turn-1.png", "/img/the-old-workings/turn-2.png", "/img/the-old-workings/turn-3.png"], "peel": ["/img/the-old-workings/peel-6.png", "/img/the-old-workings/peel-9.png", "/img/the-old-workings/peel-12.png", "/img/the-old-workings/peel-15.png", "/img/the-old-workings/peel-18.png"], "night": "/img/the-old-workings/night.png"};
+  var courses = [6, 9, 12, 15, 18, 20];
+</script>
+<script src="/assets/model.js"></script>
+</body>
+</html>

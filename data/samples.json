@@ -1,0 +1,128 @@
+[
+ {
+  "name": "Corner Cottage",
+  "slug": "corner-cottage",
+  "summary": "A two-storey cottage with two rooms, a hipped roof stepped in plates, shuttered windows and a front door.",
+  "width": 12,
+  "depth": 10,
+  "courses": 15,
+  "shots": [
+   "/img/corner-cottage/turn-0.png",
+   "/img/corner-cottage/turn-1.png",
+   "/img/corner-cottage/turn-2.png",
+   "/img/corner-cottage/turn-3.png"
+  ]
+ },
+ {
+  "name": "Harbour Sloop",
+  "slug": "harbour-sloop",
+  "summary": "A single-masted sloop with a tapered hull, a white deck and a blue stripe.",
+  "width": 8,
+  "depth": 20,
+  "courses": 7,
+  "shots": [
+   "/img/harbour-sloop/turn-0.png",
+   "/img/harbour-sloop/turn-1.png",
+   "/img/harbour-sloop/turn-2.png",
+   "/img/harbour-sloop/turn-3.png"
+  ]
+ },
+ {
+  "name": "The Towers",
+  "slug": "the-towers",
+  "summary": "The Narragansett Towers: two round granite towers under conical caps, the broad segmental arch that carries Ocean Road between them, and the glazed great room bridging the road above it under a steep dormered roof.",
+  "width": 32,
+  "depth": 14,
+  "courses": 23,
+  "shots": [
+   "/img/the-towers/turn-0.png",
+   "/img/the-towers/turn-1.png",
+   "/img/the-towers/turn-2.png",
+   "/img/the-towers/turn-3.png"
+  ]
+ },
+ {
+  "name": "The Brick Colonial",
+  "slug": "the-brick-colonial",
+  "summary": "A two-storey brick colonial under a steep shingle roof: a projecting entry gable with a fanlight over the door and an arched window above it, a canted bay window under its own dark roof, a two-storey garage standing proud of the front with its doors facing away down the drive, and a sunroom across the back with a chimney at its west end.",
+  "width": 52,
+  "depth": 46,
+  "courses": 24,
+  "shots": [
+   "/img/the-brick-colonial/turn-0.png",
+   "/img/the-brick-colonial/turn-1.png",
+   "/img/the-brick-colonial/turn-2.png",
+   "/img/the-brick-colonial/turn-3.png"
+  ]
+ },
+ {
+  "name": "Brick Colonial Repolished",
+  "slug": "brick-colonial-repolished",
+  "summary": "A two-storey brick colonial under a hipped shingle roof, built as a house: a round-headed front door under a brick gable with an arched window lighting a two-storey foyer, a box bay under a dark metal roof, a storey-and-a-half garage wing with a hipped dormer, a sunroom with a fireplace across the back, and furnished rooms on both floors.",
+  "width": 64,
+  "depth": 58,
+  "courses": 30,
+  "shots": [
+   "/img/brick-colonial-repolished/turn-0.png",
+   "/img/brick-colonial-repolished/turn-1.png",
+   "/img/brick-colonial-repolished/turn-2.png",
+   "/img/brick-colonial-repolished/turn-3.png"
+  ]
+ },
+ {
+  "name": "Beavertail Light",
+  "slug": "beavertail-light",
+  "summary": "The light station at the southern tip of Conanicut Island: the grey granite tower with its black lantern standing at the seaward end of the long red-roofed keeper's house, the aquarium beside it and the second range behind, chimneys through every roof, and visitors on the path above the slate ledges.",
+  "width": 52,
+  "depth": 44,
+  "courses": 34,
+  "shots": [
+   "/img/beavertail-light/turn-0.png",
+   "/img/beavertail-light/turn-1.png",
+   "/img/beavertail-light/turn-2.png",
+   "/img/beavertail-light/turn-3.png"
+  ]
+ },
+ {
+  "name": "The Old Workings",
+  "slug": "the-old-workings",
+  "summary": "A mine nobody has worked in a long time: a propped adit into the hillside and an open cut beside it, ore still showing in both walls, the tramway out of the mouth going to rust and then to nothing, a cart on its side in the dirt, the headframe over the shaft with a brace missing, and weeds through the sleepers.",
+  "width": 48,
+  "depth": 40,
+  "courses": 20,
+  "shots": [
+   "/img/the-old-workings/turn-0.png",
+   "/img/the-old-workings/turn-1.png",
+   "/img/the-old-workings/turn-2.png",
+   "/img/the-old-workings/turn-3.png"
+  ]
+ },
+ {
+  "name": "The Stone and Cedar House",
+  "slug": "the-stone-and-cedar-house",
+  "summary": "A long, low contemporary house in fieldstone and vertical cedar, built as a house rather than a block: a storey-and-a-half wing with the front door retreated under a little dormer, a two-storey centre proud under a shallow cedar gable, a monitor of six windows lighting the middle of the house, a garage bent back at an angle with the cars inside, rooms on both floors, a pergola behind, and the lawn falling to the road over a stone retaining wall.",
+  "width": 68,
+  "depth": 44,
+  "courses": 24,
+  "shots": [
+   "/img/the-stone-and-cedar-house/turn-0.png",
+   "/img/the-stone-and-cedar-house/turn-1.png",
+   "/img/the-stone-and-cedar-house/turn-2.png",
+   "/img/the-stone-and-cedar-house/turn-3.png"
+  ]
+ },
+ {
+  "name": "Rhode Island State House",
+  "slug": "rhode-island-state-house",
+  "summary": "The Rhode Island State House in white marble: long three-storey wings either side of a central section with arched bronze doors and four columns, an attic with four colonnaded cupolas, the drum and its colonnade, the marble dome and lantern, and the gilded Independent Man on top. Inside, the rotunda with its stairs and balcony, the Senate and House chambers, the State Room and the State Library.",
+  "width": 96,
+  "depth": 96,
+  "courses": 74,
+  "shots": [
+   "/img/rhode-island-state-house/turn-0.png",
+   "/img/rhode-island-state-house/turn-1.png",
+   "/img/rhode-island-state-house/turn-2.png",
+   "/img/rhode-island-state-house/turn-3.png"
+  ]
+ }
+]
