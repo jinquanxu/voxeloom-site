@@ -131,19 +131,18 @@ h2 { font-size: clamp(25px, 3.2vw, 34px); }
 h3 { font-size: 19px; }
 p { margin: 0 0 14px; }
 .lead { font-size: 19px; color: var(--muted); max-width: 54ch; }
-/* Voxel and heirloom carry the two halves of the name, so in the headline
-   and the lead they take the wordmark's own inks, exactly -- the owner's
-   choice, after the darker text gold read as black. The logo's gold is
-   2.4:1 on the plate, under the 3:1 asked of large text, so it is kept to
-   these two words and never used for sentences. */
-.lead strong { font-weight: 600; color: var(--ink); }
-/* The hero's lead as verse: each headword starts its own line, with a little
+/* The hero's lead as verse: each stanza starts its own line, with a little
    air between them so a line that wraps on a phone still reads as one.
    Every phrase is a .unit, so a line breaks only at a comma or a full stop,
    never at "a / grid" or "built / by your hands", and never leaves "cells."
    alone; balancing then evens the lines out. */
 .lead.verse > span { display: block; text-wrap: balance; }
-.lead.verse > span + span { margin-top: 6px; }
+.lead.verse > span + span { margin-top: 12px; }
+/* Voxel and heirloom carry the two halves of the name, so in the headline,
+   the thumbnails' labels and the zoom they take the wordmark's own inks,
+   exactly -- the owner's choice, after the darker text gold read as black.
+   The logo's gold is 2.4:1 on the plate, under the 3:1 asked of large
+   text, so it is kept to these two words and never used for sentences. */
 .hero .vox, .zoom .vox { color: var(--accent); }
 .hero .loom, .zoom .loom { color: var(--gold); }
 .tagline {
