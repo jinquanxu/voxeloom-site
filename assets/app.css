@@ -13,13 +13,15 @@
   --paper: #faf7f2;
   --card: #ffffff;
 
-  /* The baseplate the whole site sits on. Warm sand rather than LEGO's blue,
-     so it belongs to the palette above; the three stud tones are close enough
-     together that the studs read as texture and never as pattern. */
-  --plate: #f4eee3;
-  --stud-shadow: #ece5d8;
-  --stud-face: #f7f2ea;
-  --stud-top: #fbf8f2;
+  /* The baseplate the whole site sits on. Not LEGO's blue but the gold from
+     the wordmark, held at the same lightness the studs were softened to --
+     the plate was already on that hue, and it was only the saturation that
+     kept it a neutral cream. The three tones stay close enough together
+     that the studs read as texture and never as pattern. */
+  --plate: #f7efe0;
+  --stud-shadow: #f3e7d0;
+  --stud-face: #f9f3e8;
+  --stud-top: #fcf8f2;
   --ink: #1b1a17;
   --muted: #6c655b;
   --line: #e5dfd4;
