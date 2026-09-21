@@ -12,7 +12,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=5334ebbbd8">
+<link rel="stylesheet" href="/assets/app.css?v=ff488cc0b7">
 </head>
 <body>
 
@@ -68,19 +68,21 @@
              They are illustrations, not photographs of a model we have built,
              and the caption under the card says so. -->
         <ol class="journey" aria-label="From photograph to heirloom" aria-describedby="journey-note">
+          <!-- Each picture links to its largest copy: the zoom below opens
+               it in place, and without script the link simply opens it. -->
           <li>
-            <div class="pic"><img src="/assets/journey-pixel.webp" width="245" height="164"
-                 alt="A photograph of a two-storey brick house with a grey roof, in evening light."></div>
+            <div class="pic"><a href="/assets/journey-pixel.webp"><img src="/assets/journey-pixel.webp" width="245" height="164"
+                 alt="A photograph of a two-storey brick house with a grey roof, in evening light."></a></div>
             <span>Pixel</span>
           </li>
           <li>
-            <div class="pic"><img src="/assets/journey-voxel.webp" width="286" height="191"
-                 alt="The same house as a grid of coloured cells, with its lawn, hedges and trees."></div>
+            <div class="pic"><a href="/assets/journey-voxel-large.webp"><img src="/assets/journey-voxel.webp" width="360" height="240"
+                 alt="The same house as a grid of coloured blocks: brick walls, a grey roof, trees, hedges and a lawn."></a></div>
             <span class="vox">Voxel</span>
           </li>
           <li>
-            <div class="pic"><img src="/assets/journey-heirloom.webp" width="304" height="203"
-                 alt="The house built in bricks, on a black display base with a small brass plaque."></div>
+            <div class="pic"><a href="/assets/journey-heirloom.webp"><img src="/assets/journey-heirloom.webp" width="304" height="203"
+                 alt="The house built in bricks, on a black display base with a small brass plaque."></a></div>
             <span class="loom">Heirloom</span>
           </li>
         </ol>
@@ -96,7 +98,7 @@
                alt="The Brick Colonial being built a course at a time: a baseplate with the floor plan on it, then furnished rooms, then the upper floor, then the roof.">
         </picture>
       </div>
-      <p class="journey-note" id="journey-note">Pixel, voxel, heirloom: illustrations of the process.</p>
+      <p class="journey-note" id="journey-note">Pixel, voxel, heirloom: illustrations of the process. Click one to see it larger.</p>
     </div>
   </div>
 </section>
@@ -403,6 +405,65 @@
     </p>
   </div>
 </footer>
+
+<!-- The hero's three pictures, enlarged. A native dialog, so focus goes back
+     to the picture that opened it; Escape, the button or a click outside
+     closes it. -->
+<dialog class="zoom" id="zoom" aria-label="Enlarged picture">
+  <form method="dialog"><button class="zoom-close" aria-label="Close">&times;</button></form>
+  <img alt="">
+  <p class="zoom-caption"><span class="zoom-label"></span> · an illustration of the process</p>
+</dialog>
+
+<!-- A plain script, not a module: the static build swaps the module below
+     for its own file and would take this with it. -->
+<script>
+  (function () {
+    var box = document.getElementById('zoom');
+    // No dialog support: the links still open each picture by itself.
+    if (!box || typeof box.showModal !== 'function') return;
+    var big = box.querySelector('img');
+    var label = box.querySelector('.zoom-label');
+
+    // As large as the screen allows, but never more than twice the picture's
+    // own size -- two of the three are small, and past that they only blur.
+    function fit() {
+      if (!big.naturalWidth) return;
+      var w = Math.min(window.innerWidth * 0.92 - 24, 1200, big.naturalWidth * 2,
+                       window.innerHeight * 0.78 * big.naturalWidth / big.naturalHeight);
+      big.style.width = Math.round(w) + 'px';
+    }
+    big.addEventListener('load', fit);
+    window.addEventListener('resize', function () { if (box.open) fit(); });
+
+    document.querySelectorAll('.journey a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var thumb = link.querySelector('img');
+        var word = link.closest('li').querySelector('span');
+        big.style.width = '';
+        big.alt = thumb.alt;
+        big.src = link.getAttribute('href');
+        label.textContent = word.textContent;
+        label.className = 'zoom-label ' + word.className;
+        box.showModal();
+        fit();
+      });
+    });
+    // Escape is meant to close a modal dialog by itself, and in Chrome and
+    // Safari it does; not every browser built on them does, so say it here.
+    // Closing a closed dialog does nothing, so this never closes one twice.
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && box.open) box.close();
+    });
+    // A click on the dimmed backdrop is a click outside the dialog's box.
+    // (It also lands on the dialog element, but so does one on its padding.)
+    box.addEventListener('click', function (e) {
+      var r = box.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) box.close();
+    });
+  })();
+</script>
 
 <script src="/assets/site.js?v=7578e55bc0"></script>
 
