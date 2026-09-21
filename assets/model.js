@@ -9,10 +9,11 @@
   var el = function (id) { return document.getElementById(id); };
   var img = el('render');
   var slider = el('layer');
-  var state = { turn: 0, lights: false, peel: courses.length - 1 };
+  var state = { turn: 0, lights: false, peel: courses.length - 1, assembly: false };
 
   function show() {
-    if (state.lights) img.src = shots.night;
+    if (state.assembly && assembly) img.src = assembly;
+    else if (state.lights) img.src = shots.night;
     else if (state.peel < courses.length - 1) img.src = shots.peel[state.peel];
     else img.src = shots.turn[state.turn];
 
@@ -21,8 +22,27 @@
       : 'Up to course ' + courses[state.peel] + ' of ' + courses[courses.length - 1];
   }
 
+  var watch = el('assembly');
+  if (watch) {
+    watch.addEventListener('click', function () {
+      state.assembly = !state.assembly;
+      watch.textContent = state.assembly ? 'Show the model' : 'Watch it built';
+      watch.setAttribute('aria-pressed', String(state.assembly));
+      show();
+    });
+  }
+
+  function stopWatching() {
+    state.assembly = false;
+    if (watch) {
+      watch.textContent = 'Watch it built';
+      watch.setAttribute('aria-pressed', 'false');
+    }
+  }
+
   document.querySelectorAll('[data-turn]').forEach(function (button) {
     button.addEventListener('click', function () {
+      stopWatching();
       state.turn = Number(button.dataset.turn);
       state.lights = false;
       state.peel = courses.length - 1;
@@ -37,6 +57,7 @@
   });
 
   el('night').addEventListener('click', function () {
+    stopWatching();
     state.lights = !state.lights;
     el('night').textContent = state.lights ? 'Lights off' : 'Lights on';
     el('night').setAttribute('aria-pressed', String(state.lights));
@@ -44,6 +65,7 @@
   });
 
   slider.addEventListener('input', function () {
+    stopWatching();
     state.peel = Number(slider.value);
     state.lights = false;
     state.turn = 0;
