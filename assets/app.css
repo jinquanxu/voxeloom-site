@@ -135,6 +135,7 @@ p { margin: 0 0 14px; }
    than the gold itself: the logo's gold is 2.4:1 on the plate, too faint for
    text; gold-ink is 5.3:1. */
 .vox, .loom { font-weight: 600; }
+.lead strong { font-weight: 600; color: var(--ink); }
 .vox { color: var(--accent); }
 .loom { color: var(--gold-ink); }
 .tagline {
@@ -198,6 +199,18 @@ figure.card h3 a:hover { text-decoration: underline; }
 /* ---------- hero ---------- */
 
 .hero { padding: 72px 0 56px; }
+/* The headline is two phrases, and a line should never break inside one:
+   "memories live, pixel / to voxel to brick" splits the chain it is about.
+   Each phrase moves to the next line whole, and wraps within itself only
+   when the screen is too narrow to hold it. */
+.hero h1 { text-wrap: balance; }
+.hero h1 .unit { display: inline-block; }
+@media (min-width: 861px) {
+  /* Beside the picture the column is about 510px, and the longer phrase
+     needs 12 times the type size -- so 42px is the most that keeps it to
+     one line. */
+  .hero h1 { font-size: clamp(34px, 3.3vw, 42px); }
+}
 .hero .grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 44px; }
 .hero picture { display: block; }
 .hero img {
