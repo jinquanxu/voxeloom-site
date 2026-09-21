@@ -200,10 +200,6 @@ figure.card h3 a:hover { text-decoration: underline; }
 /* ---------- hero ---------- */
 
 .hero { padding: 72px 0 56px; }
-/* The headline is two phrases, and a line should never break inside one:
-   "memories live, pixel / to voxel to brick" splits the chain it is about.
-   Each phrase moves to the next line whole, and wraps within itself only
-   when the screen is too narrow to hold it. */
 /* Pixel, voxel, heirloom as three pictures laid over the top of the
    animation's card. Every frame is framed on the finished model, and the top
    29.5% of all 29 frames is empty -- the still picture too -- so the strip
@@ -265,8 +261,15 @@ figure.card h3 a:hover { text-decoration: underline; }
   margin: 10px 0 0; text-align: center;
   font-size: 13px; color: var(--muted);
 }
+/* The headline and the eyebrow over it are each two phrases, and a line
+   should never break inside one: "memories live, pixel / to voxel to
+   heirloom" splits the chain it is about, "LEGO brick / models" the thing we
+   make. Each phrase moves to the next line whole, and wraps within itself
+   only when the screen is too narrow to hold it. "One-of-a-kind" never
+   splits at a hyphen. */
 .hero h1 { text-wrap: balance; }
-.hero h1 .unit { display: inline-block; }
+.hero .unit { display: inline-block; }
+.nowrap { white-space: nowrap; }
 @media (min-width: 861px) {
   /* Beside the picture the column is about 510px, and the longer phrase
      needs 12 times the type size -- so 42px is the most that keeps it to
