@@ -204,6 +204,42 @@ figure.card h3 a:hover { text-decoration: underline; }
    "memories live, pixel / to voxel to brick" splits the chain it is about.
    Each phrase moves to the next line whole, and wraps within itself only
    when the screen is too narrow to hold it. */
+/* Pixel, voxel, heirloom as three pictures laid over the top of the
+   animation's card. Every frame is framed on the finished model, and the top
+   29.5% of all 29 frames is empty -- the still picture too -- so the strip
+   sits in that band and never covers the building: at most 27% of the card,
+   at any width from 320px up. The cap on its width keeps it inside the band
+   where the card is wider than the square picture in it, as on a tablet. */
+.showcase { position: relative; }
+.journey {
+  --gap: 18px;
+  position: absolute; z-index: 1; top: 3%; left: 50%; transform: translateX(-50%);
+  width: 80%; max-width: 380px;
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap);
+}
+.journey li { margin: 0; text-align: center; }
+/* The arrow hangs off the picture's frame rather than the list item, so it
+   sits level with the middle of the picture, not of picture and label. */
+.journey .pic { position: relative; }
+.journey li:not(:last-child) .pic::after {
+  content: "\2192"; position: absolute; top: 50%; right: calc(-1 * var(--gap));
+  width: var(--gap); transform: translateY(-50%);
+  color: var(--muted); font-size: 16px; line-height: 1;
+}
+.hero .journey img {
+  aspect-ratio: 3 / 2; object-fit: cover; max-height: none; border-radius: 8px;
+}
+.journey span {
+  display: block; margin-top: 6px;
+  font: 600 14px/1.2 var(--sans); color: var(--ink);
+}
+/* Under the card, not in it: the strip has 10-25px to spare above the
+   building, and a line of text inside would push it onto the roof. */
+.journey-note {
+  margin: 10px 0 0; text-align: center;
+  font-size: 13px; color: var(--muted);
+}
 .hero h1 { text-wrap: balance; }
 .hero h1 .unit { display: inline-block; }
 @media (min-width: 861px) {
