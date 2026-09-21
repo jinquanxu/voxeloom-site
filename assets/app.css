@@ -191,6 +191,7 @@ figure.card h3 a:hover { text-decoration: underline; }
 
 .hero { padding: 72px 0 56px; }
 .hero .grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 44px; }
+.hero picture { display: block; }
 .hero img {
   width: 100%; height: auto; max-height: 460px; object-fit: contain;
   background: var(--paper); border-radius: var(--radius);
