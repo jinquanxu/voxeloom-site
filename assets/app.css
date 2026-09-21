@@ -270,11 +270,11 @@ figure.card h3 a:hover { text-decoration: underline; }
 }
 /* The headline and the eyebrow over it are each two phrases, and a line
    should never break inside one: "memories live, pixel / to voxel to
-   heirloom" splits the chain it is about, "LEGO brick / models" the thing we
+   heirloom" splits the chain it is about, "LEGO brick / keepsakes" the thing we
    make. Each phrase moves to the next line whole, and wraps within itself
    only when the screen is too narrow to hold it. "One-of-a-kind" never
    splits at a hyphen. */
-.hero h1 { text-wrap: balance; }
+.hero h1, .hero .eyebrow { text-wrap: balance; }
 .hero .unit { display: inline-block; }
 .nowrap { white-space: nowrap; }
 @media (min-width: 861px) {
