@@ -131,6 +131,12 @@ h2 { font-size: clamp(25px, 3.2vw, 34px); }
 h3 { font-size: 19px; }
 p { margin: 0 0 14px; }
 .lead { font-size: 19px; color: var(--muted); max-width: 54ch; }
+/* The two halves of the name, in the wordmark's two inks. Gold-ink rather
+   than the gold itself: the logo's gold is 2.4:1 on the plate, too faint for
+   text; gold-ink is 5.3:1. */
+.vox, .loom { font-weight: 600; }
+.vox { color: var(--accent); }
+.loom { color: var(--gold-ink); }
 .tagline {
   font: italic 20px/1.3 var(--serif); color: var(--accent);
   margin: -4px 0 16px;
