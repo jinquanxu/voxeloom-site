@@ -42,6 +42,20 @@
   ]
  },
  {
+  "name": "Warwick Neck Light",
+  "slug": "warwick-neck-light",
+  "summary": "Warwick Neck Light in real LEGO parts: the white cast-iron tower on the bluff with its black gallery, its lantern and green light, the keeper's house of white clapboard under steep red roofs with its porch and brick chimney, the little garage, the flag and the Adirondack chairs on the lawn, and the stair down the bluff to the seawall and the keeper's skiff. Inside, a spiral stair up the tower to the keeper at the lens, the parlour and the kitchen, bedrooms under the roofs, and buoys being painted in the garage.",
+  "width": 58,
+  "depth": 46,
+  "courses": 34,
+  "shots": [
+   "/img/warwick-neck-light/turn-0.png",
+   "/img/warwick-neck-light/turn-1.png",
+   "/img/warwick-neck-light/turn-2.png",
+   "/img/warwick-neck-light/turn-3.png"
+  ]
+ },
+ {
   "name": "The Stone and Cedar House",
   "slug": "the-stone-and-cedar-house",
   "summary": "The Stone and Cedar House in real LEGO parts: fieldstone and vertical cedar, the wing's roof climbing to a monitor of six windows beside the stone chimney, the two-storey centre proud under a shallow gable, the front door up steps under its own little gable, the garage bent back at an angle, rooms inside, and the drive looping round a planted island.",
