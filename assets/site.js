@@ -34,6 +34,7 @@
         + ' alt="A brick model: ' + esc(s.summary.slice(0, 120)) + '"></a>'
         + '<figcaption>'
         + '<h3 style="margin:16px 0 4px"><a href="/gallery/' + s.slug + '/">' + esc(s.name) + '</a></h3>'
+        + sizes(s)
         + '<p class="small muted">' + esc(s.summary) + '</p>'
         + '<p class="small muted">' + s.width + ' × ' + s.depth + ' studs · ' + s.courses + ' courses</p>'
         + '<div class="actions" style="margin-top:14px">'
@@ -82,6 +83,20 @@
   }).catch(function () {
     target.innerHTML = '<p class="muted">The gallery could not be loaded just now.</p>';
   });
+
+  // A design that comes in more than one size says so under its name, where
+  // it is seen before the summary, and links the other sizes; the page
+  // itself has a card for each.
+  function sizes(s) {
+    if (!s.sizes) return '';
+    var count = ['', '', 'Two', 'Three'][s.sizes.length] || String(s.sizes.length);
+    return '<p class="small"><span class="badge gold">' + count + ' sizes</span> '
+      + s.sizes.map(function (x) {
+        return x.slug === s.slug
+          ? '<strong>' + esc(x.size) + '</strong>'
+          : '<a href="/gallery/' + x.slug + '/">' + esc(x.size) + '</a>';
+      }).join(' · ') + '</p>';
+  }
 
   function preload(urls, done) {
     var left = urls.length;

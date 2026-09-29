@@ -420,6 +420,26 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 }
 .step-card strong { display: block; margin: 3px 0 5px; }
 
+/* ---------- sizes ---------- */
+
+/* One design built at more than one size: a card for each, side by side
+   under the summary, the one on this page marked. The whole card is the
+   link, so the choice is one tap. */
+.sizes { margin: 4px 0 30px; max-width: 760px; }
+.sizes .eyebrow { margin-bottom: 4px; }
+.sizes .choices { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 12px; }
+.sizes .choice {
+  display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center;
+  text-decoration: none; color: var(--muted);
+}
+.sizes .choice strong { color: var(--ink); }
+.sizes .choice img {
+  width: 96px; height: 96px; object-fit: contain;
+  border-radius: 8px; background: var(--paper); display: block;
+}
+.sizes a.choice:not([aria-current]):hover { border-color: var(--muted); }
+.choice[aria-current="page"] { border-color: var(--accent); background: var(--accent-soft); }
+
 /* ---------- tables ---------- */
 
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
