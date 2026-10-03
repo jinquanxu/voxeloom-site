@@ -66,6 +66,11 @@
 
 * { box-sizing: border-box; }
 
+/* Hidden means hidden, whatever a class says about how it shows: a button
+   is inline-flex and a viewer's picture is a block, and either would
+   otherwise stay on screen with the attribute set. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   color: var(--ink);
@@ -440,6 +445,72 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .sizes a.choice:not([aria-current]):hover { border-color: var(--muted); }
 .choice[aria-current="page"] { border-color: var(--accent); background: var(--accent-soft); }
 
+/* ---------- pixel, voxel, heirloom ---------- */
+
+/* The studio's three pictures. The words keep the logo's inks, as they do
+   in the hero: voxel in green, heirloom in gold -- the owner's call. */
+.pvh-page .vox { color: var(--accent); }
+.pvh-page .loom { color: var(--gold); }
+
+.pvh-examples { margin: 26px 0; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.pvh-examples .choice {
+  display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center;
+  text-align: left; text-decoration: none; color: var(--muted); font: 14px/1.4 var(--sans);
+}
+.pvh-examples .choice strong { color: var(--ink); }
+.pvh-examples .choice img, .pvh-examples .own {
+  width: 64px; height: 64px; border-radius: 8px; background: var(--paper); display: block; object-fit: contain;
+}
+.pvh-examples .own {
+  display: grid; place-items: center; border: 1.5px dashed var(--line);
+  font-size: 26px; color: var(--muted); box-sizing: border-box;
+}
+.pvh-examples a.choice:hover, .pvh-examples button.choice:not([aria-pressed="true"]):hover { border-color: var(--muted); }
+
+.pvh-photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; margin: 10px 0 12px; }
+.pvh-photos figure { margin: 0; }
+.pvh-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; display: block; }
+.pvh-photos figcaption { font-size: 11px; line-height: 1.3; color: var(--muted); margin-top: 3px; }
+.pvh-photos p { grid-column: 1 / -1; margin: 0; }
+
+.pvh-steps { display: flex; align-items: stretch; gap: 8px; margin-bottom: 12px; }
+.pvh-steps button {
+  flex: 1; min-width: 0; padding: 10px 12px; border-radius: 10px; cursor: pointer; text-align: left;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  font: 600 18px/1.15 var(--serif);
+}
+.pvh-steps button small { display: block; margin-top: 3px; font: 13px/1.3 var(--sans); color: var(--muted); }
+.pvh-steps button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.pvh-steps button:disabled { opacity: .45; cursor: default; }
+.pvh-steps .arrow { align-self: center; color: var(--muted); }
+
+.pvh-view canvas {
+  width: 100%; aspect-ratio: 1 / 1; display: block;
+  border-radius: var(--radius); background: var(--card);
+  /* A sideways drag turns the cubes; an upward one still scrolls the page. */
+  touch-action: pan-y;
+}
+.pvh-view #voxels { cursor: grab; }
+.pvh-view #voxels:active { cursor: grabbing; }
+.pvh-standin {
+  position: absolute; left: 12px; bottom: 12px; margin: 0; padding: 4px 10px; border-radius: 999px;
+  background: rgba(27, 26, 23, .72); color: #fff; font-size: 12px;
+}
+.pvh-wait {
+  position: absolute; inset: 0; margin: 0; display: grid; place-items: center;
+  color: var(--muted); font-size: 15px; pointer-events: none;
+}
+.pvh-caption { margin: 10px 2px 12px; min-height: 2.8em; }
+.pvh #view { scroll-margin-top: 78px; }   /* clear of the sticky header */
+.pvh #brief .progress { margin: 18px 0 12px; }
+
+@media (max-width: 560px) {
+  .pvh-steps { gap: 6px; }
+  .pvh-steps .arrow { display: none; }
+  .pvh-steps button { padding: 8px 9px; font-size: 16px; }
+  .pvh-steps button small { font-size: 12px; }
+}
+
 /* ---------- tables ---------- */
 
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -476,4 +547,20 @@ footer.site a:hover { text-decoration: underline; }
   nav.site { gap: 11px; }
   nav.site a { font-size: 14px; }
   .btn.small { padding: 7px 12px; }
+}
+
+/* The studio's link says "Studio" where "Design studio" would not fit. */
+.nav-short { display: none; }
+@media (max-width: 560px) {
+  .nav-long { display: none; }
+  .nav-short { display: inline; }
+  header.site .wrap { gap: 14px; }
+  nav.site { gap: 10px; }
+  nav.site .btn.small { padding: 7px 10px; }
+}
+/* On the narrowest phones the wordmark, the studio and the price button
+   leave no room for a fourth link; the gallery is a tap away from the
+   front page and from the studio. */
+@media (max-width: 389px) {
+  nav.site a[href="/gallery"] { display: none; }
 }

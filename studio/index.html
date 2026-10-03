@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design studio — Voxeloom</title>
+<meta name="description" content="Watch a place become a LEGO design: the photographs read as pixels, the place laid out in voxels, and every voxel turned into real LEGO pieces.">
+<link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="manifest" href="/assets/manifest.json">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
+<link rel="stylesheet" href="/assets/app.css?v=2ec32a24e2">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="lockup">
+      <a class="brand" href="/">
+        <picture>
+          <source srcset="/assets/voxeloom-dark.png?v=4f5e7f2cbc" media="(prefers-color-scheme: dark)">
+          <img src="/assets/voxeloom.png?v=529da98ea0" alt="Voxeloom" width="202" height="37">
+        </picture>
+      </a>
+      <span class="line">Made to build. Meant to keep.</span>
+    </div>
+    <nav class="site">
+      <a href="/gallery">Gallery</a>
+      <a href="/studio/" aria-current="page"><span class="nav-long">Design studio</span><span class="nav-short">Studio</span></a>
+      <a href="/#pricing" class="hide-sm">Prices</a>
+      <a href="mailto:hello@voxeloom.com?subject=A%20model%20of%20my%20house" class="btn small primary">Get a price</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pvh-page">
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Design studio</p>
+    <h2>From photographs to bricks</h2>
+    <p class="lead">
+      Pick a place and press <strong>Design it</strong>. You will watch it made the way every
+      Voxeloom design is made: the photographs read as <span class="vox">pixels</span>, the place
+      laid out in <span class="vox">voxels</span>, and every voxel turned into real LEGO pieces
+      &mdash; an <span class="loom">heirloom</span>.
+    </p>
+    <p class="note" style="max-width:760px">
+      These are replays of designs we made from photographs, so nothing here is charged or
+      ordered. Designing your own place right here opens soon. Until then,
+      <a href="mailto:hello@voxeloom.com?subject=A%20model%20of%20my%20house">email us the photographs</a> and one of us will design it.
+    </p>
+
+    <div class="choices pvh-examples" id="examples" data-own="mailto:hello@voxeloom.com?subject=A%20model%20of%20my%20house" data-own-text="Opening soon. For now, email us the photographs."></div>
+
+    <div class="stage pvh">
+      <div>
+        <div class="card" id="brief">
+          <p class="eyebrow" style="margin-bottom:6px">The brief</p>
+          <h3 id="briefName"></h3>
+          <div class="pvh-photos" id="briefPhotos"></div>
+          <p class="muted" id="briefText"></p>
+          <p class="small muted">Size: <span id="briefSize"></span></p>
+          <button class="btn primary" type="button" id="go" style="width:100%">Design it</button>
+          <button class="btn" type="button" id="skip" hidden style="width:100%;margin-top:10px">Skip to the end</button>
+          <div class="progress" id="progress" aria-live="polite"></div>
+          <p class="small muted" style="margin:0">
+            A replay of how this design was made, at a pace you can follow.
+          </p>
+        </div>
+      </div>
+
+      <div id="view">
+        <div class="pvh-steps" role="group" aria-label="Pixel, voxel, heirloom">
+          <button type="button" data-view="pixel"><span class="vox">Pixel</span><small>the photographs</small></button>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+          <button type="button" data-view="voxel"><span class="vox">Voxel</span><small>the place in cubes</small></button>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+          <button type="button" data-view="heirloom"><span class="loom">Heirloom</span><small>the LEGO set</small></button>
+        </div>
+        <div class="viewer pvh-view">
+          <canvas id="pixel" role="img" aria-label="The photograph, read as pixels"></canvas>
+          <p class="pvh-standin" id="standIn" hidden>Stand-in picture: the photograph goes here</p>
+          <div id="voxelBox" hidden>
+            <canvas id="voxels" role="img" aria-label="The design as cubes. Drag to turn it."></canvas>
+            <img id="voxelStill" hidden alt="The design as cubes">
+          </div>
+          <img id="heirloom" hidden alt="The LEGO model">
+        </div>
+        <p class="small muted pvh-caption" id="caption"></p>
+        <div id="heirloomTools" hidden>
+          <div class="turns" style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn small" type="button" data-turn="0">Front</button>
+            <button class="btn small" type="button" data-turn="1">Right</button>
+            <button class="btn small" type="button" data-turn="2">Back</button>
+            <button class="btn small" type="button" data-turn="3">Left</button>
+            <button class="btn small" type="button" id="night" aria-pressed="false">Lights on</button>
+          </div>
+          <div class="peel">
+            <label for="layer" id="layerLabel"></label>
+            <input type="range" id="layer" min="0" max="1" value="1" step="1">
+          </div>
+        </div>
+
+        <div class="card" id="result" hidden style="margin-top:22px">
+          <h3 id="resultName"></h3>
+          <dl class="facts">
+            <dt>Size</dt><dd id="factSize"></dd>
+            <dt>Pieces</dt><dd id="factPieces"></dd>
+            <dt>Estimate</dt><dd id="factPrice"></dd>
+            <dt>Built from</dt><dd id="factFrom"></dd>
+          </dl>
+          <p class="small muted" id="sizesNote" hidden style="margin-top:12px"></p>
+          <div class="actions">
+            <a class="btn primary" id="askPrice" href="mailto:hello@voxeloom.com?subject=A%20model%20of%20my%20house">Ask for a price</a>
+            <a class="btn" id="openDesign" href="/gallery">Open the full design</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="small"><strong>Voxeloom</strong> — brick models of the places you love. <em>Made to build. Meant to keep.</em></p>
+    <p class="legal">
+      LEGO® is a trademark of the LEGO Group, which does not sponsor, authorise or
+      endorse this site. Models are designed by us and built from genuine LEGO®
+      bricks bought from LEGO's Pick a Brick shop.
+    </p>
+  </div>
+</footer>
+
+<script type="application/json" id="examplesData">[{"slug": "carrie-tower", "name": "Carrie Tower", "where": "Brown University, Providence", "thumb": "/img/carrie-tower/turn-0.png", "photos": 1}, {"slug": "beavertail-light", "name": "Beavertail Light", "where": "Jamestown, Rhode Island", "thumb": "/img/beavertail-light/turn-0.png", "photos": 1}, {"slug": "the-towers", "name": "The Towers", "where": "Narragansett, Rhode Island", "thumb": "/img/the-towers/turn-0.png", "photos": 1}]</script>
+<script type="module" src="/assets/studio-demo.js?v=378b01e8c3"></script>
+</body>
+</html>
