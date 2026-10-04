@@ -567,6 +567,85 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   .pvh-strip .label { font-size: 13px; }
 }
 
+/* ---------- gift ideas ---------- */
+
+/* Three designs from the gallery under the opening: a family home, a place
+   couples marry, a new home -- the three gifts people think of first. */
+.gift-pics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 30px 0 8px; }
+.gift-pics a { display: block; text-decoration: none; color: var(--ink); }
+.gift-pics img {
+  width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; display: block;
+  border-radius: var(--radius); background: var(--card);
+}
+.gift-pics span { display: block; margin-top: 8px; font: 600 15px/1.3 var(--serif); }
+@media (prefers-reduced-motion: no-preference) {
+  .gift-pics img { transition: transform .15s ease; }
+  .gift-pics a:hover img { transform: translateY(-2px); }
+}
+
+/* The way down the page, by who the gift is for. */
+.gift-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.gift-jump a {
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--card); color: var(--ink); text-decoration: none; font-size: 14px;
+}
+.gift-jump a:hover { border-color: var(--accent); }
+.gifts section[id] { scroll-margin-top: 78px; }   /* clear of the sticky header */
+
+.gift-cards { margin-top: 24px; }
+.gift-cards .card { display: flex; flex-direction: column; }
+.gift-line { font: italic 17px/1.35 var(--serif); color: var(--accent); margin: 2px 0 12px; }
+/* "Think of" sits at the foot of each card, wherever the words above end. */
+.think { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.think strong { color: var(--ink); font-weight: 600; }
+.gift-quiet { max-width: 760px; }
+.gift-quiet .think { margin-top: 14px; }
+/* The lines that carry the feeling: set like the front page's verse. */
+.gift-verse { font: 16px/1.6 var(--serif); color: var(--ink); margin: 0 0 12px; }
+.gift-actions { margin-top: 26px; }
+
+/* Each group of gifts in a colour of its own, the owner's call: hearth for
+   family, rose for partners, sky for new chapters, brass for thank-yous and
+   dusk for remembrance. A deep ink for words and buttons, a pale wash for the
+   cards, and lighter inks on darker washes after dark. */
+.hue-family      { --hue: #a4502a; --hue-soft: #f8ebe0; --hue-on: #fff; }
+.hue-partners    { --hue: #a63a55; --hue-soft: #f8e6ea; --hue-on: #fff; }
+.hue-milestones  { --hue: #2d6a96; --hue-soft: #e4eef6; --hue-on: #fff; }
+.hue-thanks      { --hue: #85650f; --hue-soft: #f6eed6; --hue-on: #fff; }
+.hue-remembrance { --hue: #6b5b8e; --hue-soft: #eeeaf4; --hue-on: #fff; }
+@media (prefers-color-scheme: dark) {
+  .hue-family      { --hue: #e8a07a; --hue-soft: #2a1e17; --hue-on: #1b1a17; }
+  .hue-partners    { --hue: #ec97aa; --hue-soft: #2b1b20; --hue-on: #1b1a17; }
+  .hue-milestones  { --hue: #93c2e6; --hue-soft: #172330; --hue-on: #1b1a17; }
+  .hue-thanks      { --hue: #e2c26a; --hue-soft: #2a2412; --hue-on: #1b1a17; }
+  .hue-remembrance { --hue: #bcadde; --hue-soft: #221e2c; --hue-on: #1b1a17; }
+}
+.gift-group .eyebrow, .gift-group .gift-line, .gift-group .gift-verse a { color: var(--hue); }
+.gift-group .card { background: var(--hue-soft); border-top: 4px solid var(--hue); }
+.gift-group .think { border-top-color: color-mix(in srgb, var(--hue) 28%, transparent); }
+.gift-group .think strong { color: var(--hue); }
+.gift-group .btn.primary { background: var(--hue); border-color: var(--hue); color: var(--hue-on); }
+.gift-group .btn:not(.primary) { border-color: var(--hue); color: var(--hue); }
+.gift-jump a[class^="hue-"] { border-color: var(--hue); color: var(--hue); }
+.gift-jump a[class^="hue-"]:hover { background: var(--hue-soft); }
+
+/* The front page's reminder: words on the left, the way in on the right. */
+.gift-band { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
+.gift-band h2 { margin-top: 4px; }
+.gift-band p.muted { max-width: 60ch; margin-bottom: 0; }
+@media (max-width: 860px) { .gift-band { grid-template-columns: 1fr; } }
+
+.gift-days { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.gift-days li {
+  padding: 6px 12px; border-radius: 999px; background: var(--accent-soft);
+  color: var(--ink); font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .gift-pics { gap: 8px; }
+  .gift-pics span { font-size: 13px; }
+}
+
 /* ---------- tables ---------- */
 
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -614,9 +693,56 @@ footer.site a:hover { text-decoration: underline; }
   nav.site { gap: 10px; }
   nav.site .btn.small { padding: 7px 10px; }
 }
-/* On the narrowest phones the wordmark, the studio and the price button
-   leave no room for a fourth link; the gallery is a tap away from the
-   front page and from the studio. */
-@media (max-width: 389px) {
+/* On most phones the wordmark, gift ideas, the studio and the price button
+   leave no room for a fifth link; the gallery is a tap away from the front
+   page and from the studio. Measured: the four fit from 422px. */
+@media (max-width: 429px) {
   nav.site a[href="/gallery"] { display: none; }
+}
+
+/* The menu button (assets/menu.js). Below 861px every link but the price
+   button folds into it, and opens as a list under the header -- so nothing
+   on the site is out of reach on a phone, whatever the header has room for.
+   The rules above still apply where the script does not run. */
+.menu-toggle { display: none; }
+@media (max-width: 860px) {
+  .has-menu .menu-toggle {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 42px; height: 38px; padding: 0 10px; flex: none; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 10px; background: var(--card);
+  }
+  .has-menu .menu-toggle span {
+    display: block; height: 2px; border-radius: 2px; background: var(--ink);
+    transition: transform .18s ease, opacity .18s ease;
+  }
+  .has-menu .menu-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .has-menu .menu-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .has-menu .menu-open .menu-toggle span:nth-child(2) { opacity: 0; }
+  .has-menu .menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .has-menu header.site .wrap { gap: 12px; }
+  .has-menu nav.site a:not(.btn) { display: none; }
+  /* Open, the list leaves the row, and the button keeps its place at the end. */
+  .has-menu header.site.menu-open .menu-toggle { margin-left: auto; }
+
+  /* Open: the whole list, full width under the gold rule. */
+  .has-menu header.site.menu-open nav.site {
+    position: absolute; top: 100%; left: 0; right: 0; margin: 2px 0 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    padding: 6px 20px 18px; background: var(--paper);
+    border-bottom: 2px solid var(--gold); box-shadow: var(--shadow);
+  }
+  .has-menu header.site.menu-open nav.site a {
+    display: block; padding: 13px 2px; font-size: 17px; color: var(--ink);
+    border-bottom: 1px solid var(--line);
+  }
+  .has-menu header.site.menu-open nav.site a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+  .has-menu header.site.menu-open nav.site .nav-long { display: inline; }
+  .has-menu header.site.menu-open nav.site .nav-short { display: none; }
+  .has-menu header.site.menu-open nav.site a.btn {
+    margin-top: 14px; padding: 12px; text-align: center; color: #fff; border-bottom: 0;
+  }
+}
+@media (max-width: 860px) and (prefers-reduced-motion: reduce) {
+  .has-menu .menu-toggle span { transition: none; }
 }
