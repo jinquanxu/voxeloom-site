@@ -28,12 +28,14 @@
   /* The two inks of the wordmark. Green does the work -- buttons, labels,
      links, the focus ring -- because it carries text at any size. Gold is
      trim only: at 2.3:1 on the plate it cannot hold small type, so it draws
-     the baseplate rule under the header and fills, never letters. */
+     the baseplate rule under the header and fills, never letters. A gold
+     button is a fill, so its words are dark ink (6:1), not white (2.8:1). */
   --accent: #055935;
   --accent-soft: #e7efe9;
   --gold: #c69333;
   --gold-soft: #f7edd7;
   --gold-ink: #7f5d1c;
+  --gold-on: #1b1a17;
   --good: #2f6b46;
   --warn: #8a6d1f;
 
@@ -178,6 +180,15 @@ section + section { border-top: 1px solid var(--line); }
 .btn:hover { border-color: var(--muted); }
 .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
 .btn.primary:hover { filter: brightness(1.06); }
+/* A pair of buttons reads as the wordmark does: the first in its green, the
+   second in the gold of "loom". Small buttons (tabs, turns) stay plain, and
+   the gift page's groups keep their own colours. */
+.btn.gold,
+.actions:not(.gift-actions) > .btn.primary + .btn:not(.primary):not(.small) {
+  background: var(--gold); border-color: var(--gold); color: var(--gold-on);
+}
+.btn.gold:hover,
+.actions:not(.gift-actions) > .btn.primary + .btn:not(.primary):not(.small):hover { filter: brightness(1.06); }
 .btn:disabled { opacity: .5; cursor: not-allowed; }
 .btn.small { padding: 8px 14px; font-size: 14px; }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
