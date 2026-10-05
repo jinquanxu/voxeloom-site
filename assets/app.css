@@ -122,7 +122,11 @@ header.site .wrap {
 .lockup .line {
   font: italic 14px/1 var(--serif); color: var(--muted); white-space: nowrap;
 }
-@media (max-width: 1080px) { .lockup .line { display: none; } }
+@media (max-width: 1099px) { .lockup .line { display: none; } }
+/* Past 1100px the header stops growing, and the front page's and the
+   gallery's seven links leave no room for the line beside the wordmark --
+   it says the same as the line under each page's headline. */
+header.site:has(nav.site a[href$="#how"]) .lockup .line { display: none; }
 
 nav.site { margin-left: auto; display: flex; gap: 22px; align-items: center; }
 nav.site a { text-decoration: none; color: var(--muted); font-size: 15px; white-space: nowrap; }
@@ -646,6 +650,25 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   .gift-pics span { font-size: 13px; }
 }
 
+/* ---------- "Your order": a gift bag in the logo's inks ---------- */
+
+/* Green like "Voxe", gold like "loom": the bag in the wordmark's two colours,
+   which the dark scheme lightens along with the wordmark itself. */
+.bag { display: inline-block; width: 18px; height: 18px; vertical-align: -3px; margin-right: 6px; }
+.bag .bag-body { fill: var(--accent); }
+.bag .bag-handle, .bag .bag-ribbon { fill: none; stroke: var(--gold); stroke-width: 1.8; stroke-linecap: round; }
+
+/* The last line of every footer. */
+.legal.copyright { margin-top: 8px; }
+
+/* ---------- privacy ---------- */
+
+.privacy-body { max-width: 66ch; margin-top: 18px; }
+.privacy-body h3 { margin-top: 30px; }
+.privacy-body p, .privacy-body li { color: var(--muted); }
+.privacy-body ul { padding-left: 20px; margin: 0 0 14px; }
+.privacy-body strong { color: var(--ink); }
+
 /* ---------- a customer's account ---------- */
 
 .account-card { max-width: 460px; margin-top: 24px; }
@@ -725,12 +748,14 @@ footer.site a:hover { text-decoration: underline; }
   nav.site a[href="/gallery"] { display: none; }
 }
 
-/* The menu button (assets/menu.js). Below 861px every link but the price
-   button folds into it, and opens as a list under the header -- so nothing
-   on the site is out of reach on a phone, whatever the header has room for.
+/* The menu button (assets/menu.js). Below 1024px every link but the Gift
+   ideas button folds into it, and opens as a list under the header -- so
+   nothing on the site is out of reach on a phone or a tablet, whatever the
+   header has room for. Measured: the wordmark and the front page's seven
+   links need about 920px, so a tablet held sideways gets the button too.
    The rules above still apply where the script does not run. */
 .menu-toggle { display: none; }
-@media (max-width: 860px) {
+@media (max-width: 1023px) {
   .has-menu .menu-toggle {
     display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
     width: 42px; height: 38px; padding: 0 10px; flex: none; cursor: pointer;
@@ -768,6 +793,6 @@ footer.site a:hover { text-decoration: underline; }
     margin-top: 14px; padding: 12px; text-align: center; color: #fff; border-bottom: 0;
   }
 }
-@media (max-width: 860px) and (prefers-reduced-motion: reduce) {
+@media (max-width: 1023px) and (prefers-reduced-motion: reduce) {
   .has-menu .menu-toggle span { transition: none; }
 }

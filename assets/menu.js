@@ -1,9 +1,9 @@
 /*
  * The site's menu on a phone or a tablet.
  *
- * Below 861px the header has room for the wordmark, the price button and not
- * much else, so the other links -- the gallery, gift ideas, prices, the studio
- * -- fold into one button that opens them all. The links themselves stay
+ * Below 1024px the header has room for the wordmark, the Gift ideas button and
+ * not much else, so the other links -- the gallery, options, the studio, your
+ * order -- fold into one button that opens them all. The links themselves stay
  * where they are in the page; this only adds the button and opens and closes
  * the list. Without script nothing folds, and the header behaves as it
  * always has.
@@ -48,6 +48,6 @@
   });
   // Turning a tablet to landscape can put the full header back.
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 860) set(false);
+    if (window.innerWidth > 1023) set(false);
   });
 })();
