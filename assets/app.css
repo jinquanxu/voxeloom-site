@@ -23,7 +23,7 @@
   --stud-face: #f9f3e8;
   --stud-top: #fcf8f2;
   --ink: #1b1a17;
-  --muted: #6c655b;
+  --muted: #59534a;
   --line: #e5dfd4;
   /* The two inks of the wordmark. Green does the work -- buttons, labels,
      links, the focus ring -- because it carries text at any size. Gold is
@@ -74,7 +74,7 @@
 body {
   margin: 0;
   color: var(--ink);
-  font: 16px/1.6 var(--sans);
+  font: 17px/1.6 var(--sans);
   -webkit-font-smoothing: antialiased;
 
   /* A LEGO baseplate, drawn in three circles per tile: the shadow the stud
@@ -159,11 +159,11 @@ p { margin: 0 0 14px; }
   margin: -4px 0 16px;
 }
 .muted { color: var(--muted); }
-.small { font-size: 14px; }
+.small { font-size: 15px; }
 section { padding: 64px 0; }
 section + section { border-top: 1px solid var(--line); }
 .eyebrow {
-  text-transform: uppercase; letter-spacing: .12em; font-size: 12px;
+  text-transform: uppercase; letter-spacing: .12em; font-size: 13px;
   color: var(--accent); font-weight: 600; margin-bottom: 10px;
 }
 
@@ -267,14 +267,14 @@ figure.card h3 a:hover { text-decoration: underline; }
   border: 1px solid var(--line); background: var(--paper); color: var(--ink);
   font-size: 22px; line-height: 1;
 }
-.zoom-caption { margin: 10px 4px 2px; text-align: center; font-size: 14px; color: var(--muted); }
+.zoom-caption { margin: 10px 4px 2px; text-align: center; font-size: 15px; color: var(--muted); }
 .zoom-label { font-weight: 600; color: var(--ink); }
 
 /* Under the card, not in it: the strip has 10-25px to spare above the
    building, and a line of text inside would push it onto the roof. */
 .journey-note {
   margin: 10px 0 0; text-align: center;
-  font-size: 13px; color: var(--muted);
+  font-size: 14px; color: var(--muted);
 }
 /* The headline and the eyebrow over it are each two phrases, and a line
    should never break inside one: "memories live, pixel / to voxel to
@@ -326,12 +326,12 @@ figure.card h3 a:hover { text-decoration: underline; }
 /* ---------- forms ---------- */
 
 .field { margin-bottom: 16px; }
-.field label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; }
-.field .hint { font-size: 13px; color: var(--muted); margin-top: 6px; }
-input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea {
+.field label { display: block; font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+.field .hint { font-size: 14px; color: var(--muted); margin-top: 6px; }
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], select, textarea {
   width: 100%; padding: 11px 13px; border-radius: 10px;
   border: 1px solid var(--line); background: var(--card); color: var(--ink);
-  font: 15px/1.5 var(--sans);
+  font: 16px/1.5 var(--sans);
 }
 textarea { min-height: 120px; resize: vertical; }
 input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
@@ -339,7 +339,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .choices { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 .choice {
   border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
-  cursor: pointer; background: var(--card); font-size: 14px;
+  cursor: pointer; background: var(--card); font-size: 15px;
 }
 .choice[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
 .choice strong { display: block; font-size: 15px; margin-bottom: 2px; }
@@ -362,10 +362,10 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 
 .note {
   border-left: 3px solid var(--accent); background: var(--accent-soft);
-  padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 14px;
+  padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 15px;
 }
 .note.grey { border-color: var(--muted); background: var(--line); }
-.error { color: #a52a1a; font-size: 14px; }
+.error { color: #a52a1a; font-size: 15px; }
 @media (prefers-color-scheme: dark) { .error { color: #ff9b86; } }
 
 /* ---------- studio ---------- */
@@ -380,7 +380,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 }
 .viewer .turns { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
 .progress { display: grid; gap: 10px; margin: 16px 0; }
-.progress .row { display: flex; gap: 10px; align-items: baseline; font-size: 14px; }
+.progress .row { display: flex; gap: 10px; align-items: baseline; font-size: 15px; }
 .progress .dot {
   width: 9px; height: 9px; border-radius: 50%; background: var(--line); flex: none;
   margin-top: 6px;
@@ -474,7 +474,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .pvh-photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; margin: 10px 0 12px; }
 .pvh-photos figure { margin: 0; }
 .pvh-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; display: block; }
-.pvh-photos figcaption { font-size: 11px; line-height: 1.3; color: var(--muted); margin-top: 3px; }
+.pvh-photos figcaption { font-size: 12px; line-height: 1.3; color: var(--muted); margin-top: 3px; }
 .pvh-photos p { grid-column: 1 / -1; margin: 0; }
 
 .pvh-steps { display: flex; align-items: stretch; gap: 8px; margin-bottom: 12px; }
@@ -483,7 +483,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   border: 1px solid var(--line); background: var(--card); color: var(--ink);
   font: 600 18px/1.15 var(--serif);
 }
-.pvh-steps button small { display: block; margin-top: 3px; font: 13px/1.3 var(--sans); color: var(--muted); }
+.pvh-steps button small { display: block; margin-top: 3px; font: 14px/1.3 var(--sans); color: var(--muted); }
 .pvh-steps button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
 .pvh-steps button:disabled { opacity: .45; cursor: default; }
 .pvh-steps .arrow { align-self: center; color: var(--muted); }
@@ -553,7 +553,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .pvh-busy {
   position: absolute; left: 12px; bottom: 12px; margin: 0; padding: 6px 12px; border-radius: 999px;
   display: flex; gap: 8px; align-items: center;
-  background: rgba(27, 26, 23, .74); color: #fff; font-size: 13px;
+  background: rgba(27, 26, 23, .74); color: #fff; font-size: 14px;
 }
 .pvh-busy .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex: none; }
 @media (prefers-reduced-motion: no-preference) {
@@ -566,9 +566,9 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   .pvh-steps { gap: 6px; }
   .pvh-steps .arrow { display: none; }
   .pvh-steps button { padding: 8px 9px; font-size: 16px; }
-  .pvh-steps button small { font-size: 12px; }
+  .pvh-steps button small { font-size: 13px; }
   .pvh-strip { gap: 5px; }
-  .pvh-strip .label { font-size: 13px; }
+  .pvh-strip .label { font-size: 14px; }
 }
 
 /* ---------- gift ideas ---------- */
@@ -591,7 +591,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .gift-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
 .gift-jump a {
   padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line);
-  background: var(--card); color: var(--ink); text-decoration: none; font-size: 14px;
+  background: var(--card); color: var(--ink); text-decoration: none; font-size: 15px;
 }
 .gift-jump a:hover { border-color: var(--accent); }
 .gifts section[id] { scroll-margin-top: 78px; }   /* clear of the sticky header */
@@ -600,7 +600,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .gift-cards .card { display: flex; flex-direction: column; }
 .gift-line { font: italic 17px/1.35 var(--serif); color: var(--accent); margin: 2px 0 12px; }
 /* "Think of" sits at the foot of each card, wherever the words above end. */
-.think { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.think { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
 .think strong { color: var(--ink); font-weight: 600; }
 .gift-quiet { max-width: 760px; }
 .gift-quiet .think { margin-top: 14px; }
@@ -642,12 +642,12 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .gift-days { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .gift-days li {
   padding: 6px 12px; border-radius: 999px; background: var(--accent-soft);
-  color: var(--ink); font-size: 14px;
+  color: var(--ink); font-size: 15px;
 }
 
 @media (max-width: 560px) {
   .gift-pics { gap: 8px; }
-  .gift-pics span { font-size: 13px; }
+  .gift-pics span { font-size: 14px; }
 }
 
 /* ---------- "Your order": a gift bag in the logo's inks ---------- */
@@ -683,7 +683,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   border-radius: var(--radius); background: var(--card);
 }
 .account-pics span { display: block; margin-top: 8px; font: 600 15px/1.3 var(--serif); }
-.account-pics small { color: var(--muted); font-size: 13px; }
+.account-pics small { color: var(--muted); font-size: 14px; }
 .account-quotes { display: grid; gap: 12px; margin-top: 12px; max-width: 760px; }
 .account-quote { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 18px; }
 .account-status { text-align: right; flex: none; }
@@ -694,9 +694,22 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   font-size: 12px; line-height: 1.3; color: var(--muted); text-align: center;
 }
 
+/* ---------- "This is a gift", in the request forms (assets/gift.js) ---------- */
+
+.check { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; margin: 0 0 10px; cursor: pointer; font-weight: 400; }
+.check input { flex: none; width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--accent); }
+.gift-fields { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 6px; background: var(--paper); }
+.gift-fields .gift-toggle { margin-bottom: 8px; }
+.gift-details { margin-top: 12px; }
+.gift-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+.gift-hint { margin: -8px 0 14px; font-size: 14px; color: var(--muted); }
+.gift-ship { margin: 0 0 14px; }
+.gift-ship legend { font-size: 15px; font-weight: 500; margin-bottom: 8px; padding: 0; }
+@media (max-width: 560px) { .gift-pair { grid-template-columns: 1fr; } }
+
 /* ---------- tables ---------- */
 
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
 th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { color: var(--muted); font-weight: 500; }
 tr.pick { cursor: pointer; }
@@ -711,7 +724,7 @@ footer.site {
 footer.site .cols { display: flex; gap: 28px; flex-wrap: wrap; justify-content: space-between; }
 footer.site a { text-decoration: none; }
 footer.site a:hover { text-decoration: underline; }
-.legal { margin-top: 18px; max-width: 62ch; font-size: 13px; }
+.legal { margin-top: 18px; max-width: 62ch; font-size: 14px; }
 
 /* ---------- narrow ---------- */
 
