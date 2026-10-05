@@ -11,7 +11,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=8113bad254">
+<link rel="stylesheet" href="/assets/app.css?v=453281ee94">
 </head>
 <body>
 
@@ -86,17 +86,17 @@
           <li>
             <div class="pic"><a href="/assets/journey-pixel.webp"><img src="/assets/journey-pixel.webp" width="245" height="164"
                  alt="A photograph of a two-storey brick house with a grey roof, in evening light."></a></div>
-            <span>Pixel</span><small>a memory</small>
+            <span data-line="a memory">Pixel</span>
           </li>
           <li>
             <div class="pic"><a href="/assets/journey-voxel-large.webp"><img src="/assets/journey-voxel.webp" width="360" height="240"
                  alt="The same house as a grid of coloured blocks: brick walls, a grey roof, trees, hedges and a lawn."></a></div>
-            <span class="vox">Voxel</span><small>given depth</small>
+            <span class="vox" data-line="given depth">Voxel</span>
           </li>
           <li>
             <div class="pic"><a href="/assets/journey-heirloom-large.webp"><img src="/assets/journey-heirloom.webp" width="304" height="203"
                  alt="The house built in bricks, on a black display base with a small brass plaque."></a></div>
-            <span class="loom">Heirloom</span><small>in LEGO® bricks</small>
+            <span class="loom" data-line="in LEGO® bricks">Heirloom</span>
           </li>
         </ol>
 
@@ -485,8 +485,9 @@
         big.src = link.getAttribute('href');
         label.textContent = word.textContent;
         label.className = 'zoom-label ' + word.className;
-        var line = link.closest('li').querySelector('small');
-        sub.textContent = line ? ', ' + line.textContent : '';
+        // The thumbnail says only the word; the enlarged picture says
+        // what it means: "Voxel, given depth".
+        sub.textContent = word.dataset.line ? ', ' + word.dataset.line : '';
         box.showModal();
         fit();
       });

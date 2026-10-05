@@ -256,12 +256,6 @@ figure.card h3 a:hover { text-decoration: underline; }
   display: block; margin-top: 6px;
   font: 600 14px/1.2 var(--sans); color: var(--ink);
 }
-/* What each word means, a quiet line under it: "a memory", "given depth",
-   "in LEGO bricks". The zoom carries it into its caption. */
-.journey small {
-  display: block; margin-top: 1px;
-  font: italic 12px/1.2 var(--serif); color: var(--muted);
-}
 /* Each thumbnail opens the zoom. There is no hover on a phone, so the
    caption under the card says so as well. */
 .journey a { display: block; border-radius: 8px; cursor: zoom-in; }
@@ -333,12 +327,6 @@ figure.card h3 a:hover { text-decoration: underline; }
   background: linear-gradient(180deg, #fcf8ef 0%, #f6ead0 55%, #edd9ae 100%);
   box-shadow: inset 0 0 0 1px rgba(198, 147, 51, .28), var(--shadow);
 }
-/* On a phone the strip and its two lines of words are taller than the
-   empty band above the house, so the card grows a little headroom there
-   and the house sits lower in it. */
-@media (max-width: 599px) {
-  .hero .showcase > picture img { padding-top: 34px; }
-}
 @media (prefers-color-scheme: dark) {
   .hero .showcase > picture img {
     background: radial-gradient(120% 95% at 50% 32%, #0f6a45 0%, #08482f 55%, #052f1f 100%);
@@ -347,7 +335,6 @@ figure.card h3 a:hover { text-decoration: underline; }
   .hero .journey span { color: #f4eee3; }
   .hero .journey span.vox { color: #8fd3ae; }
   .hero .journey span.loom { color: #d9a94f; }
-  .hero .journey small { color: #cfd9d2; }
   .hero .journey li:not(:last-child) .pic::after { color: #cfd9d2; }
 }
 
