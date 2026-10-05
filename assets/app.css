@@ -768,6 +768,15 @@ footer.site .cols { display: flex; gap: 28px; flex-wrap: wrap; justify-content: 
 footer.site a { text-decoration: none; }
 footer.site a:hover { text-decoration: underline; }
 .legal { margin-top: 18px; max-width: 62ch; font-size: 14px; }
+/* The QR code for voxeloom.com, at the top right of the footer: for someone
+   on a computer who wants the site on their phone, where their photographs
+   are. Not on a phone or a tablet, which cannot scan its own screen. */
+.footer-qr { display: none; }
+@media (min-width: 861px) and (hover: hover) {
+  .footer-qr { display: block; float: right; width: 140px; margin: 0 0 12px 32px; text-align: center; }
+  .footer-qr img { display: block; width: 112px; height: 112px; margin: 0 auto 8px; border-radius: 8px; }
+  .footer-qr p { margin: 0; font-size: 12.5px; line-height: 1.4; }
+}
 
 /* ---------- narrow ---------- */
 

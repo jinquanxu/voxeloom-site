@@ -160,5 +160,19 @@
    "/img/corner-cottage/turn-2.png",
    "/img/corner-cottage/turn-3.png"
   ]
+ },
+ {
+  "name": "The Red Barn",
+  "slug": "the-red-barn",
+  "summary": "A red gambrel barn in real LEGO parts: barn-red board siding under a white curved roof, steep below and gentler above, with the cupola on the ridge, the hay hood over the white-framed hayloft door, and the wide doorway between small white windows. The workshop wing behind the board fence, the hen house and its picket run, the sliding door on its track at the back, the water trough, the meadow of wild flowers and the shade trees. Inside, horse and cow stalls along the aisle, the tack corner and the feed room, a ladder up to the hayloft with its stacked bales and a child jumping in the hay, the farmer at the workbench, and hens on their nests.",
+  "width": 68,
+  "depth": 52,
+  "courses": 45,
+  "shots": [
+   "/img/the-red-barn/turn-0.png",
+   "/img/the-red-barn/turn-1.png",
+   "/img/the-red-barn/turn-2.png",
+   "/img/the-red-barn/turn-3.png"
+  ]
  }
 ]
