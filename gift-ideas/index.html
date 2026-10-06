@@ -11,7 +11,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=9a88848e05">
+<link rel="stylesheet" href="/assets/app.css?v=df4dd9ee7d">
 </head>
 <body>
 
@@ -65,7 +65,378 @@
       We make that place in genuine LEGO® bricks, one of a kind: something to build
       together, something to keep on the shelf, and a story to hand down.
     </p>
+  </div>
+</section>
 
+<!-- Who it is for, as pictures: every idea is a tile -- its cartoon, its
+     title, its one line -- in one grid, and the colour chips above show one
+     group at a time. A tile opens the idea in full (assets/gifts.js). Without
+     the script the chips stay hidden and the ideas read in full below the
+     grid, which is also what search engines see. -->
+<section id="ideas" class="gift-chooser">
+  <div class="wrap">
+    <p class="eyebrow">Who is it for?</p>
+    <h2>Choose a picture to read the idea</h2>
+    <div class="gift-filter" role="group" aria-label="Show the ideas for">
+      <button type="button" data-group="all" aria-pressed="true">All</button>
+      <button type="button" class="hue-family" data-group="family" aria-pressed="false">Family</button>
+      <button type="button" class="hue-partners" data-group="partners" aria-pressed="false">Partners</button>
+      <button type="button" class="hue-milestones" data-group="milestones" aria-pressed="false">Milestones</button>
+      <button type="button" class="hue-thanks" data-group="thanks" aria-pressed="false">To say thank you</button>
+      <button type="button" class="hue-remembrance" data-group="remembrance" aria-pressed="false">In remembrance</button>
+    </div>
+    <ul class="gift-tiles">
+      <li class="hue-family" data-group="family"><a href="#for-grandparents">
+        <img src="/assets/gifts/grandparents.webp" width="720" height="480" loading="lazy" alt="" data-alt="A granddaughter kneels by her grandmother's armchair and hands her a brick model of the family house.">
+        <span class="tile-for">For parents and grandparents</span>
+        <span class="tile-line">The house that holds the stories.</span>
+      </a></li>
+      <li class="hue-family" data-group="family"><a href="#for-grandchildren">
+        <img src="/assets/gifts/grandchildren.webp" width="720" height="480" loading="lazy" alt="" data-alt="A grandfather and his young grandchild build a brick model of a house together at the kitchen table.">
+        <span class="tile-for">For children and grandchildren</span>
+        <span class="tile-line">A piece of where they come from.</span>
+      </a></li>
+      <li class="hue-family" data-group="family"><a href="#for-siblings">
+        <img src="/assets/gifts/siblings.webp" width="720" height="480" loading="lazy" alt="" data-alt="Grown-up siblings and their parents laugh around a brick model of their childhood home.">
+        <span class="tile-for">For siblings and the whole family</span>
+        <span class="tile-line">One place. A dozen versions of the story.</span>
+      </a></li>
+      <li class="hue-partners" data-group="partners"><a href="#for-partner">
+        <img src="/assets/gifts/partner.webp" width="720" height="480" loading="lazy" alt="" data-alt="On a sofa, one partner surprises the other with a brick model of the seaside cafe where they met.">
+        <span class="tile-for">For your partner</span>
+        <span class="tile-line">Somewhere only the two of you would choose.</span>
+      </a></li>
+      <li class="hue-partners" data-group="partners"><a href="#for-newlyweds">
+        <img src="/assets/gifts/newlyweds.webp" width="720" height="480" loading="lazy" alt="" data-alt="A bride and groom hold a brick model of a white chapel as petals fall around them and their guests.">
+        <span class="tile-for">For newlyweds</span>
+        <span class="tile-line">Where they said &ldquo;I do&rdquo;.</span>
+      </a></li>
+      <li class="hue-milestones" data-group="milestones"><a href="#for-homeowners">
+        <img src="/assets/gifts/homeowners.webp" width="720" height="480" loading="lazy" alt="" data-alt="A couple in the doorway of their first home hold up the key, beside a brick model of the same house.">
+        <span class="tile-for">For new homeowners</span>
+        <span class="tile-line">The first key, kept for good.</span>
+      </a></li>
+      <li class="hue-milestones" data-group="milestones"><a href="#for-graduates">
+        <img src="/assets/gifts/graduates.webp" width="720" height="480" loading="lazy" alt="" data-alt="Friends in graduation gowns gather around a brick model of a campus clock tower.">
+        <span class="tile-for">For graduates and lifelong friends</span>
+        <span class="tile-line">The place that stands for the years.</span>
+      </a></li>
+      <li class="hue-milestones" data-group="milestones"><a href="#for-far-from-home">
+        <img src="/assets/gifts/far-from-home.webp" width="720" height="480" loading="lazy" alt="" data-alt="In a city apartment, a young person smiles at a brick model of the family farmhouse on the windowsill.">
+        <span class="tile-for">For someone far from home</span>
+        <span class="tile-line">Home, wherever life takes them.</span>
+      </a></li>
+      <li class="hue-milestones" data-group="milestones"><a href="#for-adventures">
+        <img src="/assets/gifts/adventures.webp" width="720" height="480" loading="lazy" alt="" data-alt="Two hikers admire a brick model of a lakeside cabin, with mountains behind them.">
+        <span class="tile-for">For the people you share adventures with</span>
+        <span class="tile-line">Keep a favourite escape close.</span>
+      </a></li>
+      <li class="hue-thanks" data-group="thanks"><a href="#for-estate-agents">
+        <img src="/assets/gifts/estate-agents.webp" width="720" height="480" loading="lazy" alt="" data-alt="On the front steps, an estate agent hands new owners a brick model of their house, tied with a bow.">
+        <span class="tile-for">From real estate agents</span>
+        <span class="tile-line">A closing gift they will keep.</span>
+      </a></li>
+      <li class="hue-thanks" data-group="thanks"><a href="#for-builders">
+        <img src="/assets/gifts/builders.webp" width="720" height="480" loading="lazy" alt="" data-alt="An architect and a builder present a brick model of a family's new house on their driveway.">
+        <span class="tile-for">From builders and architects</span>
+        <span class="tile-line">Hand over the keys, and the house in miniature.</span>
+      </a></li>
+      <li class="hue-thanks" data-group="thanks"><a href="#for-retiring">
+        <img src="/assets/gifts/retiring.webp" width="720" height="480" loading="lazy" alt="" data-alt="Colleagues applaud as a colleague receives a brick model of the shop where they worked for years.">
+        <span class="tile-for">For someone retiring, or a business milestone</span>
+        <span class="tile-line">Honour what they helped build.</span>
+      </a></li>
+      <li class="hue-thanks" data-group="thanks"><a href="#for-community">
+        <img src="/assets/gifts/community.webp" width="720" height="480" loading="lazy" alt="" data-alt="A community gathers in a village hall around a brick model of a white church with a steeple.">
+        <span class="tile-for">For churches, schools and clubs</span>
+        <span class="tile-line">A building the whole community knows.</span>
+      </a></li>
+      <li class="hue-remembrance" data-group="remembrance"><a href="#for-remembrance">
+        <img src="/assets/gifts/remembrance.webp" width="720" height="480" loading="lazy" alt="" data-alt="By a lamp-lit window at dusk, an older person holds a brick model of a small cottage, beside a framed photograph and a candle.">
+        <span class="tile-for">In remembrance</span>
+        <span class="tile-line">A place that holds someone you love.</span>
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<script>document.documentElement.classList.add('gift-js');</script>
+<section class="gift-details" aria-label="The ideas in full">
+  <div class="wrap">
+    <article id="for-grandparents" class="card gift-detail gift-group hue-family">
+      <img class="gift-art" src="/assets/gifts/grandparents.webp" width="720" height="480" loading="lazy" alt="A granddaughter kneels by her grandmother's armchair and hands her a brick model of the family house.">
+      <p class="eyebrow">For family</p>
+      <h3>For parents and grandparents</h3>
+      <p class="gift-line">The house that holds the stories.</p>
+      <p class="gift-verse">
+        The front steps where everyone gathered.<br>
+        The garden they tended, season after season.<br>
+        The kitchen window, lit for you coming home.
+      </p>
+      <p class="muted small">
+        Give it back to them in bricks, for a milestone birthday, an anniversary, or
+        the move to somewhere smaller.
+      </p>
+      <p class="muted small">
+        And if they are settling into a new room, in assisted living or a care home,
+        let a little of home go too: a familiar roofline on the windowsill, and a place
+        to begin when you visit. Build it together, a few bags at a time, or let us
+        build it for them.
+      </p>
+      <p class="think"><strong>Think of:</strong> the family home, their childhood house, a favourite holiday cottage, the house they are moving out of.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-grandchildren" class="card gift-detail gift-group hue-family">
+      <img class="gift-art" src="/assets/gifts/grandchildren.webp" width="720" height="480" loading="lazy" alt="A grandfather and his young grandchild build a brick model of a house together at the kitchen table.">
+      <p class="eyebrow">For family</p>
+      <h3>For children and grandchildren</h3>
+      <p class="gift-line">A piece of where they come from.</p>
+      <p class="gift-verse">
+        Grandma&rsquo;s house, a story in every window.<br>
+        The door a new baby was first carried through.<br>
+        The home a grown child takes with them to college.
+      </p>
+      <p class="muted small">
+        For the youngest, make it a family project, and share as much of the building
+        as suits them. For the eldest, it is a little piece of home to carry along.
+      </p>
+      <p class="think"><strong>Think of:</strong> the house they came home to as a baby, Grandma&rsquo;s house, the family farm, the home they are leaving for college.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-siblings" class="card gift-detail gift-group hue-family">
+      <img class="gift-art" src="/assets/gifts/siblings.webp" width="720" height="480" loading="lazy" alt="Grown-up siblings and their parents laugh around a brick model of their childhood home.">
+      <p class="eyebrow">For family</p>
+      <h3>For siblings and the whole family</h3>
+      <p class="gift-line">One place. A dozen versions of the story.</p>
+      <p class="gift-verse">
+        The kitchen everyone remembers differently.<br>
+        The porch in every summer photograph.<br>
+        The holiday house where the cousins grew up together.
+      </p>
+      <p class="muted small">
+        Give it together: for a reunion, a parent&rsquo;s birthday, or one last
+        gathering before the house is sold. Choosing the details becomes part of the gift.
+      </p>
+      <p class="think"><strong>Think of:</strong> the childhood home, a shared summer cottage, the family&rsquo;s first house in a new country.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-partner" class="card gift-detail gift-group hue-partners">
+      <img class="gift-art" src="/assets/gifts/partner.webp" width="720" height="480" loading="lazy" alt="On a sofa, one partner surprises the other with a brick model of the seaside cafe where they met.">
+      <p class="eyebrow">For partners</p>
+      <h3>For your partner</h3>
+      <p class="gift-line">Somewhere only the two of you would choose.</p>
+      <p class="gift-verse">
+        The caf&eacute; where an hour felt like a minute.<br>
+        The first apartment, and its one good window.<br>
+        The bench, the bridge, the place you said yes.
+      </p>
+      <p class="muted small">
+        For an anniversary, or an ordinary Tuesday worth celebrating: build it side by
+        side, and tell the story one more time.
+      </p>
+      <p class="think"><strong>Think of:</strong> where you met, your first shared home, where you got engaged, a honeymoon hotel.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-newlyweds" class="card gift-detail gift-group hue-partners">
+      <img class="gift-art" src="/assets/gifts/newlyweds.webp" width="720" height="480" loading="lazy" alt="A bride and groom hold a brick model of a white chapel as petals fall around them and their guests.">
+      <p class="eyebrow">For partners</p>
+      <h3>For newlyweds</h3>
+      <p class="gift-line">Where they said &ldquo;I do&rdquo;.</p>
+      <p class="gift-verse">
+        The church, the chapel, the barn, the ballroom &mdash;<br>
+        the one room that held everyone they love, at once.
+      </p>
+      <p class="muted small">
+        Give it as a wedding gift, or save it for the first anniversary, when the day
+        has become their favourite story. And if you are the one just married, it is a
+        lovely way to say it all again.
+      </p>
+      <p class="think"><strong>Think of:</strong> the wedding venue, the church where their parents married too, the first home they share.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-homeowners" class="card gift-detail gift-group hue-milestones">
+      <img class="gift-art" src="/assets/gifts/homeowners.webp" width="720" height="480" loading="lazy" alt="A couple in the doorway of their first home hold up the key, beside a brick model of the same house.">
+      <p class="eyebrow">For milestones</p>
+      <h3>For new homeowners</h3>
+      <p class="gift-line">The first key, kept for good.</p>
+      <p class="gift-verse">
+        A first house. A long-awaited move.<br>
+        A place to put down roots, and paint the front door.
+      </p>
+      <p class="muted small">
+        Celebrate the housewarming, or the first anniversary of the keys, with the home
+        itself in bricks.
+      </p>
+      <p class="think"><strong>Think of:</strong> a first home, a forever home, the house they built or restored.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-graduates" class="card gift-detail gift-group hue-milestones">
+      <img class="gift-art" src="/assets/gifts/graduates.webp" width="720" height="480" loading="lazy" alt="Friends in graduation gowns gather around a brick model of a campus clock tower.">
+      <p class="eyebrow">For milestones</p>
+      <h3>For graduates and lifelong friends</h3>
+      <p class="gift-line">The place that stands for the years.</p>
+      <p class="gift-verse">
+        The residence hall. The library at midnight.<br>
+        A campus tower like Brown&rsquo;s <a href="/gallery/carrie-tower/">Carrie Tower</a>,
+        keeping the hours.
+      </p>
+      <p class="muted small">
+        For a graduation or a reunion &mdash; or for an old friend, the school where you
+        met, the apartment you once shared.
+      </p>
+      <p class="think"><strong>Think of:</strong> a school, a university landmark, a first shared apartment, a favourite campus building.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-far-from-home" class="card gift-detail gift-group hue-milestones">
+      <img class="gift-art" src="/assets/gifts/far-from-home.webp" width="720" height="480" loading="lazy" alt="In a city apartment, a young person smiles at a brick model of the family farmhouse on the windowsill.">
+      <p class="eyebrow">For milestones</p>
+      <h3>For someone far from home</h3>
+      <p class="gift-line">Home, wherever life takes them.</p>
+      <p class="gift-verse">
+        Across the country, across an ocean,<br>
+        for work, for love, for a posting far away &mdash;<br>
+        the smallest details of home grow larger.
+      </p>
+      <p class="muted small">Give them a building they know by heart.</p>
+      <p class="think"><strong>Think of:</strong> a hometown library, a family house abroad, a cherished place of worship, the State House on its hill.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-adventures" class="card gift-detail gift-group hue-milestones">
+      <img class="gift-art" src="/assets/gifts/adventures.webp" width="720" height="480" loading="lazy" alt="Two hikers admire a brick model of a lakeside cabin, with mountains behind them.">
+      <p class="eyebrow">For milestones</p>
+      <h3>For the people you share adventures with</h3>
+      <p class="gift-line">Keep a favourite escape close.</p>
+      <p class="gift-verse">
+        The cabin you return to every summer.<br>
+        The lighthouse from that unforgettable trip &mdash;
+        <a href="/gallery/beavertail-light/">Beavertail</a>, perhaps, in the wind.<br>
+        The little hotel everyone still talks about.
+      </p>
+      <p class="muted small">A reminder of time well spent, and a reason to plan the next one.</p>
+      <p class="think"><strong>Think of:</strong> a lakeside cottage, a mountain lodge, a beach house, a favourite landmark.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-estate-agents" class="card gift-detail gift-group hue-thanks">
+      <img class="gift-art" src="/assets/gifts/estate-agents.webp" width="720" height="480" loading="lazy" alt="On the front steps, an estate agent hands new owners a brick model of their house, tied with a bow.">
+      <p class="eyebrow">To say thank you</p>
+      <h3>From real estate agents</h3>
+      <p class="gift-line">A closing gift they will keep.</p>
+      <p class="gift-verse">
+        For the buyers, the house they have just been handed the keys to.<br>
+        For the sellers, the home they are saying goodbye to.
+      </p>
+      <p class="muted small">Either way, it says you understood what the move meant.</p>
+      <p class="think"><strong>Think of:</strong> a first home, a forever home, a family home passing to new owners.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-builders" class="card gift-detail gift-group hue-thanks">
+      <img class="gift-art" src="/assets/gifts/builders.webp" width="720" height="480" loading="lazy" alt="An architect and a builder present a brick model of a family's new house on their driveway.">
+      <p class="eyebrow">To say thank you</p>
+      <h3>From builders and architects</h3>
+      <p class="gift-line">Hand over the keys, and the house in miniature.</p>
+      <p class="gift-verse">
+        The custom home. The careful restoration.<br>
+        The building you drew from nothing.
+      </p>
+      <p class="muted small">The thank-you a client keeps long after the paperwork is filed.</p>
+      <p class="think"><strong>Think of:</strong> a custom home, a restored farmhouse, a new chapel or library.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-retiring" class="card gift-detail gift-group hue-thanks">
+      <img class="gift-art" src="/assets/gifts/retiring.webp" width="720" height="480" loading="lazy" alt="Colleagues applaud as a colleague receives a brick model of the shop where they worked for years.">
+      <p class="eyebrow">To say thank you</p>
+      <h3>For someone retiring, or a business milestone</h3>
+      <p class="gift-line">Honour what they helped build.</p>
+      <p class="gift-verse">
+        The shop they opened. The classroom where they taught.<br>
+        The fire station they answered calls from.<br>
+        The corner restaurant that became a neighbourhood&rsquo;s kitchen.
+      </p>
+      <p class="muted small">A gift from colleagues, customers or family, for the years someone gave to a place.</p>
+      <p class="think"><strong>Think of:</strong> a first storefront, a long-time workplace, a family business, a fire station.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-community" class="card gift-detail gift-group hue-thanks">
+      <img class="gift-art" src="/assets/gifts/community.webp" width="720" height="480" loading="lazy" alt="A community gathers in a village hall around a brick model of a white church with a steeple.">
+      <p class="eyebrow">To say thank you</p>
+      <h3>For churches, schools and clubs</h3>
+      <p class="gift-line">A building the whole community knows.</p>
+      <p class="gift-verse">
+        A centenary. A new building.<br>
+        A farewell to an old one.
+      </p>
+      <p class="muted small">
+        A model can mark the day, thank someone who served for years, or be the prize
+        everyone hopes to carry home from the fundraiser.
+      </p>
+      <p class="think"><strong>Think of:</strong> a parish church, a school&rsquo;s oldest building, a clubhouse, a town library.</p>
+      <div class="actions gift-actions">
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
+        <a class="btn" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a>
+      </div>
+    </article>
+    <article id="for-remembrance" class="card gift-detail gift-group hue-remembrance">
+      <img class="gift-art" src="/assets/gifts/remembrance.webp" width="720" height="480" loading="lazy" alt="By a lamp-lit window at dusk, an older person holds a brick model of a small cottage, beside a framed photograph and a candle.">
+      <p class="eyebrow">In remembrance</p>
+      <h3>A place that holds someone you love</h3>
+      <p class="gift-verse">
+        Some places keep a person in them &mdash;<br>
+        a porch, a workshop, a kitchen table.
+      </p>
+      <p class="muted">
+        If it feels right for the one receiving it, a model of that place can be a quiet
+        tribute. Choose it with care, and perhaps invite them to help decide which details
+        matter most. If the place is gone, an old photograph can be enough to begin.
+      </p>
+      <p class="think"><strong>Think of:</strong> a parent&rsquo;s home, a grandparent&rsquo;s workshop, a place where you spent time together.</p>
+    </article>
+  </div>
+</section>
+
+<dialog class="gift-dialog" id="giftDialog">
+  <form method="dialog"><button class="zoom-close" aria-label="Close">&times;</button></form>
+  <div class="gift-dialog-body"></div>
+</dialog>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">From our gallery</p>
     <div class="gift-pics">
       <a href="/gallery/the-brick-colonial/">
         <img src="/img/the-brick-colonial/turn-0.png" width="900" height="900" loading="lazy"
@@ -85,254 +456,6 @@
     </div>
     <p class="small muted">Designs from our gallery, each one checked and priced.</p>
 
-    <nav class="gift-jump" aria-label="Gift ideas by who they are for">
-      <a class="hue-family" href="#family">For family</a>
-      <a class="hue-partners" href="#partners">For partners</a>
-      <a class="hue-milestones" href="#milestones">For milestones</a>
-      <a class="hue-thanks" href="#thanks">To say thank you</a>
-      <a class="hue-remembrance" href="#remembrance">In remembrance</a>
-    </nav>
-  </div>
-</section>
-
-<section id="family" class="gift-group hue-family">
-  <div class="wrap">
-    <p class="eyebrow">For family</p>
-    <h2>Who are you thinking of?</h2>
-    <div class="grid three gift-cards">
-      <article class="card">
-        <h3>For parents and grandparents</h3>
-        <p class="gift-line">The house that holds the stories.</p>
-        <p class="gift-verse">
-          The front steps where everyone gathered.<br>
-          The garden they tended, season after season.<br>
-          The kitchen window, lit for you coming home.
-        </p>
-        <p class="muted small">
-          Give it back to them in bricks, for a milestone birthday, an anniversary, or
-          the move to somewhere smaller.
-        </p>
-        <p class="muted small">
-          And if they are settling into a new room, in assisted living or a care home,
-          let a little of home go too: a familiar roofline on the windowsill, and a place
-          to begin when you visit. Build it together, a few bags at a time, or let us
-          build it for them.
-        </p>
-        <p class="think"><strong>Think of:</strong> the family home, their childhood house, a favourite holiday cottage, the house they are moving out of.</p>
-      </article>
-      <article class="card">
-        <h3>For children and grandchildren</h3>
-        <p class="gift-line">A piece of where they come from.</p>
-        <p class="gift-verse">
-          Grandma&rsquo;s house, a story in every window.<br>
-          The door a new baby was first carried through.<br>
-          The home a grown child takes with them to college.
-        </p>
-        <p class="muted small">
-          For the youngest, make it a family project, and share as much of the building
-          as suits them. For the eldest, it is a little piece of home to carry along.
-        </p>
-        <p class="think"><strong>Think of:</strong> the house they came home to as a baby, Grandma&rsquo;s house, the family farm, the home they are leaving for college.</p>
-      </article>
-      <article class="card">
-        <h3>For siblings and the whole family</h3>
-        <p class="gift-line">One place. A dozen versions of the story.</p>
-        <p class="gift-verse">
-          The kitchen everyone remembers differently.<br>
-          The porch in every summer photograph.<br>
-          The holiday house where the cousins grew up together.
-        </p>
-        <p class="muted small">
-          Give it together: for a reunion, a parent&rsquo;s birthday, or one last
-          gathering before the house is sold. Choosing the details becomes part of the gift.
-        </p>
-        <p class="think"><strong>Think of:</strong> the childhood home, a shared summer cottage, the family&rsquo;s first house in a new country.</p>
-      </article>
-    </div>
-    <div class="actions gift-actions">
-      <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
-      <a class="btn" href="/gallery">Explore the gallery</a>
-    </div>
-  </div>
-</section>
-
-<section id="partners" class="gift-group hue-partners">
-  <div class="wrap">
-    <p class="eyebrow">For partners</p>
-    <h2>A place that means &ldquo;us&rdquo;</h2>
-    <div class="grid two gift-cards">
-      <article class="card">
-        <h3>For your partner</h3>
-        <p class="gift-line">Somewhere only the two of you would choose.</p>
-        <p class="gift-verse">
-          The caf&eacute; where an hour felt like a minute.<br>
-          The first apartment, and its one good window.<br>
-          The bench, the bridge, the place you said yes.
-        </p>
-        <p class="muted small">
-          For an anniversary, or an ordinary Tuesday worth celebrating: build it side by
-          side, and tell the story one more time.
-        </p>
-        <p class="think"><strong>Think of:</strong> where you met, your first shared home, where you got engaged, a honeymoon hotel.</p>
-      </article>
-      <article class="card">
-        <h3>For newlyweds</h3>
-        <p class="gift-line">Where they said &ldquo;I do&rdquo;.</p>
-        <p class="gift-verse">
-          The church, the chapel, the barn, the ballroom &mdash;<br>
-          the one room that held everyone they love, at once.
-        </p>
-        <p class="muted small">
-          Give it as a wedding gift, or save it for the first anniversary, when the day
-          has become their favourite story. And if you are the one just married, it is a
-          lovely way to say it all again.
-        </p>
-        <p class="think"><strong>Think of:</strong> the wedding venue, the church where their parents married too, the first home they share.</p>
-      </article>
-    </div>
-    <div class="actions gift-actions">
-      <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
-      <a class="btn" href="/gallery">Explore the gallery</a>
-    </div>
-  </div>
-</section>
-
-<section id="milestones" class="gift-group hue-milestones">
-  <div class="wrap">
-    <p class="eyebrow">For milestones</p>
-    <h2>Where a new chapter began</h2>
-    <div class="grid two gift-cards">
-      <article class="card">
-        <h3>For new homeowners</h3>
-        <p class="gift-line">The first key, kept for good.</p>
-        <p class="gift-verse">
-          A first house. A long-awaited move.<br>
-          A place to put down roots, and paint the front door.
-        </p>
-        <p class="muted small">
-          Celebrate the housewarming, or the first anniversary of the keys, with the home
-          itself in bricks.
-        </p>
-        <p class="think"><strong>Think of:</strong> a first home, a forever home, the house they built or restored.</p>
-      </article>
-      <article class="card">
-        <h3>For graduates and lifelong friends</h3>
-        <p class="gift-line">The place that stands for the years.</p>
-        <p class="gift-verse">
-          The residence hall. The library at midnight.<br>
-          A campus tower like Brown&rsquo;s <a href="/gallery/carrie-tower/">Carrie Tower</a>,
-          keeping the hours.
-        </p>
-        <p class="muted small">
-          For a graduation or a reunion &mdash; or for an old friend, the school where you
-          met, the apartment you once shared.
-        </p>
-        <p class="think"><strong>Think of:</strong> a school, a university landmark, a first shared apartment, a favourite campus building.</p>
-      </article>
-      <article class="card">
-        <h3>For someone far from home</h3>
-        <p class="gift-line">Home, wherever life takes them.</p>
-        <p class="gift-verse">
-          Across the country, across an ocean,<br>
-          for work, for love, for a posting far away &mdash;<br>
-          the smallest details of home grow larger.
-        </p>
-        <p class="muted small">Give them a building they know by heart.</p>
-        <p class="think"><strong>Think of:</strong> a hometown library, a family house abroad, a cherished place of worship, the State House on its hill.</p>
-      </article>
-      <article class="card">
-        <h3>For the people you share adventures with</h3>
-        <p class="gift-line">Keep a favourite escape close.</p>
-        <p class="gift-verse">
-          The cabin you return to every summer.<br>
-          The lighthouse from that unforgettable trip &mdash;
-          <a href="/gallery/beavertail-light/">Beavertail</a>, perhaps, in the wind.<br>
-          The little hotel everyone still talks about.
-        </p>
-        <p class="muted small">A reminder of time well spent, and a reason to plan the next one.</p>
-        <p class="think"><strong>Think of:</strong> a lakeside cottage, a mountain lodge, a beach house, a favourite landmark.</p>
-      </article>
-    </div>
-    <div class="actions gift-actions">
-      <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
-      <a class="btn" href="/gallery">Explore the gallery</a>
-    </div>
-  </div>
-</section>
-
-<section id="thanks" class="gift-group hue-thanks">
-  <div class="wrap">
-    <p class="eyebrow">To say thank you</p>
-    <h2>Gifts from the people who helped</h2>
-    <div class="grid two gift-cards">
-      <article class="card">
-        <h3>From real estate agents</h3>
-        <p class="gift-line">A closing gift they will keep.</p>
-        <p class="gift-verse">
-          For the buyers, the house they have just been handed the keys to.<br>
-          For the sellers, the home they are saying goodbye to.
-        </p>
-        <p class="muted small">Either way, it says you understood what the move meant.</p>
-        <p class="think"><strong>Think of:</strong> a first home, a forever home, a family home passing to new owners.</p>
-      </article>
-      <article class="card">
-        <h3>From builders and architects</h3>
-        <p class="gift-line">Hand over the keys, and the house in miniature.</p>
-        <p class="gift-verse">
-          The custom home. The careful restoration.<br>
-          The building you drew from nothing.
-        </p>
-        <p class="muted small">The thank-you a client keeps long after the paperwork is filed.</p>
-        <p class="think"><strong>Think of:</strong> a custom home, a restored farmhouse, a new chapel or library.</p>
-      </article>
-      <article class="card">
-        <h3>For someone retiring, or a business milestone</h3>
-        <p class="gift-line">Honour what they helped build.</p>
-        <p class="gift-verse">
-          The shop they opened. The classroom where they taught.<br>
-          The fire station they answered calls from.<br>
-          The corner restaurant that became a neighbourhood&rsquo;s kitchen.
-        </p>
-        <p class="muted small">A gift from colleagues, customers or family, for the years someone gave to a place.</p>
-        <p class="think"><strong>Think of:</strong> a first storefront, a long-time workplace, a family business, a fire station.</p>
-      </article>
-      <article class="card">
-        <h3>For churches, schools and clubs</h3>
-        <p class="gift-line">A building the whole community knows.</p>
-        <p class="gift-verse">
-          A centenary. A new building.<br>
-          A farewell to an old one.
-        </p>
-        <p class="muted small">
-          A model can mark the day, thank someone who served for years, or be the prize
-          everyone hopes to carry home from the fundraiser.
-        </p>
-        <p class="think"><strong>Think of:</strong> a parish church, a school&rsquo;s oldest building, a clubhouse, a town library.</p>
-      </article>
-    </div>
-    <div class="actions gift-actions">
-      <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
-      <a class="btn" href="/gallery">Explore the gallery</a>
-    </div>
-  </div>
-</section>
-
-<section id="remembrance" class="gift-group hue-remembrance">
-  <div class="wrap">
-    <div class="card gift-quiet">
-      <p class="eyebrow">In remembrance</p>
-      <h3>A place that holds someone you love</h3>
-      <p class="gift-verse">
-        Some places keep a person in them &mdash;<br>
-        a porch, a workshop, a kitchen table.
-      </p>
-      <p class="muted">
-        If it feels right for the one receiving it, a model of that place can be a quiet
-        tribute. Choose it with care, and perhaps invite them to help decide which details
-        matter most. If the place is gone, an old photograph can be enough to begin.
-      </p>
-      <p class="think"><strong>Think of:</strong> a parent&rsquo;s home, a grandparent&rsquo;s workshop, a place where you spent time together.</p>
-    </div>
   </div>
 </section>
 
@@ -411,5 +534,6 @@
 </footer>
 
 <script src="/assets/menu.js?v=2388a0c114" defer></script>
+<script src="/assets/gifts.js?v=4c4c9251d5" defer></script>
 </body>
 </html>

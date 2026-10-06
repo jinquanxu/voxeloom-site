@@ -628,6 +628,13 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 
 .gift-cards { margin-top: 24px; }
 .gift-cards .card { display: flex; flex-direction: column; }
+/* Each card's cartoon (tools/gift_cartoons.py) runs edge to edge across its
+   top, under the group's coloured rule. */
+.gift-art {
+  display: block; width: calc(100% + 44px); max-width: none; height: auto;
+  aspect-ratio: 3 / 2; object-fit: cover;
+  margin: -22px -22px 16px;
+}
 .gift-line { font: italic 17px/1.35 var(--serif); color: var(--accent); margin: 2px 0 12px; }
 /* "Think of" sits at the foot of each card, wherever the words above end. */
 .think { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
@@ -662,6 +669,64 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .gift-group .btn:not(.primary) { border-color: var(--hue); color: var(--hue); }
 .gift-jump a[class^="hue-"] { border-color: var(--hue); color: var(--hue); }
 .gift-jump a[class^="hue-"]:hover { background: var(--hue-soft); }
+
+/* The picture chooser: chips that show one group, a grid of tiles (cartoon,
+   title, one line), and each idea in full in a dialog (assets/gifts.js). */
+.gift-filter { display: none; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; }
+.gift-js .gift-filter { display: flex; }
+.gift-filter button {
+  font: 600 14px/1 var(--sans); padding: 10px 16px; border-radius: 999px; cursor: pointer;
+  border: 1.5px solid var(--hue, var(--ink)); color: var(--hue, var(--ink)); background: var(--card);
+}
+.gift-filter button:hover { background: var(--hue-soft, var(--paper)); }
+.gift-filter button[aria-pressed="true"] { background: var(--hue, var(--ink)); color: var(--hue-on, var(--paper)); }
+.gift-filter button:focus-visible { outline: 3px solid var(--hue, var(--accent)); outline-offset: 2px; }
+
+.gift-tiles {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.gift-tiles li { margin: 0; }
+.gift-tiles li[hidden] { display: none; }
+.gift-tiles a {
+  display: flex; flex-direction: column; height: 100%; text-decoration: none; color: var(--ink);
+  background: var(--hue-soft); border-top: 4px solid var(--hue); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow);
+}
+.gift-tiles a:focus-visible { outline: 3px solid var(--hue); outline-offset: 3px; }
+@media (prefers-reduced-motion: no-preference) {
+  .gift-tiles a { transition: transform .15s ease, box-shadow .15s ease; }
+  .gift-tiles a:hover { transform: translateY(-3px); }
+}
+.gift-tiles img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.tile-for { display: block; padding: 12px 14px 3px; font: 600 16.5px/1.3 var(--serif); }
+.tile-line { display: block; padding: 0 14px 15px; font: italic 15px/1.35 var(--serif); color: var(--hue); }
+@media (max-width: 1023px) { .gift-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 700px) {
+  .gift-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .tile-for { padding: 10px 10px 2px; font-size: 15px; }
+  .tile-line { padding: 0 10px 12px; font-size: 13.5px; }
+}
+
+/* The ideas in full: in a dialog when the script runs, read below the tiles
+   when it does not. */
+.gift-js .gift-details { display: none; }
+.gift-details .wrap { display: grid; gap: 20px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 860px) { .gift-details .wrap { grid-template-columns: 1fr; } }
+.gift-detail { display: flex; flex-direction: column; overflow: hidden; scroll-margin-top: 78px;
+  background: var(--hue-soft); border-top: 4px solid var(--hue); }
+
+.gift-dialog {
+  border: 0; padding: 0; width: min(620px, 94vw); max-height: 92vh; overflow: auto;
+  border-radius: var(--radius); border-top: 5px solid var(--hue);
+  background: var(--hue-soft); color: var(--ink); box-shadow: var(--shadow);
+}
+.gift-dialog::backdrop { background: rgba(20, 18, 14, .62); }
+.gift-dialog-body { padding: 0 26px 24px; }
+.gift-dialog .gift-art { width: calc(100% + 52px); margin: 0 -26px 18px; }
+.gift-dialog h3 { font-size: 24px; margin: 4px 0 4px; }
+.gift-dialog .think { margin-top: 14px; }
+.gift-dialog .zoom-close { z-index: 2; }
 
 /* The front page's reminder: words on the left, the way in on the right. */
 .gift-band { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
