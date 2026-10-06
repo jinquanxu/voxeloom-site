@@ -51,3 +51,16 @@
     if (window.innerWidth > 1023) set(false);
   });
 })();
+
+/*
+ * Anything dated -- the Christmas banner -- takes itself down the day its
+ * offer ends (data-until, the first day it no longer applies), so a static
+ * page never promises a date that has passed.
+ */
+(function () {
+  var today = new Date();
+  document.querySelectorAll('[data-until]').forEach(function (el) {
+    var until = new Date(el.getAttribute('data-until') + 'T00:00:00');
+    if (!isNaN(until) && today >= until) el.hidden = true;
+  });
+})();

@@ -4,14 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voxeloom — brick models of the places you love</title>
-<meta name="description" content="Voxeloom designs brick models of real places — your house, your church, your landmark — built from genuine LEGO bricks. See your place as a LEGO set in the studio, or send us photographs.">
+<meta name="description" content="Voxeloom designs brick models of real places — your house, your church, your landmark — built from genuine LEGO bricks. See your place in LEGO® bricks in the studio, or send us photographs.">
+<!-- preview -->
+<link rel="canonical" href="https://voxeloom.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxeloom">
+<meta property="og:title" content="Voxeloom — brick models of the places you love">
+<meta property="og:description" content="Voxeloom designs brick models of real places — your house, your church, your landmark — built from genuine LEGO bricks. See your place in LEGO® bricks in the studio, or send us photographs.">
+<meta property="og:url" content="https://voxeloom.com/">
+<meta property="og:image" content="https://voxeloom.com/assets/share/voxeloom.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A house in LEGO bricks on a black display base with a small brass plaque.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Voxeloom", "url": "https://voxeloom.com/", "logo": "https://voxeloom.com/assets/icon-512.png", "slogan": "Made to build. Meant to keep.", "email": "orders@voxeloom.com", "description": "Voxeloom designs brick models of real places — your house, your church, your landmark — built from genuine LEGO bricks. See your place in LEGO® bricks in the studio, or send us photographs.", "address": {"@type": "PostalAddress", "addressLocality": "Providence", "addressRegion": "RI", "addressCountry": "US"}, "areaServed": ["US", "CA"]}</script>
+<!-- /preview -->
 <link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=df4dd9ee7d">
+<link rel="stylesheet" href="/assets/app.css?v=d76e519894">
 </head>
 <body>
 
@@ -37,6 +51,12 @@
     </nav>
   </div>
 </header>
+
+<!-- The Christmas date, the owner's (5 Oct 2026). menu.js hides it from
+     21 November; take it out of the page after the holidays. -->
+<div class="season" data-until="2026-11-21">
+  <div class="wrap"><strong>Giving it for Christmas?</strong> Ask by 20 November. We take requests first come, first served. <a href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a></div>
+</div>
 
 <main>
 
@@ -65,11 +85,11 @@
         <span class="unit">Given today. One day, handed down.</span></span>
       </p>
       <div class="actions">
-        <a class="btn primary" href="https://studio.voxeloom.com/studio">See yours as a LEGO set</a>
+        <a class="btn primary" href="https://studio.voxeloom.com/studio">See yours in LEGO® bricks</a>
         <a class="btn" href="/gallery">Visit our gallery</a>
       </div>
       <p class="small muted" style="margin-top:14px">
-        Add a photograph and see your place as a LEGO set in about a minute. Free, and no account needed.
+        Add a photograph and see your place in LEGO® bricks, in about a minute. Free, and no account needed.
       </p>
     </div>
     <div>
@@ -106,6 +126,9 @@
              gets the finished model instead. -->
         <picture>
           <source media="(prefers-reduced-motion: reduce)" srcset="/assets/hero-build.png" type="image/png">
+          <!-- A phone shows the card about 340 pixels wide: the 640-pixel copy is
+               as sharp there and a third lighter on a mobile connection. -->
+          <source media="(max-width: 600px)" srcset="/assets/hero-build-640.webp" type="image/webp">
           <source srcset="/assets/hero-build.webp" type="image/webp">
           <img src="/assets/hero-build.png"
                alt="The Brick Colonial being built a course at a time: a baseplate with the floor plan on it, then furnished rooms, then the upper floor, then the roof.">
@@ -121,7 +144,7 @@
     <p class="eyebrow">How it works</p>
     <h2>See it in a minute, then we design it</h2>
     <p class="lead">
-      The studio shows your place as a LEGO set while you wait. One of our designers
+      The studio shows your place in LEGO® bricks while you wait. One of our designers
       then works out the real one, piece by piece — and you are in the room for all of it.
     </p>
 
@@ -130,7 +153,7 @@
         <h3>First, the studio</h3>
         <p class="muted">
           Add a photograph of the place and, in about a minute, see it as voxels and
-          then as a LEGO set on its display base. It is an impression, drawn from your
+          then in LEGO® bricks on its display base. It is an impression, drawn from your
           photograph, to give you a feel for the set.
         </p>
         <ul class="muted small">
@@ -162,7 +185,7 @@
 
     <div class="grid four" style="margin-top:38px">
       <div class="step"><span class="n">1</span><div><strong>Show us the place</strong><p class="small muted">A photograph in the studio, or four sides and a view from above sent to us.</p></div></div>
-      <div class="step"><span class="n">2</span><div><strong>See it as a LEGO set</strong><p class="small muted">About a minute in the studio: your place as voxels, then as a set on its base.</p></div></div>
+      <div class="step"><span class="n">2</span><div><strong>See it in LEGO® bricks</strong><p class="small muted">About a minute in the studio: your place as voxels, then as a set on its base.</p></div></div>
       <div class="step"><span class="n">3</span><div><strong>We design it</strong><p class="small muted">Your designer works it out in real LEGO pieces with you, and confirms the price.</p></div></div>
       <div class="step"><span class="n">4</span><div><strong>It arrives</strong><p class="small muted">Sorted bags, instructions, and every brick to build it.</p></div></div>
     </div>
@@ -375,7 +398,7 @@
     <div class="grid two" style="margin-top:24px">
       <div>
         <h3>How long does it take?</h3>
-        <p class="muted">The studio shows you your place as a LEGO set in about a minute, and one of our designers works through the real design with you the same day. After that the wait is LEGO's rather than ours: the bricks come from their Pick a Brick shop and usually take a week or two, while the instructions are generated the moment the design is settled. A very large model takes longer, because LEGO caps how many of one piece you may buy at once and the order goes in more than once. A hand-drawn commission elsewhere takes months — the drawing is the part we removed.</p>
+        <p class="muted">The studio shows you your place in LEGO® bricks, in about a minute, and one of our designers works through the real design with you the same day. After that the wait is LEGO's rather than ours: the bricks come from their Pick a Brick shop and usually take a week or two, while the instructions are generated the moment the design is settled. A very large model takes longer, because LEGO caps how many of one piece you may buy at once and the order goes in more than once. A hand-drawn commission elsewhere takes months — the drawing is the part we removed. We take on only as many as we can do well, first come, first served, so if your gift must arrive by a date, count on that date once we have confirmed it to you in writing.</p>
 
         <h3>What do you need from me?</h3>
         <p class="muted">Five pictures: the front straight on, both corners, the back, and one from above — the aerial view is the only way to get a roof right. If you have none to hand, the address is enough and we will look up the map views ourselves.</p>
@@ -401,7 +424,7 @@
   <div class="wrap" style="text-align:center">
     <h2>Start with the place.</h2>
     <p class="tagline" style="margin-bottom:10px">Made to build. Meant to keep.</p>
-    <p class="lead" style="margin:0 auto 6px">A photograph and a minute, and you are looking at your own place as a LEGO set.</p>
+    <p class="lead" style="margin:0 auto 6px">A photograph and a minute, and you are looking at your own place in LEGO® bricks.</p>
     <div class="actions" style="justify-content:center">
       <a class="btn primary" href="https://studio.voxeloom.com/studio">Try the studio</a>
       <a class="btn" href="/gallery">See the gallery</a>
@@ -428,6 +451,7 @@
         <p><a href="/about">The workshop</a></p>
         <p><a href="/gallery">Gallery</a></p>
         <p><a href="/gift-ideas">Gift ideas</a></p>
+        <p><a href="/for-business/">For business</a></p>
         <p><a href="https://studio.voxeloom.com/studio">Design studio</a></p>
         <p><a href="https://studio.voxeloom.com/quote">Talk to us</a></p>
         <p><a href="mailto:orders@voxeloom.com">orders@voxeloom.com</a></p>
@@ -442,7 +466,7 @@
       endorse this site. Models are designed by us and built from genuine LEGO®
       bricks bought from LEGO's Pick a Brick shop.
     </p>
-    <p class="legal copyright">&copy; 2026 Voxeloom. All rights reserved. &middot; <a href="/privacy">Privacy</a></p>
+    <p class="legal copyright">&copy; 2026 Voxeloom. All rights reserved. &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></p>
   </div>
 </footer>
 
@@ -511,6 +535,6 @@
 
 <script src="/assets/site.js?v=dd668d746b"></script>
 
-<script src="/assets/menu.js?v=2388a0c114" defer></script>
+<script src="/assets/menu.js?v=7c394d36df" defer></script>
 </body>
 </html>

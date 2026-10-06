@@ -5,13 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gift ideas — Voxeloom</title>
 <meta name="description" content="A gift only you would think to give: the house where they raised you, the chapel where you said your vows, their first home — made in genuine LEGO® bricks.">
+<!-- preview -->
+<link rel="canonical" href="https://voxeloom.com/gift-ideas/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxeloom">
+<meta property="og:title" content="Gift ideas — Voxeloom">
+<meta property="og:description" content="A gift only you would think to give: the house where they raised you, the chapel where you said your vows, their first home — made in genuine LEGO® bricks.">
+<meta property="og:url" content="https://voxeloom.com/gift-ideas/">
+<meta property="og:image" content="https://voxeloom.com/assets/share/gift-ideas.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A granddaughter hands her grandmother a brick model of the family house.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /preview -->
 <link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=df4dd9ee7d">
+<link rel="stylesheet" href="/assets/app.css?v=d76e519894">
 </head>
 <body>
 
@@ -37,6 +50,12 @@
   </div>
 </header>
 
+<!-- The Christmas date, the owner's (5 Oct 2026). menu.js hides it from
+     21 November; take it out of the page after the holidays. -->
+<div class="season" data-until="2026-11-21">
+  <div class="wrap"><strong>Giving it for Christmas?</strong> Ask by 20 November. We take requests first come, first served. <a href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a></div>
+</div>
+
 <!-- Written from a draft by Codex (4 Oct 2026) and the owner's own ideas, in
      the voice of the front page's verse. The rules it kept, and this page
      keeps: older relatives are people with histories, not lonely or
@@ -53,7 +72,7 @@
 <section>
   <div class="wrap">
     <p class="eyebrow">Gift ideas</p>
-    <h2>A gift only you would think to give&hellip;</h2>
+    <h1 class="page-title">A gift only you would think to give&hellip;</h1>
     <p class="tagline">Made to build. Meant to keep.</p>
     <p class="lead verse">
       <span><span class="unit">The house where they raised you.</span>
@@ -353,6 +372,7 @@
         For the sellers, the home they are saying goodbye to.
       </p>
       <p class="muted small">Either way, it says you understood what the move meant.</p>
+      <p class="muted small">Ordering for clients? See <a href="/for-business/">For business</a>: 10% off from your third set in a year.</p>
       <p class="think"><strong>Think of:</strong> a first home, a forever home, a family home passing to new owners.</p>
       <div class="actions gift-actions">
         <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
@@ -369,6 +389,7 @@
         The building you drew from nothing.
       </p>
       <p class="muted small">The thank-you a client keeps long after the paperwork is filed.</p>
+      <p class="muted small">Ordering for clients? See <a href="/for-business/">For business</a>: 10% off from your third set in a year.</p>
       <p class="think"><strong>Think of:</strong> a custom home, a restored farmhouse, a new chapel or library.</p>
       <div class="actions gift-actions">
         <a class="btn primary" href="https://studio.voxeloom.com/studio">Start with a photograph</a>
@@ -436,31 +457,6 @@
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">From our gallery</p>
-    <div class="gift-pics">
-      <a href="/gallery/the-brick-colonial/">
-        <img src="/img/the-brick-colonial/turn-0.png" width="900" height="900" loading="lazy"
-             alt="The Brick Colonial: a two-storey brick house under a hipped roof, in LEGO bricks.">
-        <span>The home that holds the stories</span>
-      </a>
-      <a href="/gallery/the-towers/">
-        <img src="/img/the-towers/turn-0.png" width="900" height="900" loading="lazy"
-             alt="The Towers in Narragansett: two round granite towers joined by an arch, in LEGO bricks.">
-        <span>A place that means &ldquo;us&rdquo;</span>
-      </a>
-      <a href="/gallery/the-stone-and-cedar-house/">
-        <img src="/img/the-stone-and-cedar-house/turn-0.png" width="900" height="900" loading="lazy"
-             alt="The Stone and Cedar House: fieldstone and cedar under a climbing roof, in LEGO bricks.">
-        <span>Their new beginning</span>
-      </a>
-    </div>
-    <p class="small muted">Designs from our gallery, each one checked and priced.</p>
-
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
     <p class="eyebrow">Giving it</p>
     <h2>Make the giving part of the memory</h2>
     <div class="grid four" style="margin-top:24px">
@@ -471,10 +467,21 @@
     </div>
 
     <p class="eyebrow" style="margin-top:44px">For the days that matter</p>
-    <ul class="gift-days" aria-label="Occasions">
-      <li>Birthdays</li><li>Anniversaries</li><li>Weddings</li><li>Mother&rsquo;s Day</li>
-      <li>Father&rsquo;s Day</li><li>Grandparents Day</li><li>Graduations</li><li>Housewarmings</li>
-      <li>Retirements</li><li>Reunions</li><li>The holidays</li>
+    <!-- Each day in its group's colour, leading to its idea; gifts.js puts the next
+         date on the days that move (and the Christmas date until it passes). -->
+    <ul class="occasions" aria-label="Occasions">
+      <li class="hue-thanks"><a href="#ideas"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l-5 7h3l-4 6h12l-4-6h3z"/><path d="M12 16v4"/></svg><strong>Christmas</strong><span data-day="christmas">Ask by 20 November</span></a></li>
+      <li class="hue-partners"><a href="#for-partner"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg><strong>Valentine&rsquo;s Day</strong><span data-day="valentine">14 February</span></a></li>
+      <li class="hue-family"><a href="#for-grandparents"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="2"/><circle cx="12" cy="4.6" r="2.4"/><circle cx="16.2" cy="7.6" r="2.4"/><circle cx="14.6" cy="12.4" r="2.4"/><circle cx="9.4" cy="12.4" r="2.4"/><circle cx="7.8" cy="7.6" r="2.4"/><path d="M12 14.8V21"/></svg><strong>Mother&rsquo;s Day</strong><span data-day="mother">The second Sunday in May</span></a></li>
+      <li class="hue-family"><a href="#for-grandparents"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 3h4l-1 3 2.2 10L12 20l-3.2-4L11 6z"/></svg><strong>Father&rsquo;s Day</strong><span data-day="father">The third Sunday in June</span></a></li>
+      <li class="hue-family"><a href="#for-grandparents"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/><path d="M10 20v-5h4v5"/></svg><strong>Grandparents Day</strong><span data-day="grandparents">The Sunday after Labor Day</span></a></li>
+      <li class="hue-family"><a href="#family"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h16v-7H4z"/><path d="M4 16c2 1.5 4 1.5 5.3 0s4-1.5 5.4 0 4 1.5 5.3 0"/><path d="M8 13v-3M12 13v-3M16 13v-3"/><path d="M8 6.5v.5M12 6.5v.5M16 6.5v.5"/></svg><strong>Birthdays</strong><span>The big ones most of all</span></a></li>
+      <li class="hue-partners"><a href="#for-partner"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h5l-.6 5.5a1.9 1.9 0 0 1-3.8 0z"/><path d="M8.5 10.3V18M6.5 18h4"/><path d="M13 3h5l-.6 5.5a1.9 1.9 0 0 1-3.8 0z"/><path d="M15.5 10.3V18M13.5 18h4"/></svg><strong>Anniversaries</strong><span>Where it all began</span></a></li>
+      <li class="hue-partners"><a href="#for-newlyweds"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="14.5" r="5"/><circle cx="15" cy="14.5" r="5"/><path d="M10.6 6l1.4-2.2L13.4 6 12 8z"/></svg><strong>Weddings</strong><span>Where they said &ldquo;I do&rdquo;</span></a></li>
+      <li class="hue-milestones"><a href="#for-graduates"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/><path d="M22 9v6"/></svg><strong>Graduations</strong><span>May and June</span></a></li>
+      <li class="hue-milestones"><a href="#for-homeowners"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg><strong>Housewarmings</strong><span>The first key, kept for good</span></a></li>
+      <li class="hue-thanks"><a href="#for-retiring"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><strong>Retirements</strong><span>Honour what they built</span></a></li>
+      <li class="hue-family"><a href="#for-siblings"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M3.5 19c0-3 2-5 4.5-5s4.5 2 4.5 5"/><path d="M11.5 19c0-3 2-5 4.5-5s4.5 2 4.5 5"/></svg><strong>Reunions</strong><span>One place, many stories</span></a></li>
     </ul>
   </div>
 </section>
@@ -491,6 +498,13 @@
           Which building would they know before you said its name?
         </p>
         <p class="muted">Start there.</p>
+        <h3 style="margin-top:28px">Or let them choose</h3>
+        <p class="muted">
+          A <strong>gift certificate</strong> gives the design and leaves the place to them. Any
+          amount from $200, paid by check; we post a printed card or email it, as you prefer, and
+          it never expires.
+        </p>
+        <div class="actions"><a class="btn gold" href="https://studio.voxeloom.com/quote?gift=1&amp;subject=A%20gift%20certificate">Ask for a gift certificate</a></div>
       </div>
       <div class="card">
         <h3>Tell us about your gift</h3>
@@ -498,6 +512,11 @@
           Who it is for, what makes the place special, and which details they would notice
           first. If there is a birthday, a wedding or another date in mind, say so, and we
           will tell you what is possible. A budget and the space it will stand in help too.
+        </p>
+        <p class="note small">
+          <strong>First come, first served.</strong> Every set is designed and checked with care,
+          so we take on only as many as we can do well. If your gift must arrive by a certain
+          date, count on it once we have confirmed that date to you in writing.
         </p>
         <div class="actions"><a class="btn primary" href="https://studio.voxeloom.com/quote?gift=1">Tell us about your gift</a></div>
         <p class="small muted" style="margin:12px 0 0">Or write to <a href="mailto:orders@voxeloom.com">orders@voxeloom.com</a>.</p>
@@ -529,11 +548,11 @@
       endorse this site. Models are designed by us and built from genuine LEGO®
       bricks bought from LEGO's Pick a Brick shop.
     </p>
-    <p class="legal copyright">&copy; 2026 Voxeloom. All rights reserved. &middot; <a href="/privacy">Privacy</a></p>
+    <p class="legal copyright">&copy; 2026 Voxeloom. All rights reserved. &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></p>
   </div>
 </footer>
 
-<script src="/assets/menu.js?v=2388a0c114" defer></script>
-<script src="/assets/gifts.js?v=4c4c9251d5" defer></script>
+<script src="/assets/menu.js?v=7c394d36df" defer></script>
+<script src="/assets/gifts.js?v=5ef0530b6d" defer></script>
 </body>
 </html>
