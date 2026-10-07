@@ -883,7 +883,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
    the next date for the days that move (gifts.js). Each leads to its idea. */
 .occasions {
   list-style: none; margin: 14px 0 0; padding: 0;
-  display: grid; gap: 12px; grid-template-columns: repeat(6, minmax(0, 1fr));
+  display: grid; gap: 12px; grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .occasions li { margin: 0; }
 .occasions a {
