@@ -24,7 +24,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=3afa130358">
+<link rel="stylesheet" href="/assets/app.css?v=7c7a3d1f21">
 </head>
 <body>
 
@@ -70,20 +70,25 @@
      remembrance. -->
 <main class="gifts">
 <section>
-  <div class="wrap">
-    <p class="eyebrow">Gift ideas</p>
-    <h1 class="page-title">A gift only you would think to give&hellip;</h1>
-    <p class="tagline">Made to build. Meant to keep.</p>
-    <p class="lead verse">
-      <span><span class="unit">The house where they raised you.</span>
-      <span class="unit">The little chapel where you said your vows.</span>
-      <span class="unit">The first door they ever held the key to.</span></span>
-      <span><span class="unit">Some gifts begin with a place.</span></span>
-    </p>
-    <p class="muted" style="max-width:60ch">
-      We make that place in genuine LEGO® bricks, one of a kind: something to build
-      together, something to keep on the shelf, and a story to hand down.
-    </p>
+  <div class="wrap gift-intro">
+    <div>
+      <p class="eyebrow">Gift ideas</p>
+      <h1 class="page-title">A gift only you would think to give&hellip;</h1>
+      <p class="tagline">Made to build. Meant to keep.</p>
+      <p class="lead verse">
+        <span><span class="unit">The house where they raised you.</span>
+        <span class="unit">The little chapel where you said your vows.</span>
+        <span class="unit">The first door they ever held the key to.</span></span>
+        <span><span class="unit">Some gifts begin with a place.</span></span>
+      </p>
+      <p class="muted" style="max-width:60ch">
+        We make that place in genuine LEGO® bricks, one of a kind: something to build
+        together, something to keep on the shelf, and a story to hand down.
+      </p>
+    </div>
+    <!-- The moment the idea arrives (tools/gift_cartoons.py, "idea"). -->
+    <img class="gift-intro-art" src="/assets/gifts/idea.webp" width="720" height="480"
+      alt="A woman at her kitchen table holds an old photograph of a house and lifts a finger, smiling; above her, a thought bubble holds the same house built in bricks.">
   </div>
 </section>
 
@@ -483,11 +488,16 @@
         <figcaption class="step"><span class="n">4</span><div><strong>Keep it a surprise</strong><p class="small muted">Preview their place in the studio and keep the pictures to yourself; we reply only to you.</p></div></figcaption>
       </figure>
     </div>
+  </div>
+</section>
 
-    <p class="eyebrow" style="margin-top:44px">For the days that matter</p>
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Occasions</p>
+    <h2 id="occasions">For the days that matter</h2>
     <!-- Each day in its group's colour, leading to its idea; gifts.js puts the next
          date on the days that move (and the Christmas date until it passes). -->
-    <ul class="occasions" aria-label="Occasions">
+    <ul class="occasions" aria-labelledby="occasions" style="margin-top:24px">
       <li class="hue-thanks"><a href="#ideas"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l-5 7h3l-4 6h12l-4-6h3z"/><path d="M12 16v4"/></svg><strong>Christmas</strong><span data-day="christmas">Ask by 20 November</span></a></li>
       <li class="hue-partners"><a href="#for-partner"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg><strong>Valentine&rsquo;s Day</strong><span data-day="valentine">14 February</span></a></li>
       <li class="hue-family"><a href="#for-grandparents"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="2"/><circle cx="12" cy="4.6" r="2.4"/><circle cx="16.2" cy="7.6" r="2.4"/><circle cx="14.6" cy="12.4" r="2.4"/><circle cx="9.4" cy="12.4" r="2.4"/><circle cx="7.8" cy="7.6" r="2.4"/><path d="M12 14.8V21"/></svg><strong>Mother&rsquo;s Day</strong><span data-day="mother">The second Sunday in May</span></a></li>
