@@ -24,7 +24,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=d76e519894">
+<link rel="stylesheet" href="/assets/app.css?v=3afa130358">
 </head>
 <body>
 
@@ -459,11 +459,29 @@
   <div class="wrap">
     <p class="eyebrow">Giving it</p>
     <h2>Make the giving part of the memory</h2>
-    <div class="grid four" style="margin-top:24px">
-      <div class="step"><span class="n">1</span><div><strong>Give an afternoon</strong><p class="small muted">A numbered kit, the old photographs spread on the table, and time for the stories.</p></div></div>
-      <div class="step"><span class="n">2</span><div><strong>Give a place on the shelf</strong><p class="small muted">For someone who would rather look than build, we build it and box it, ready to stand.</p></div></div>
-      <div class="step"><span class="n">3</span><div><strong>Give the story with it</strong><p class="small muted">Tuck in an old photograph and a note on why this place. Ask us about a display case and a plaque.</p></div></div>
-      <div class="step"><span class="n">4</span><div><strong>Keep it a surprise</strong><p class="small muted">Preview their place in the studio and keep the pictures to yourself; we reply only to you.</p></div></div>
+    <!-- Each way of giving with its cartoon (tools/gift_cartoons.py, the
+         giving-* ones), in the wordmark's green and gold. -->
+    <div class="grid four giving" style="margin-top:24px">
+      <figure class="giving-card">
+        <img src="/assets/gifts/giving-afternoon.webp" width="720" height="480" loading="lazy"
+          alt="A woman and her elderly father build a brick model of the family home at the kitchen table, old photographs spread around them.">
+        <figcaption class="step"><span class="n">1</span><div><strong>Give an afternoon</strong><p class="small muted">A numbered kit, the old photographs spread on the table, and time for the stories.</p></div></figcaption>
+      </figure>
+      <figure class="giving-card">
+        <img src="/assets/gifts/giving-shelf.webp" width="720" height="480" loading="lazy"
+          alt="An older man lifts a finished brick model of a house from its gift box onto his bookshelf.">
+        <figcaption class="step"><span class="n">2</span><div><strong>Give a place on the shelf</strong><p class="small muted">For someone who would rather look than build, we build it and box it, ready to stand.</p></div></figcaption>
+      </figure>
+      <figure class="giving-card">
+        <img src="/assets/gifts/giving-story.webp" width="720" height="480" loading="lazy"
+          alt="Hands tuck an old photograph and a handwritten note into a gift box holding the brick model in a display case with a brass plaque.">
+        <figcaption class="step"><span class="n">3</span><div><strong>Give the story with it</strong><p class="small muted">Tuck in an old photograph and a note on why this place. Ask us about a display case and a plaque.</p></div></figcaption>
+      </figure>
+      <figure class="giving-card">
+        <img src="/assets/gifts/giving-surprise.webp" width="720" height="480" loading="lazy"
+          alt="A young woman smiles at a brick model of a house on her laptop, a finger to her lips, while her mother waters the plants nearby.">
+        <figcaption class="step"><span class="n">4</span><div><strong>Keep it a surprise</strong><p class="small muted">Preview their place in the studio and keep the pictures to yourself; we reply only to you.</p></div></figcaption>
+      </figure>
     </div>
 
     <p class="eyebrow" style="margin-top:44px">For the days that matter</p>

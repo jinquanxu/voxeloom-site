@@ -382,6 +382,19 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   padding: 22px; text-align: center; color: var(--muted); cursor: pointer;
 }
 .drop:hover { border-color: var(--accent); color: var(--ink); }
+/* The studio's box: a faint cartoon of the Red Barn from the gallery behind
+   the words, to show the kind of photograph that works -- the front. */
+.drop-art {
+  position: relative; overflow: hidden; min-height: 190px;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+}
+.drop-art > span { position: relative; z-index: 1; max-width: 24ch; font-weight: 500; }
+.drop-cartoon {
+  position: absolute; left: 6px; right: 6px; bottom: 0; width: calc(100% - 12px); height: 78%;
+  opacity: .16; pointer-events: none;
+}
+.drop-art:hover .drop-cartoon, .drop-art:focus-visible .drop-cartoon { opacity: .24; }
+@media (prefers-reduced-motion: no-preference) { .drop-cartoon { transition: opacity .2s ease; } }
 .thumbs { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
 .thumbs figure { margin: 0; position: relative; }
 .thumbs img { width: 92px; height: 70px; object-fit: cover; border-radius: 8px; }
@@ -390,6 +403,117 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   border-radius: 50%; border: 1px solid var(--line); background: var(--card);
   cursor: pointer; line-height: 1; font-size: 13px; color: var(--ink);
 }
+.thumbs figcaption { margin-top: 2px; text-align: center; }
+
+/* Talk to us: a place for each photograph we ask for -- front, both sides,
+   back, from above -- each with a little plan of where to stand, and + for
+   more. A filled place shows the picture with its name on it. */
+.views { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.view { position: relative; }
+.view .pick {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  width: 100%; aspect-ratio: 5 / 4; padding: 6px;
+  border: 1.5px dashed color-mix(in srgb, var(--muted) 45%, var(--line)); border-radius: 12px;
+  background: var(--card); color: var(--muted); cursor: pointer;
+  font: 600 14px/1.2 var(--sans);
+}
+.view .pick:hover, .view.over .pick { border-color: var(--accent); color: var(--ink); background: var(--accent-soft); }
+.view .pick:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.view .plan { width: 58px; height: 58px; flex: none; }
+.plan .cone { fill: var(--accent); opacity: .3; }
+.plan .eye { fill: var(--accent); stroke: var(--card); stroke-width: 1.2; }
+.plan .ring { fill: none; stroke: var(--accent); stroke-width: 1.3; opacity: .5; }
+.view .pick img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.view.filled .pick { border: 2px solid var(--accent); padding: 0; }
+.view.filled .plan { display: none; }
+.view.filled .view-name {
+  position: absolute; left: 6px; bottom: 6px; padding: 2px 8px; border-radius: 999px;
+  background: rgba(20, 18, 14, .74); color: #fff; font-size: 12.5px;
+}
+.view.filled .view-name::before { content: "\2713\00a0"; }
+.view .remove {
+  position: absolute; top: -8px; right: -8px; z-index: 1; width: 24px; height: 24px;
+  border-radius: 50%; border: 1px solid var(--line); background: var(--card);
+  cursor: pointer; line-height: 1; font-size: 14px; color: var(--ink);
+}
+.view.more .pick { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); color: var(--accent); }
+.view.more .plus { font: 300 34px/1 var(--sans); }
+@media (max-width: 520px) { .view .plan { width: 40px; height: 40px; } }
+
+/* The QR code for this very page, near the top of the form: someone on a
+   computer whose photographs are on their phone opens the page there before
+   typing anything. Not on a phone, which cannot scan its own screen. */
+.phone-qr { display: none; }
+@media (min-width: 861px) and (hover: hover) {
+  .phone-qr {
+    display: flex; gap: 16px; align-items: center; margin: 18px 0 0; padding: 12px 18px 12px 12px;
+    background: var(--gold-soft); border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent);
+    border-radius: 12px;
+  }
+  .phone-qr img { flex: none; width: 128px; height: 128px; border-radius: 8px; }
+  .phone-qr strong { display: block; font-size: 16px; }
+  .phone-qr p { margin: 4px 0 0; font-size: 14.5px; color: var(--muted); }
+  /* The studio's form is a narrow column: a smaller code, at the top. */
+  .stage .phone-qr { margin: 0 0 18px; gap: 12px; padding: 10px 14px 10px 10px; }
+  .stage .phone-qr img { width: 104px; height: 104px; }
+  .stage .phone-qr strong { font-size: 15px; }
+}
+
+/* Talk to us, arrived from the design studio: its pictures go with the
+   request, and the LEGO one is shown so the customer knows. */
+.studio-note { display: flex; gap: 12px; align-items: center; margin: -4px 0 16px; }
+.studio-note img { flex: none; width: 72px; height: 54px; object-fit: cover; border-radius: 6px; }
+.studio-note p { margin: 0; font-size: 14.5px; }
+
+/* A sum of money: the dollar sign in front, the currency after. */
+.money { position: relative; }
+.money input { padding-left: 30px; padding-right: 54px; -moz-appearance: textfield; appearance: textfield; }
+.money input::-webkit-inner-spin-button, .money input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.money-sign, .money-unit { position: absolute; top: 50%; transform: translateY(-50%); pointer-events: none; }
+.money-sign { left: 14px; font-weight: 600; color: var(--ink); }
+.money-unit { right: 14px; font-size: 13px; letter-spacing: .05em; color: var(--muted); }
+
+/* What happens next, as a timeline: each step's number in a green ring on a
+   fine gold line that runs down to the next, fading as it goes; the last
+   ring is filled -- the set, built. */
+.flow { list-style: none; margin: 12px 0 0; padding: 0; }
+.flow .step {
+  position: relative; display: grid; grid-template-columns: 30px 1fr; gap: 14px;
+  margin: 0; padding-bottom: 14px; line-height: 1.45;
+}
+.flow .step:last-child { padding-bottom: 0; }
+.flow .step:not(:last-child)::before {
+  content: ""; position: absolute; left: 14px; top: 32px; bottom: 2px; width: 2px; border-radius: 2px;
+  background: linear-gradient(var(--gold), color-mix(in srgb, var(--gold) 35%, transparent));
+}
+.flow .step .n {
+  background: var(--card); border: 2px solid var(--accent); color: var(--accent);
+  font: 600 15px/1 var(--serif);
+}
+.flow .step:last-child .n { background: var(--accent); color: var(--card); }
+.flow .step strong { font-size: 15.5px; }
+.flow .step p { margin: 2px 0 0; }
+
+/* Sent: a thank-you nobody can miss, in place of the form it answers. */
+.done {
+  display: flex; gap: 14px; align-items: flex-start; margin-top: 8px; padding: 16px 18px;
+  background: var(--accent-soft); border: 2px solid var(--accent); border-radius: 12px;
+}
+.done:focus { outline: none; }
+.done-mark {
+  flex: none; width: 36px; height: 36px; border-radius: 50%;
+  background: var(--accent); color: var(--card); display: grid; place-items: center;
+}
+.done strong { display: block; font-size: 18px; line-height: 1.35; }
+.done p { margin: 4px 0 0; font-size: 15px; }
+.done-card { border: 2px solid var(--accent); }
+.done-card:focus { outline: none; }
+.done-card h3 { display: flex; align-items: center; gap: 10px; }
+@media (prefers-reduced-motion: no-preference) {
+  .done:not([hidden]), .done-card:not([hidden]) { animation: done-in .35s ease-out; }
+}
+@keyframes done-in { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: none; } }
 
 /* ---------- notices ---------- */
 
@@ -639,6 +763,15 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   margin: -22px -22px 16px;
 }
 .gift-line { font: italic 17px/1.35 var(--serif); color: var(--accent); margin: 2px 0 12px; }
+/* Giving it: each way of giving under its cartoon, in the wordmark's green
+   and gold. Two across on a tablet, one on a phone. */
+.giving-card { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.giving-card img {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover;
+  border-radius: 12px; box-shadow: var(--shadow);
+  outline: 1px solid color-mix(in srgb, var(--gold) 35%, transparent); outline-offset: -1px;
+}
+@media (min-width: 561px) and (max-width: 860px) { .grid.four.giving { grid-template-columns: repeat(2, 1fr); } }
 /* "Think of" sits at the foot of each card, wherever the words above end. */
 .think { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
 .think strong { color: var(--ink); font-weight: 600; }
