@@ -174,5 +174,19 @@
    "/img/the-red-barn/turn-2.png",
    "/img/the-red-barn/turn-3.png"
   ]
+ },
+ {
+  "name": "The Red Gables",
+  "slug": "the-red-gables",
+  "summary": "A two-storey family house with a three-car garage in real LEGO parts: dark grey lap siding with thin white trim, and three steep barn-red gables with black rakes, a big one on the left with a smaller one nested in front of it and one over the right-hand windows. A covered porch on slim white columns over stone bases, a black front door, white raised-panel garage doors with a row of dark panes, and three black lanterns. Burgundy shrubs, a blossoming tree and an evergreen frame the drive, and a concrete patio with a grill sits at the back. Inside, the foyer and stair, the living room, the dining table by the patio door, the kitchen with its island, the family nook, a half bath and the garage with its workbench; upstairs, the primary suite over the garage with its bath and walk-in closet, three more bedrooms, the hall bath and a reading landing.",
+  "width": 76,
+  "depth": 60,
+  "courses": 31,
+  "shots": [
+   "/img/the-red-gables/turn-0.png",
+   "/img/the-red-gables/turn-1.png",
+   "/img/the-red-gables/turn-2.png",
+   "/img/the-red-gables/turn-3.png"
+  ]
  }
 ]
