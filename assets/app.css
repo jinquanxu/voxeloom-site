@@ -623,7 +623,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
    in the hero: voxel in green, heirloom in gold -- the owner's call. */
 .pvh-page .vox { color: var(--accent); }
 /* A page's own heading, with its words about the bricks in the wordmark's green. */
-.page-title .vox { color: var(--accent); }
+.page-title .vox, h2 .vox { color: var(--accent); }
 .pvh-page .loom { color: var(--gold); }
 
 .pvh-examples { margin: 26px 0; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
