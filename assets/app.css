@@ -763,6 +763,16 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   margin: -22px -22px 16px;
 }
 .gift-line { font: italic 17px/1.35 var(--serif); color: var(--accent); margin: 2px 0 12px; }
+/* The About page's opening, beside the workshop's cartoon; on a phone the
+   cartoon follows the words. */
+.about-intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.about-art {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  outline: 1px solid color-mix(in srgb, var(--gold) 35%, transparent); outline-offset: -1px;
+}
+@media (max-width: 860px) { .about-intro { grid-template-columns: 1fr; gap: 24px; } }
+
 /* Giving it: each way of giving under its cartoon, in the wordmark's green
    and gold. Two across on a tablet, one on a phone. */
 .giving-card { margin: 0; display: flex; flex-direction: column; gap: 14px; }
