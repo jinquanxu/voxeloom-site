@@ -29,7 +29,7 @@
     target.innerHTML = shown.map(function (s, i) {
       return '<figure class="card" style="margin:0">'
         + '<a href="/gallery/' + s.slug + '/">'
-        + '<img class="shot" loading="' + (i < 2 ? 'eager' : 'lazy') + '"'
+        + '<img class="shot" loading="' + (i < 2 && !featured ? 'eager' : 'lazy') + '"'
         + ' data-slug="' + s.slug + '" data-turn="0" src="' + s.shots[0] + '"'
         + ' alt="A brick model: ' + esc(s.summary.slice(0, 120)) + '"></a>'
         + '<figcaption>'
@@ -69,14 +69,20 @@
     // for all of them, rather than starting each as it is ready, is what
     // makes the stagger hold: otherwise three preloads finishing at three
     // different moments would set the offsets, and could land together.
-    var ready = 0;
-    turners.forEach(function (s) {
-      preload(s.shots, function () {
-        if (++ready < turners.length) return;
-        turners.forEach(function (card, i) {
-          var img = target.querySelector('img[data-slug="' + card.slug + '"]');
-          setTimeout(function () { spin(img, card.shots); },
-                     Math.round(i * TURN_MS / turners.length));
+    //
+    // And none is fetched until the cards come near the screen: on a phone
+    // they are a dozen screens down the front page, and every angle of three
+    // models is the better part of a megabyte the first view does not need.
+    whenNear(target, function () {
+      var ready = 0;
+      turners.forEach(function (s) {
+        preload(s.shots, function () {
+          if (++ready < turners.length) return;
+          turners.forEach(function (card, i) {
+            var img = target.querySelector('img[data-slug="' + card.slug + '"]');
+            setTimeout(function () { spin(img, card.shots); },
+                       Math.round(i * TURN_MS / turners.length));
+          });
         });
       });
     });
@@ -96,6 +102,16 @@
           ? '<strong>' + esc(x.size) + '</strong>'
           : '<a href="/gallery/' + x.slug + '/">' + esc(x.size) + '</a>';
       }).join(' · ') + '</p>';
+  }
+
+  function whenNear(node, go) {
+    if (!('IntersectionObserver' in window)) return go();
+    var watch = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (e) { return e.isIntersecting; })) return;
+      watch.disconnect();
+      go();
+    }, { rootMargin: '600px 0px' });
+    watch.observe(node);
   }
 
   function preload(urls, done) {

@@ -7,10 +7,10 @@
   "depth": 96,
   "courses": 61,
   "shots": [
-   "/img/rhode-island-state-house/turn-0.png",
-   "/img/rhode-island-state-house/turn-1.png",
-   "/img/rhode-island-state-house/turn-2.png",
-   "/img/rhode-island-state-house/turn-3.png"
+   "/img/rhode-island-state-house/turn-0.webp",
+   "/img/rhode-island-state-house/turn-1.webp",
+   "/img/rhode-island-state-house/turn-2.webp",
+   "/img/rhode-island-state-house/turn-3.webp"
   ]
  },
  {
@@ -21,10 +21,10 @@
   "depth": 48,
   "courses": 32,
   "shots": [
-   "/img/beavertail-light/turn-0.png",
-   "/img/beavertail-light/turn-1.png",
-   "/img/beavertail-light/turn-2.png",
-   "/img/beavertail-light/turn-3.png"
+   "/img/beavertail-light/turn-0.webp",
+   "/img/beavertail-light/turn-1.webp",
+   "/img/beavertail-light/turn-2.webp",
+   "/img/beavertail-light/turn-3.webp"
   ]
  },
  {
@@ -35,10 +35,10 @@
   "depth": 40,
   "courses": 31,
   "shots": [
-   "/img/the-towers/turn-0.png",
-   "/img/the-towers/turn-1.png",
-   "/img/the-towers/turn-2.png",
-   "/img/the-towers/turn-3.png"
+   "/img/the-towers/turn-0.webp",
+   "/img/the-towers/turn-1.webp",
+   "/img/the-towers/turn-2.webp",
+   "/img/the-towers/turn-3.webp"
   ]
  },
  {
@@ -49,10 +49,10 @@
   "depth": 46,
   "courses": 34,
   "shots": [
-   "/img/warwick-neck-light/turn-0.png",
-   "/img/warwick-neck-light/turn-1.png",
-   "/img/warwick-neck-light/turn-2.png",
-   "/img/warwick-neck-light/turn-3.png"
+   "/img/warwick-neck-light/turn-0.webp",
+   "/img/warwick-neck-light/turn-1.webp",
+   "/img/warwick-neck-light/turn-2.webp",
+   "/img/warwick-neck-light/turn-3.webp"
   ]
  },
  {
@@ -63,10 +63,10 @@
   "depth": 56,
   "courses": 72,
   "shots": [
-   "/img/carrie-tower/turn-0.png",
-   "/img/carrie-tower/turn-1.png",
-   "/img/carrie-tower/turn-2.png",
-   "/img/carrie-tower/turn-3.png"
+   "/img/carrie-tower/turn-0.webp",
+   "/img/carrie-tower/turn-1.webp",
+   "/img/carrie-tower/turn-2.webp",
+   "/img/carrie-tower/turn-3.webp"
   ],
   "size": "Big",
   "sizes": [
@@ -88,10 +88,10 @@
   "depth": 32,
   "courses": 50,
   "shots": [
-   "/img/carrie-tower-small/turn-0.png",
-   "/img/carrie-tower-small/turn-1.png",
-   "/img/carrie-tower-small/turn-2.png",
-   "/img/carrie-tower-small/turn-3.png"
+   "/img/carrie-tower-small/turn-0.webp",
+   "/img/carrie-tower-small/turn-1.webp",
+   "/img/carrie-tower-small/turn-2.webp",
+   "/img/carrie-tower-small/turn-3.webp"
   ],
   "size": "Small",
   "sizes": [
@@ -113,10 +113,10 @@
   "depth": 50,
   "courses": 24,
   "shots": [
-   "/img/the-stone-and-cedar-house/turn-0.png",
-   "/img/the-stone-and-cedar-house/turn-1.png",
-   "/img/the-stone-and-cedar-house/turn-2.png",
-   "/img/the-stone-and-cedar-house/turn-3.png"
+   "/img/the-stone-and-cedar-house/turn-0.webp",
+   "/img/the-stone-and-cedar-house/turn-1.webp",
+   "/img/the-stone-and-cedar-house/turn-2.webp",
+   "/img/the-stone-and-cedar-house/turn-3.webp"
   ]
  },
  {
@@ -127,10 +127,10 @@
   "depth": 58,
   "courses": 30,
   "shots": [
-   "/img/the-brick-colonial/turn-0.png",
-   "/img/the-brick-colonial/turn-1.png",
-   "/img/the-brick-colonial/turn-2.png",
-   "/img/the-brick-colonial/turn-3.png"
+   "/img/the-brick-colonial/turn-0.webp",
+   "/img/the-brick-colonial/turn-1.webp",
+   "/img/the-brick-colonial/turn-2.webp",
+   "/img/the-brick-colonial/turn-3.webp"
   ]
  },
  {
@@ -141,10 +141,10 @@
   "depth": 40,
   "courses": 20,
   "shots": [
-   "/img/the-old-workings/turn-0.png",
-   "/img/the-old-workings/turn-1.png",
-   "/img/the-old-workings/turn-2.png",
-   "/img/the-old-workings/turn-3.png"
+   "/img/the-old-workings/turn-0.webp",
+   "/img/the-old-workings/turn-1.webp",
+   "/img/the-old-workings/turn-2.webp",
+   "/img/the-old-workings/turn-3.webp"
   ]
  },
  {
@@ -155,10 +155,10 @@
   "depth": 40,
   "courses": 26,
   "shots": [
-   "/img/corner-cottage/turn-0.png",
-   "/img/corner-cottage/turn-1.png",
-   "/img/corner-cottage/turn-2.png",
-   "/img/corner-cottage/turn-3.png"
+   "/img/corner-cottage/turn-0.webp",
+   "/img/corner-cottage/turn-1.webp",
+   "/img/corner-cottage/turn-2.webp",
+   "/img/corner-cottage/turn-3.webp"
   ]
  },
  {
@@ -169,10 +169,10 @@
   "depth": 52,
   "courses": 45,
   "shots": [
-   "/img/the-red-barn/turn-0.png",
-   "/img/the-red-barn/turn-1.png",
-   "/img/the-red-barn/turn-2.png",
-   "/img/the-red-barn/turn-3.png"
+   "/img/the-red-barn/turn-0.webp",
+   "/img/the-red-barn/turn-1.webp",
+   "/img/the-red-barn/turn-2.webp",
+   "/img/the-red-barn/turn-3.webp"
   ]
  },
  {
@@ -183,10 +183,10 @@
   "depth": 60,
   "courses": 31,
   "shots": [
-   "/img/the-red-gables/turn-0.png",
-   "/img/the-red-gables/turn-1.png",
-   "/img/the-red-gables/turn-2.png",
-   "/img/the-red-gables/turn-3.png"
+   "/img/the-red-gables/turn-0.webp",
+   "/img/the-red-gables/turn-1.webp",
+   "/img/the-red-gables/turn-2.webp",
+   "/img/the-red-gables/turn-3.webp"
   ]
  }
 ]
