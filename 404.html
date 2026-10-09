@@ -12,7 +12,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=3ab28f21d0">
+<link rel="stylesheet" href="/assets/app.css?v=d1df2cc96e">
 </head>
 <body>
 
@@ -189,11 +189,11 @@
       </div>
     </div>
 
-    <div class="grid four" style="margin-top:38px">
-      <div class="step"><span class="n">1</span><div><strong>Show us the place</strong><p class="small muted">A photograph in the studio, or four sides and a view from above sent to us.</p></div></div>
-      <div class="step"><span class="n">2</span><div><strong>See it in LEGO® bricks</strong><p class="small muted">About a minute in the studio: your place as voxels, then as a set on its base.</p></div></div>
-      <div class="step"><span class="n">3</span><div><strong>We design it</strong><p class="small muted">Your designer works it out in real LEGO pieces with you, and confirms the price.</p></div></div>
-      <div class="step"><span class="n">4</span><div><strong>It arrives</strong><p class="small muted">Sorted bags, instructions, and every brick to build it.</p></div></div>
+    <div class="grid four steps" style="margin-top:38px">
+      <div class="step"><span class="n">1</span><div><strong>Show us the place</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>1–2 minutes</span><p class="small muted">A photograph in the studio, or four sides and a bird&rsquo;s-eye view sent to us.</p></div></div>
+      <div class="step"><span class="n">2</span><div><strong>See it in LEGO® bricks</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>About a minute</span><p class="small muted">About a minute in the studio: your place as voxels, then as a set on its base.</p></div></div>
+      <div class="step"><span class="n">3</span><div><strong>We design it</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>1–2 days</span><p class="small muted">Your designer works it out in real LEGO pieces with you, and confirms the price.</p></div></div>
+      <div class="step"><span class="n">4</span><div><strong>It arrives</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>1–4 weeks</span><p class="small muted">Sorted bags, instructions, and every brick to build it.</p></div></div>
     </div>
   </div>
 </section>
@@ -205,7 +205,7 @@
     <div class="card gift-band">
       <div>
         <p class="eyebrow">Gift ideas</p>
-        <h2>A gift that begins with a place</h2>
+        <h2>A gift that begins with a place, <span class="vox">in LEGO® bricks</span></h2>
         <p class="muted">
           The house a grandmother raised her family in. The chapel where they said
           &ldquo;I do&rdquo;. The first front door that was theirs. The campus tower
@@ -242,7 +242,7 @@
         <h3>The instructions write themselves</h3>
         <p class="muted small">
           Every step and every numbered bag comes out of the model itself —
-          nineteen thousand bricks sorted into build order in about a second.
+          nineteen thousand bricks sorted into build order in seconds.
           Nobody draws a booklet by hand here.
         </p>
       </div>
@@ -258,8 +258,8 @@
 
     <p class="note" style="margin-top:28px">
       <strong>Which leaves the post as the only real wait.</strong> Once you are
-      happy with the design, the bricks are ordered from LEGO's Pick a Brick
-      shop and their delivery is the long pole — usually a week or two. Large
+      happy with the design, the bricks are ordered from <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">LEGO's Pick a Brick shop</a>
+      and their delivery is the long pole — usually a week or two. Large
       models take longer, because LEGO caps how many of one piece you may buy
       at a time and the order has to go in more than once.
     </p>
@@ -269,12 +269,12 @@
 <section id="gallery">
   <div class="wrap">
     <p class="eyebrow">Built already</p>
-    <h2>Houses, landmarks, and one state house</h2>
+    <h2>Houses, landmarks, and one state house, <span class="vox">in LEGO® bricks</span></h2>
     <p class="lead">Every model below was designed in the same workshop, from photographs.</p>
     <div class="grid three" id="samples" style="margin-top:26px">
       <p class="muted">Loading the gallery…</p>
     </div>
-    <div class="actions"><a class="btn" href="/gallery">See all of them</a></div>
+    <div class="actions"><a class="btn gold" href="/gallery">See all of them</a></div>
   </div>
 </section>
 
@@ -289,6 +289,17 @@
 
     <div class="grid four" style="margin-top:28px">
       <div class="card tier">
+        <span class="tier-art"><!-- The front alone, flat, on a strip of plate. -->
+        <svg class="tier-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect class="stud" x="7" y="51" width="5" height="2" rx=".6"/><rect class="stud" x="52" y="51" width="5" height="2" rx=".6"/>
+          <rect class="plate" x="5" y="53" width="54" height="5" rx="1"/>
+          <path class="roof" d="M13 31 32 14 51 31z"/>
+          <rect class="wall" x="16" y="29" width="32" height="24"/>
+          <rect class="glass" x="20" y="33" width="7" height="7" rx=".8"/>
+          <rect class="glass" x="37" y="33" width="7" height="7" rx=".8"/>
+          <rect class="glass" x="28.5" y="42" width="7" height="11" rx="3.5"/>
+          <circle class="glass" cx="32" cy="24.5" r="2.6"/>
+        </svg></span>
         <span class="badge grey">Façade</span>
         <div class="price">from $400</div>
         <p class="small muted">About 1,500–2,000 pieces</p>
@@ -301,9 +312,22 @@
       </div>
 
       <div class="card tier">
+        <span class="tier-art"><!-- All four sides and the roof, seen from a corner. -->
+        <svg class="tier-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect class="stud" x="6" y="51" width="5" height="2" rx=".6"/><rect class="stud" x="53" y="51" width="5" height="2" rx=".6"/>
+          <rect class="plate" x="4" y="53" width="56" height="5" rx="1"/>
+          <path class="shade" d="M30 53V34l24-6v20z"/>
+          <path class="wall" d="M10 53V34l10-11 10 11v19z"/>
+          <path class="roof-dark" d="M20 23 44 17l13 13-27 6z"/>
+          <path class="roof" d="M20 21.2 7.8 35l2.6 1.4L20 25.6l10.6 11.2 2.4-1.6z"/>
+          <rect class="glass" x="16.5" y="43" width="7" height="10" rx="1"/>
+          <rect class="glass" x="16.5" y="33" width="7" height="6" rx=".8"/>
+          <path class="glass" d="M36 37.6l6-1.5v6l-6 1.5z"/>
+          <path class="glass" d="M45.5 35.2l5-1.25v6l-5 1.25z"/>
+        </svg></span>
         <span class="badge grey">House</span>
         <div class="price">from $900</div>
-        <p class="small muted">About 4,000–6,000 pieces</p>
+        <p class="small muted">About 3,000–5,000 pieces</p>
         <ul>
           <li>All four sides and the roof</li>
           <li>Windows, doors, chimneys, dormers</li>
@@ -313,9 +337,23 @@
       </div>
 
       <div class="card tier">
+        <span class="tier-art"><!-- The house in its case, on a plinth with a plaque, a room showing. -->
+        <svg class="tier-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect class="case" x="7" y="5" width="50" height="45" rx="2.5"/>
+          <path class="gleam" d="M12 14l6-6M12 21l11-11"/>
+          <rect class="plinth" x="4" y="50" width="56" height="9" rx="1.5"/>
+          <rect class="plaque" x="25" y="53" width="14" height="3.4" rx=".8"/>
+          <path class="shade" d="M30 50V36l18-4.5V46z"/>
+          <path class="wall" d="M14 50V36l8-8 8 8v14z"/>
+          <path class="room" d="M16.5 39h11v8h-11z"/>
+          <path class="wall" d="M16.5 43h11v1.2h-11z"/>
+          <path class="roof" d="M22 21.5 12.5 31l2.2 1.2 7.3-7.4 7.4 7.4 2-1.4z"/>
+          <path class="roof-dark" d="M22 21.5l17.5-4.5L50 27.5 31.4 32.2z"/>
+          <path class="glass" d="M35 39l5.5-1.4v5.6L35 44.6z"/>
+        </svg></span>
         <span class="badge gold">Heirloom</span>
         <div class="price">from $1,800</div>
-        <p class="small muted">8,000 pieces and up</p>
+        <p class="small muted">About 6,000 pieces and up</p>
         <ul>
           <li>Everything in House</li>
           <li>Rooms inside, furnished</li>
@@ -325,6 +363,22 @@
       </div>
 
       <div class="card tier">
+        <span class="tier-art"><!-- A domed civic building: columns, steps, a lantern on the dome. -->
+        <svg class="tier-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect class="plate" x="4" y="53" width="56" height="5" rx="1"/>
+          <rect class="wall" x="10" y="49" width="44" height="4"/>
+          <rect class="wall" x="13" y="46" width="38" height="3"/>
+          <rect class="wall" x="14" y="31" width="4" height="15"/>
+          <rect class="wall" x="23" y="31" width="4" height="15"/>
+          <rect class="wall" x="37" y="31" width="4" height="15"/>
+          <rect class="wall" x="46" y="31" width="4" height="15"/>
+          <rect class="shade" x="27" y="31" width="10" height="15"/>
+          <path class="roof" d="M11 31 32 21l21 10z"/>
+          <rect class="wall" x="24" y="17" width="16" height="5"/>
+          <path class="roof" d="M24 17a8 8 0 0 1 16 0z"/>
+          <rect class="roof-dark" x="31" y="5" width="2" height="5"/>
+          <circle class="roof" cx="32" cy="9.5" r="1.8"/>
+        </svg></span>
         <span class="badge grey">Landmark</span>
         <div class="price">by arrangement</div>
         <p class="small muted">Civic and commercial work</p>
@@ -370,7 +424,7 @@
         <ul class="muted small" style="margin-top:10px">
           <li><strong>Build it for you</strong>, and send it assembled and ready for the shelf rather than as a kit.</li>
           <li><strong>Open it up.</strong> Rooms inside, furnished, with lift-off floors so you can see in. This is what the Heirloom tier is.</li>
-          <li><strong>Light it.</strong> Lighting is bought as a kit and quoted separately — it never appears in the brick price. Say so early: a model that is going to be lit is designed differently from the start.</li>
+          <li><strong>Light it.</strong> Lighting is bought as a kit and quoted separately — it never appears in the brick price. Say so early: a model that is going to be lit is designed differently from the start. <span class="aside">The lights are usually not LEGO® parts, since LEGO's shop does not sell them; they come from a specialist maker, so a lit model can take a week or two longer to arrive.</span></li>
           <li><strong>Put it in a case</strong>, with a plaque.</li>
         </ul>
       </div>
@@ -404,10 +458,10 @@
     <div class="grid two" style="margin-top:24px">
       <div>
         <h3>How long does it take?</h3>
-        <p class="muted">The studio shows you your place in LEGO® bricks, in about a minute, and one of our designers works through the real design with you the same day. After that the wait is LEGO's rather than ours: the bricks come from their Pick a Brick shop and usually take a week or two, while the instructions are generated the moment the design is settled. A very large model takes longer, because LEGO caps how many of one piece you may buy at once and the order goes in more than once. A hand-drawn commission elsewhere takes months — the drawing is the part we removed. We take on only as many as we can do well, first come, first served, so if your gift must arrive by a date, count on that date once we have confirmed it to you in writing.</p>
+        <p class="muted">The studio shows you your place in LEGO® bricks, in about a minute, and one of our designers works through the real design with you the same day. After that the wait is LEGO's rather than ours: the bricks come from their <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">Pick a Brick shop</a> and usually take a week or two, while the instructions are generated the moment the design is settled. A very large model takes longer, because LEGO caps how many of one piece you may buy at once and the order goes in more than once. A hand-drawn commission elsewhere takes months — the drawing is the part we removed. We take on only as many as we can do well, first come, first served, so if your gift must arrive by a date, count on that date once we have confirmed it to you in writing.</p>
 
         <h3>What do you need from me?</h3>
-        <p class="muted">At least one photograph if you can, and up to ten: the front straight on, each side, the back, and one from above — the aerial view is the only way to get a roof right. If you have none to hand, the address is enough and we will look up the map views ourselves.</p>
+        <p class="muted">At least one photograph if you can, and up to ten: the front straight on, each side, the back, and a bird&rsquo;s-eye view from above — the only way to get a roof right. If you have none to hand, the address is enough and we will look up the map views ourselves.</p>
       </div>
       <div>
         <h3>How do I reach you?</h3>
@@ -420,7 +474,7 @@
         <p class="muted">A voxel is a pixel with depth — the grid of coloured cells every model begins as, before a single brick is chosen. The loom is from heirloom: a thing made well enough to be handed down. A house makes the whole journey here: photographs on Monday, a grid on a screen that afternoon, a box of numbered bags by the end of the month.</p>
 
         <h3>Are these real LEGO bricks?</h3>
-        <p class="muted">Yes. Every part is ordered from LEGO's own Pick a Brick shop, so your model is built from genuine LEGO® bricks and can be repaired with them years from now. We are an independent workshop, not part of the LEGO Group.</p>
+        <p class="muted">Yes. Every part is ordered from <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">LEGO's own Pick a Brick shop</a>, so your model is built from genuine LEGO® bricks and can be repaired with them years from now. We are an independent workshop, not part of the LEGO Group.</p>
       </div>
     </div>
   </div>
@@ -451,7 +505,7 @@
             <img src="/assets/voxeloom.png?v=529da98ea0" alt="Voxeloom" width="164" height="30">
           </picture>
         </a>
-        <p class="small" style="margin-top:8px">Brick models of the places you love.<br><em>Made to build. Meant to keep.</em></p>
+        <p class="small" style="margin-top:8px">LEGO® brick models of the places you love.<br><em>Made to build. Meant to keep.</em></p>
       </div>
       <div>
         <p><a href="/about/">The workshop</a></p>

@@ -384,11 +384,55 @@ figure.card h3 a:hover { text-decoration: underline; }
   background: var(--accent-soft); color: var(--accent);
   display: grid; place-items: center; font-weight: 600; font-size: 14px;
 }
+/* How it works, in four steps: each ring fills a little more than the one
+   before -- empty, a third, two thirds, full -- as the place becomes a set.
+   The timeline on Talk to us does the same. Under each step's name, how
+   long it takes. */
+.steps .step .n, .flow .step .n {
+  background: var(--card); border: 2px solid var(--accent); color: var(--accent);
+  font: 600 15px/1 var(--serif);
+}
+.steps .step:nth-child(2) .n, .flow .step:nth-child(2) .n {
+  background: color-mix(in srgb, var(--accent) 33%, var(--card));
+}
+.steps .step:nth-child(3) .n, .flow .step:nth-child(3) .n {
+  background: color-mix(in srgb, var(--accent) 67%, var(--card)); color: var(--card);
+}
+.steps .step:nth-child(4) .n, .flow .step:last-child .n { background: var(--accent); color: var(--card); }
+.when {
+  display: inline-flex; align-items: center; gap: 5px; margin: 5px 0 2px;
+  padding: 2px 9px 2px 7px; border-radius: 999px;
+  background: var(--gold-soft); color: var(--gold-ink); font-size: 13px; font-weight: 600; line-height: 1.5;
+}
+.when svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+.steps .step strong { display: block; }
+
 .tier { display: flex; flex-direction: column; }
 .tier .badge { align-self: flex-start; }   /* a flex child would stretch to the card */
+/* Each option's picture: the front alone, the whole house, the house in its
+   case, a landmark -- in the wordmark's green and gold, on a round of gold. */
+.tier-art {
+  display: grid; place-items: center; width: 92px; height: 92px; margin: 0 0 14px;
+  border-radius: 50%; background: var(--gold-soft);
+}
+.tier-icon { width: 70px; height: 70px; display: block; }
+.tier-icon .wall { fill: var(--accent); }
+.tier-icon .shade { fill: color-mix(in srgb, var(--accent) 72%, #000); }
+.tier-icon .roof, .tier-icon .plate, .tier-icon .stud, .tier-icon .plaque { fill: var(--gold); }
+.tier-icon .roof-dark { fill: color-mix(in srgb, var(--gold) 78%, #000); }
+.tier-icon .glass { fill: var(--card); }
+.tier-icon .room { fill: var(--gold-soft); }
+.tier-icon .plinth { fill: var(--ink); }
+.tier-icon .case {
+  fill: color-mix(in srgb, var(--accent) 6%, transparent);
+  stroke: color-mix(in srgb, var(--accent) 45%, transparent); stroke-width: 1.4;
+}
+.tier-icon .gleam { fill: none; stroke: var(--card); stroke-width: 1.6; stroke-linecap: round; opacity: .9; }
 .tier .price { font: 600 30px/1 var(--serif); margin: 6px 0 2px; }
 .tier ul { margin: 14px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
 .tier li { margin-bottom: 6px; }
+/* A note on a line of a list: on its own line, a little quieter. */
+li .aside { display: block; margin-top: 4px; font-style: italic; }
 .tier .spacer { flex: 1; min-height: 12px; }
 
 /* ---------- forms ---------- */
@@ -411,6 +455,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 }
 .choice[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
 .choice strong { display: block; font-size: 15px; margin-bottom: 2px; }
+.choice small { display: block; margin-top: 4px; font-size: 13px; line-height: 1.35; color: var(--muted); }
 
 .drop {
   border: 1.5px dashed var(--line); border-radius: var(--radius);
@@ -429,6 +474,23 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   opacity: .16; pointer-events: none;
 }
 .drop-art:hover .drop-cartoon, .drop-art:focus-visible .drop-cartoon { opacity: .24; }
+/* With a photograph in it, the box shows the photograph -- there is only
+   ever one -- with × to take it out, beside the box rather than inside it,
+   since the box is itself a button. */
+.drop-wrap { position: relative; }
+.drop-art.filled { padding: 10px 10px 12px; }
+.drop-art.filled .drop-cartoon { display: none; }
+.drop-photo {
+  position: relative; z-index: 1; display: block; width: 100%; max-height: 320px;
+  object-fit: contain; border-radius: 10px; margin-bottom: 8px;
+}
+.drop-art.filled > span { font-size: 14px; font-weight: 400; }
+.drop-remove {
+  position: absolute; top: -10px; right: -10px; z-index: 2; width: 30px; height: 30px;
+  border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  cursor: pointer; font-size: 18px; line-height: 1; box-shadow: var(--shadow);
+}
+.drop-remove:hover { border-color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) { .drop-cartoon { transition: opacity .2s ease; } }
 .thumbs { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
 .thumbs figure { margin: 0; position: relative; }
@@ -522,11 +584,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   content: ""; position: absolute; left: 14px; top: 32px; bottom: 2px; width: 2px; border-radius: 2px;
   background: linear-gradient(var(--gold), color-mix(in srgb, var(--gold) 35%, transparent));
 }
-.flow .step .n {
-  background: var(--card); border: 2px solid var(--accent); color: var(--accent);
-  font: 600 15px/1 var(--serif);
-}
-.flow .step:last-child .n { background: var(--accent); color: var(--card); }
+/* Its rings fill step by step: see .steps under steps and tiers. */
 .flow .step strong { font-size: 15.5px; }
 .flow .step p { margin: 2px 0 0; }
 
@@ -545,6 +603,23 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .done-card { border: 2px solid var(--accent); }
 .done-card:focus { outline: none; }
 .done-card h3 { display: flex; align-items: center; gap: 10px; }
+/* Prefer to talk? Prefer email? A big, plain sign for each -- a handset, an
+   envelope -- white on green, large enough to find at a glance. */
+.contact-head { display: flex; align-items: center; gap: 12px; }
+.contact-icon {
+  flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%;
+  background: var(--accent); color: var(--card);
+}
+.contact-icon svg {
+  width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+/* The studio, offered beside the form: its picture, and a gold button. */
+.studio-card img {
+  display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover;
+  border-radius: 10px; margin: 4px 0 12px; background: var(--paper);
+}
+.studio-card p a { color: var(--accent); }
 @media (prefers-reduced-motion: no-preference) {
   .done:not([hidden]), .done-card:not([hidden]) { animation: done-in .35s ease-out; }
 }
@@ -850,12 +925,15 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .hue-milestones  { --hue: #2d6a96; --hue-soft: #e4eef6; --hue-on: #fff; }
 .hue-thanks      { --hue: #85650f; --hue-soft: #f6eed6; --hue-on: #fff; }
 .hue-remembrance { --hue: #6b5b8e; --hue-soft: #eeeaf4; --hue-on: #fff; }
+/* Christmas, among the occasions, in the wordmark's green. */
+.hue-christmas   { --hue: var(--accent); --hue-soft: var(--accent-soft); --hue-on: #fff; }
 @media (prefers-color-scheme: dark) {
   .hue-family      { --hue: #e8a07a; --hue-soft: #2a1e17; --hue-on: #1b1a17; }
   .hue-partners    { --hue: #ec97aa; --hue-soft: #2b1b20; --hue-on: #1b1a17; }
   .hue-milestones  { --hue: #93c2e6; --hue-soft: #172330; --hue-on: #1b1a17; }
   .hue-thanks      { --hue: #e2c26a; --hue-soft: #2a2412; --hue-on: #1b1a17; }
   .hue-remembrance { --hue: #bcadde; --hue-soft: #221e2c; --hue-on: #1b1a17; }
+  .hue-christmas   { --hue-on: #1b1a17; }
 }
 .gift-group .eyebrow, .gift-group .gift-line, .gift-group .gift-verse a { color: var(--hue); }
 .gift-group .card { background: var(--hue-soft); border-top: 4px solid var(--hue); }
