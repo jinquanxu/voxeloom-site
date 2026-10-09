@@ -134,6 +134,30 @@ nav.site { margin-left: auto; display: flex; gap: 22px; align-items: center; }
 nav.site a { text-decoration: none; color: var(--muted); font-size: 15px; white-space: nowrap; }
 nav.site a:hover, nav.site a[aria-current="page"] { color: var(--ink); }
 
+/* Pointing at a link sets a brick under it: a 1 x N plate in the
+   wordmark's green, seen from the side, with its studs on top. Green, not
+   gold, because green is the links' colour and gold is the rule just below.
+   The page you are on keeps its brick. Only where there is a mouse, and not
+   in the phone menu. Whole studs only: `space` never cuts one. */
+@media (hover: hover) and (pointer: fine) {
+  header.site:not(.menu-open) nav.site a:not(.btn) { position: relative; }
+  header.site:not(.menu-open) nav.site a:not(.btn)::after {
+    content: ""; position: absolute; left: -3px; right: -3px; bottom: -8px; height: 8px;
+    background:
+      linear-gradient(var(--accent), var(--accent)) bottom / 100% 5px no-repeat,
+      linear-gradient(90deg, transparent 2px, var(--accent) 2px 8px, transparent 8px) top / 10px 3px space no-repeat;
+    border-radius: 1px;
+    opacity: 0; transform: translateY(4px);
+    transition: opacity .16s ease, transform .16s ease;
+  }
+  header.site:not(.menu-open) nav.site a:not(.btn):hover::after,
+  header.site:not(.menu-open) nav.site a:not(.btn):focus-visible::after,
+  header.site:not(.menu-open) nav.site a[aria-current="page"]::after { opacity: 1; transform: none; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: reduce) {
+  header.site:not(.menu-open) nav.site a:not(.btn)::after { transition: none; transform: none; }
+}
+
 /* ---------- type ---------- */
 
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0 0 12px; }
@@ -690,6 +714,9 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   border-radius: 8px; background: var(--paper);
 }
 .pvh-strip .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* A kept picture has the Voxeloom band under it (PictureBand.kt). Cropped
+   from the top, a 3:2 thumbnail shows the picture and leaves the band out. */
+.pvh-card[data-view="voxel"] img, .pvh-card[data-view="heirloom"] img { object-position: top; }
 .pvh-strip .label { display: block; margin-top: 6px; font: 600 15px/1.2 var(--sans); color: var(--ink); }
 .pvh-strip .label.vox { color: var(--accent); }
 .pvh-strip .label.loom { color: var(--gold); }
@@ -714,7 +741,8 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 @keyframes sheen { from { background-position: 100% 0; } to { background-position: -150% 0; } }
 
 /* The big frame. The drawn pictures are 3:2, and so is the frame, so the page
-   does not jump when one replaces the photograph. */
+   does not jump when one replaces the photograph. Kept with the band under
+   them they are a little taller, and are shown whole, band and all. */
 .pvh-big { position: relative; }
 .pvh-big canvas, .pvh-big img {
   width: 100%; aspect-ratio: 3 / 2; display: block;
@@ -962,7 +990,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .account-pics { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 12px; }
 .account-pics a { display: block; text-decoration: none; color: var(--ink); }
 .account-pics img {
-  width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;
+  width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: top; display: block;
   border-radius: var(--radius); background: var(--card);
 }
 .account-pics span { display: block; margin-top: 8px; font: 600 15px/1.3 var(--serif); }
