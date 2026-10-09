@@ -188,5 +188,19 @@
    "/img/the-red-gables/turn-2.webp",
    "/img/the-red-gables/turn-3.webp"
   ]
+ },
+ {
+  "name": "The Stone Farmhouse",
+  "slug": "the-stone-farmhouse",
+  "summary": "A two-storey stone farmhouse in real LEGO parts: warm tan masonry with white quoins, sills and a stone arch, under low terracotta tile roofs with a tall chimney and black gutters. Dark brown shutters stand open at the upstairs windows, a vine in white flower climbs beside the arched glass doors, and lanterns light the lower wing that steps forward on the right. On the left a vine-covered pergola shades the supper table; in front, a gravel courtyard, a lawn with stepping stones, an olive tree, cypresses and a bed of lavender behind a low stone wall with its lamps. Inside, the kitchen with its range and island, the living room with a lit fireplace and the long table laid for supper, a wine store with barrels and a potting room; upstairs, the main bedroom, a bathroom and the children's room.",
+  "width": 80,
+  "depth": 58,
+  "courses": 28,
+  "shots": [
+   "/img/the-stone-farmhouse/turn-0.webp",
+   "/img/the-stone-farmhouse/turn-1.webp",
+   "/img/the-stone-farmhouse/turn-2.webp",
+   "/img/the-stone-farmhouse/turn-3.webp"
+  ]
  }
 ]
