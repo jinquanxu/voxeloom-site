@@ -12,7 +12,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=d1df2cc96e">
+<link rel="stylesheet" href="/assets/app.css?v=b079d98ecc">
 </head>
 <body>
 
@@ -126,13 +126,31 @@
           <img src="/assets/hero-build.png"
                alt="The Brick Colonial being built a course at a time: a baseplate with the floor plan on it, then furnished rooms, then the upper floor, then the roof.">
         </picture>
+        <!-- Anything that moves by itself can be stopped: the button puts the
+             still back, and plays the animation again. -->
+        <button type="button" class="hero-pause" id="heroPause" aria-pressed="false" hidden>
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path class="pause" d="M5 3.5v9M11 3.5v9"/><path class="play" d="M5 3.2v9.6L12.6 8z"/></svg>
+          <span>Pause</span>
+        </button>
         <script>
           addEventListener('load', function () {
             if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
             if (navigator.connection && navigator.connection.saveData) return;
-            document.querySelectorAll('source[data-animated]').forEach(function (source) {
-              source.srcset = source.dataset.animated;
+            var sources = document.querySelectorAll('source[data-animated]');
+            function play(on) {
+              sources.forEach(function (source) {
+                if (!source.dataset.still) source.dataset.still = source.srcset;
+                source.srcset = on ? source.dataset.animated : source.dataset.still;
+              });
+              button.setAttribute('aria-pressed', String(!on));
+              button.querySelector('span').textContent = on ? 'Pause' : 'Play';
+            }
+            var button = document.getElementById('heroPause');
+            button.addEventListener('click', function () {
+              play(button.getAttribute('aria-pressed') === 'true');
             });
+            button.hidden = false;
+            play(true);
           });
         </script>
       </div>
@@ -188,8 +206,8 @@
     <div class="grid four steps" style="margin-top:38px">
       <div class="step"><span class="n">1</span><div><strong>Show us the place</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>1–2 minutes</span><p class="small muted">A photograph in the studio, or four sides and a bird&rsquo;s-eye view sent to us.</p></div></div>
       <div class="step"><span class="n">2</span><div><strong>See it in LEGO® bricks</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>About a minute</span><p class="small muted">About a minute in the studio: your place as voxels, then as a set on its base.</p></div></div>
-      <div class="step"><span class="n">3</span><div><strong>We design it</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>1–2 days</span><p class="small muted">Your designer works it out in real LEGO pieces with you, and confirms the price.</p></div></div>
-      <div class="step"><span class="n">4</span><div><strong>It arrives</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>1–4 weeks</span><p class="small muted">Sorted bags, instructions, and every brick to build it.</p></div></div>
+      <div class="step"><span class="n">3</span><div><strong>We design it</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>Within 2 working days</span><p class="small muted">Your designer works it out in real LEGO pieces and sends you pictures and a fixed price. Change it as often as you like.</p></div></div>
+      <div class="step"><span class="n">4</span><div><strong>It arrives</strong><span class="when"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.6V8l2.4 1.6"/></svg>3–5 weeks</span><p class="small muted">Sorted bags, instructions, and every brick to build it, three to five weeks after you say yes.</p></div></div>
     </div>
   </div>
 </section>
@@ -217,7 +235,7 @@
 <section id="quicker">
   <div class="wrap">
     <p class="eyebrow">Why we are quicker</p>
-    <h2>A first look in a minute. A kit in days, not seasons.</h2>
+    <h2>A first look in a minute. A kit in weeks, not seasons.</h2>
     <p class="lead">
       A custom brick model usually takes months, because a designer is drawing it
       by hand and you are in a queue behind everybody else. We took the drawing
@@ -226,12 +244,11 @@
 
     <div class="grid three" style="margin-top:30px">
       <div class="card">
-        <h3>The design is done the day you ask</h3>
+        <h3>Your design within two working days</h3>
         <p class="muted small">
-          The studio shows you the set while you watch, and one of our designers works
-          through the real design with you the same day, using advanced AI design tools.
-          There is no waiting list, because
-          there is no backlog of drawing to get through.
+          The studio shows you the set while you watch. Then one of our designers works
+          out the real design with our own design tools, and sends it to you with a fixed
+          price within two working days &mdash; not after months of drawing by hand.
         </p>
       </div>
       <div class="card">
@@ -253,7 +270,7 @@
     </div>
 
     <p class="note" style="margin-top:28px">
-      <strong>Which leaves the post as the only real wait.</strong> Once you are
+      <strong>Which leaves LEGO&rsquo;s delivery as the longest wait.</strong> Once you are
       happy with the design, the bricks are ordered from <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">LEGO's Pick a Brick shop</a>
       and their delivery is the long pole — usually a week or two. Large
       models take longer, because LEGO caps how many of one piece you may buy
@@ -264,9 +281,9 @@
 
 <section id="gallery">
   <div class="wrap">
-    <p class="eyebrow">Built already</p>
+    <p class="eyebrow">Our designs</p>
     <h2>Houses, landmarks, and one state house, <span class="vox">in LEGO® bricks</span></h2>
-    <p class="lead">Every model below was designed in the same workshop, from photographs.</p>
+    <p class="lead">Every model below is a digital design from our workshop, made from photographs, with every piece checked against LEGO&rsquo;s own shop.</p>
     <div class="grid three" id="samples" style="margin-top:26px">
       <p class="muted">Loading the gallery…</p>
     </div>
@@ -438,6 +455,11 @@
         There is no deposit and no booking fee, because you have already seen
         exactly what you are buying.
       </p>
+      <p class="muted">
+        You pay <strong>by check</strong>, made out to Voxeloom; the email with your price
+        says where to send it. We order the bricks as soon as it clears, usually in three to
+        five working days.
+      </p>
     </div>
 
     <p class="small muted" style="margin-top:18px">
@@ -454,7 +476,17 @@
     <div class="grid two" style="margin-top:24px">
       <div>
         <h3>How long does it take?</h3>
-        <p class="muted">The studio shows you your place in LEGO® bricks, in about a minute, and one of our designers works through the real design with you the same day. After that the wait is LEGO's rather than ours: the bricks come from their <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">Pick a Brick shop</a> and usually take a week or two, while the instructions are generated the moment the design is settled. A very large model takes longer, because LEGO caps how many of one piece you may buy at once and the order goes in more than once. A hand-drawn commission elsewhere takes months — the drawing is the part we removed. We take on only as many as we can do well, first come, first served, so if your gift must arrive by a date, count on that date once we have confirmed it to you in writing.</p>
+        <p class="muted">Typically three to five weeks from the day you say yes:</p>
+        <ul class="muted timeline-list">
+          <li><strong>A first look:</strong> about a minute in the studio.</li>
+          <li><strong>Your design and price:</strong> within two working days of asking.</li>
+          <li><strong>Changes:</strong> as many as you like, at your pace.</li>
+          <li><strong>Payment:</strong> by check, which usually clears in three to five working days.</li>
+          <li><strong>The bricks:</strong> ordered from LEGO&rsquo;s <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">Pick a Brick shop</a> once it clears; LEGO usually delivers in one to two weeks. A very large model takes longer, because LEGO limits how many of one piece you may buy at once.</li>
+          <li><strong>Sorting, bagging and packing:</strong> two to three days.</li>
+          <li><strong>Shipping:</strong> two to five days in the US, longer to Canada.</li>
+        </ul>
+        <p class="muted">We take on only as many as we can do well, first come, first served. If your gift must arrive by a date, tell us when you ask, and count on that date once we have confirmed it to you in writing. For Christmas, ask by 20 November.</p>
 
         <h3>What do you need from me?</h3>
         <p class="muted">At least one photograph if you can, and up to ten: the front straight on, each side, the back, and a bird&rsquo;s-eye view from above — the only way to get a roof right. If you have none to hand, the address is enough and we will look up the map views ourselves.</p>
@@ -464,10 +496,10 @@
         <p class="muted">On the <a href="https://studio.voxeloom.com/quote">Talk to us</a> page, send photographs and a few words, ask us to call you back, or leave your email and we will write to you. Or write to <a href="mailto:orders@voxeloom.com">orders@voxeloom.com</a>. Our Customer Care team reads every message and replies within two working days.</p>
 
         <h3>Do you keep my photographs?</h3>
-        <p class="muted">Only while your quote is open, so your designer can see them. When a quote is closed or declined, the pictures are deleted. The studio uses your photograph only to render your pictures.</p>
+        <p class="muted">The photographs you send us are kept only while your request is open, so your designer can see them: they are deleted when it is closed or declined, or once it has gone 60 days without a reply. The studio sends its photograph to our AI providers to render your pictures and does not store it; the pictures it makes are kept for 14 days, or longer if you share them, sign in or ask us for a quote. The <a href="/privacy">privacy page</a> has the details.</p>
 
         <h3>Why Voxeloom?</h3>
-        <p class="muted">A voxel is a pixel with depth — the grid of coloured cells every model begins as, before a single brick is chosen. The loom is from heirloom: a thing made well enough to be handed down. A house makes the whole journey here: photographs on Monday, a grid on a screen that afternoon, a box of numbered bags by the end of the month.</p>
+        <p class="muted">A voxel is a pixel with depth — the grid of coloured cells every model begins as, before a single brick is chosen. The loom is from heirloom: a thing made well enough to be handed down. A house makes the whole journey here: photographs on Monday, a grid on a screen that afternoon, a box of numbered bags a few weeks later.</p>
 
         <h3>Are these real LEGO bricks?</h3>
         <p class="muted">Yes. Every part is ordered from <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">LEGO's own Pick a Brick shop</a>, so your model is built from genuine LEGO® bricks and can be repaired with them years from now. We are an independent workshop, not part of the LEGO Group.</p>
