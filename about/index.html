@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The workshop — Voxeloom</title>
-<meta name="description" content="Who makes these, how a model is designed, and what we will not do.">
+<title>Our family workshop — Voxeloom</title>
+<meta name="description" content="Meet the family behind Voxeloom, a workshop near Providence, Rhode Island, turning the places people love into keepsakes made with genuine LEGO® bricks.">
 <!-- preview -->
 <link rel="canonical" href="https://voxeloom.com/about/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Voxeloom">
-<meta property="og:title" content="The workshop — Voxeloom">
-<meta property="og:description" content="Who makes these, how a model is designed, and what we will not do.">
+<meta property="og:title" content="Our family workshop — Voxeloom">
+<meta property="og:description" content="Meet the family behind Voxeloom, a workshop near Providence, Rhode Island, turning the places people love into keepsakes made with genuine LEGO® bricks.">
 <meta property="og:url" content="https://voxeloom.com/about/">
 <meta property="og:image" content="https://voxeloom.com/assets/share/voxeloom.jpg">
 <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=b079d98ecc">
+<link rel="stylesheet" href="/assets/app.css?v=0686bc9366">
 </head>
 <body>
 
@@ -52,112 +52,207 @@
 </header>
 
 <main>
+<!-- The About page, redesigned on 10 Oct 2026 from the owner's draft: the
+     family behind the workshop -- by the nicknames they use, never their
+     names -- and their parts in it, then how a model is made, what to
+     expect, and the places nearby. The cartoon is the owner's own. -->
+<section class="about-open">
+  <div class="wrap">
+    <p class="eyebrow">Our family workshop · Rhode Island</p>
+    <h1 class="page-title">A family project. <span class="vox">A place in your story.</span></h1>
+    <p class="tagline">Made to build. Meant to keep.</p>
+    <p class="lead" style="margin-top:18px">
+      We&rsquo;re the family behind Voxeloom. From our workshop in the suburbs of Providence,
+      Rhode Island, we turn the places people love into keepsakes made with genuine
+      LEGO® bricks.
+    </p>
+    <p><a class="more-link" href="#our-family">Meet the family <span aria-hidden="true">&darr;</span></a></p>
+
+    <figure class="family-figure">
+      <picture>
+        <source media="(max-width: 700px)" srcset="/assets/gifts/about-family-720.webp">
+        <img src="/assets/gifts/about-family.webp" width="1200" height="800"
+          alt="A cartoon of the Voxeloom family at their workbench: Mom keeps the work organised, CiCi draws a design, Didi builds a model house, and Dad checks its details.">
+      </picture>
+      <figcaption><span>One family. Different interests. Something to make together.</span>
+        <span>A cartoon of our family workshop.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap about-story">
+    <div>
+      <p class="eyebrow">How it began</p>
+      <h2>Mom had an idea. <span class="vox">We made it a family project.</span></h2>
+    </div>
+    <div class="muted">
+      <p>
+        Voxeloom started with Mom&rsquo;s idea. Dad, our resident technology enthusiast, teamed
+        up with CiCi and Didi to create the design studio. Each brought a different interest:
+        art, technology, and a love of building with LEGO® bricks.
+      </p>
+      <p>
+        CiCi and Didi are our nicknames for big sister and little brother. Working together
+        gives us a chance to learn from each other and make something we care about.
+      </p>
+      <p>
+        That&rsquo;s the spirit we bring to your model, too. It might be the home where your
+        family grew up, the place where you said &ldquo;I do&rdquo;, or a building that has
+        always meant something to you. We want to understand the details that make it yours.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="our-family">
+  <div class="wrap">
+    <p class="eyebrow">The people behind your model</p>
+    <h2>Everyone has a part.</h2>
+    <p class="lead">A family workshop, with Mom overseeing operations and Dad responsible for quality control.</p>
+
+    <div class="grid four about-roles" style="margin-top:26px">
+      <article class="card">
+        <h3>Mom</h3>
+        <p class="role">The idea &amp; the organisation</p>
+        <p class="muted small">Mom brought us the idea that became Voxeloom. She oversees operations and keeps the family&rsquo;s work organised.</p>
+      </article>
+      <article class="card">
+        <h3>Dad</h3>
+        <p class="role">Technology &amp; quality</p>
+        <p class="muted small">Dad helped build the design studio with CiCi and Didi. He brings his enthusiasm for technology to the work, and handles quality control.</p>
+      </article>
+      <article class="card">
+        <h3>CiCi</h3>
+        <p class="role">Design &amp; customer care</p>
+        <p class="muted small">Big sister CiCi loves drawing cartoons. At Voxeloom she contributes to design and helps with customer care.</p>
+      </article>
+      <article class="card">
+        <h3>Didi</h3>
+        <p class="role">Building &amp; testing</p>
+        <p class="muted small">Little brother Didi loves building with LEGO® bricks. He will build and test our first sets, checking how the pieces and the instructions work together.</p>
+      </article>
+    </div>
+    <p class="note" style="margin-top:22px">
+      CiCi and Didi are learning by doing, with their parents overseeing the workshop. Their
+      fresh eyes help us spot the details that need another look.
+    </p>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
-    <!-- Who makes these, beside the workshop's cartoon (tools/gift_cartoons.py,
-         about-workshop); on a phone the cartoon follows the words. -->
-    <div class="about-intro">
-      <div>
-        <p class="eyebrow">The workshop</p>
-        <h1 class="page-title">Who makes these</h1>
-        <p class="tagline">Made to build. Meant to keep.</p>
-
-        <p class="lead" style="margin-top:26px">
-          A small workshop in the suburbs of Providence, Rhode Island.
-        </p>
-        <p class="muted" style="max-width:62ch">
-          Every LEGO® brick model on this site was designed here, with tools built for this
-          and nothing else — then checked against LEGO's own shop, priced from the
-          real parts list, and proved to stand up, before anybody was shown it.
-        </p>
-      </div>
-      <img class="about-art" src="/assets/gifts/about-workshop.webp" width="720" height="480"
-        alt="A boy at a workbench presses a brick onto a half-built model house, with drawers of sorted bricks, its picture on a laptop and an instruction booklet around him.">
-    </div>
-
-    <h3 style="margin-top:44px">How a model is made</h3>
+    <p class="eyebrow">From your photograph to your model</p>
+    <h2>A little imagination. <span class="vox">A lot of checking.</span></h2>
     <p class="lead">
-      Every LEGO® brick model starts as a grid — a voxel is a pixel with depth, and a house
-      read off photographs is a lattice of coloured cells before it is anything
-      else. Turning that into something a person can actually build is where
-      the work is, and three things have to be true before a design leaves here.
+      Every LEGO® brick model starts as a grid &mdash; a voxel is a pixel with depth, and a
+      house read off photographs is a lattice of coloured cells before it is anything else.
+      Turning that into something a person can actually build is where the work is, and three
+      things have to be true before a design leaves here.
     </p>
 
     <div class="grid three" style="margin-top:28px">
       <div class="card">
         <h3>Every piece is one LEGO sells</h3>
         <p class="muted small">
-          Not a piece that looks like it. Every part in a design is one LEGO
-          sells new in its <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">Pick a Brick shop</a>, in a colour LEGO actually makes it
-          in, and the whole parts list is checked against the shop before
-          anybody sees the model. A part LEGO does not sell does not go in.
+          Not a piece that looks like it. Every part in a design is one LEGO sells new in its
+          <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">Pick a Brick shop</a>,
+          in a colour LEGO actually makes it in, and the whole parts list is checked against
+          the shop before anybody sees the model. A part LEGO does not sell does not go in.
         </p>
       </div>
       <div class="card">
         <h3>Every brick is held</h3>
         <p class="muted small">
-          A model is walked brick by brick to find anything resting on nothing.
-          Where a piece floats, a support goes in underneath — and the change is
-          written down and told to you rather than quietly shipped. If a design
-          cannot be made to stand, you hear that instead of a box of pieces that
-          will not hold together.
+          A model is walked brick by brick to find anything resting on nothing. Where a piece
+          floats, a support goes in underneath &mdash; and the change is written down and told to
+          you rather than quietly shipped. If a design cannot be made to stand, you hear that
+          instead of a box of pieces that will not hold together.
         </p>
       </div>
       <div class="card">
         <h3>The instructions come out of the model</h3>
         <p class="muted small">
-          Every step and every numbered bag is generated from the finished
-          design: nineteen thousand bricks sorted into build order in
-          seconds. Nobody draws a booklet by hand here, which is most of the
-          reason a kit takes weeks rather than seasons.
+          Every step and every numbered bag is generated from the finished design: nineteen
+          thousand bricks sorted into build order in seconds. Nobody draws a booklet by hand
+          here, which is most of the reason a kit takes weeks rather than seasons.
         </p>
       </div>
     </div>
+  </div>
+</section>
 
-    <h3 style="margin-top:44px">What we will not do</h3>
-    <p class="muted" style="max-width:62ch">
-      We build with genuine LEGO® bricks, bought new from <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">LEGO's own Pick a Brick shop</a>. Not clone brands, and not second-hand lots of unknown
-      provenance. If a piece cannot be bought new, it does not go into the
-      design in the first place.
-    </p>
-    <p class="muted" style="max-width:62ch">
-      We do not start building until you have seen your model and said yes to
-      it. And we do not show you a picture of something we could not actually
-      make — every model in the gallery is a design that has been checked,
-      priced and could be ordered this afternoon.
-    </p>
-    <p class="muted" style="max-width:62ch">
-      And we do not take on more than we can do well. Requests are taken first
-      come, first served, and if your gift has a date it must arrive by, count
-      on that date only once we have confirmed it to you in writing.
-    </p>
+<section>
+  <div class="wrap about-expect">
+    <div>
+      <p class="eyebrow">What you can expect</p>
+      <h2>Personal care. <span class="vox">Practical details.</span></h2>
+      <p class="muted" style="margin-top:14px">
+        A meaningful gift deserves clear expectations. Here are a few things to know before
+        we begin.
+      </p>
+      <p><a class="more-link" href="/terms">Read our terms of sale and delivery <span aria-hidden="true">&rarr;</span></a></p>
+    </div>
+    <ul class="expect-list">
+      <li><strong>Genuine LEGO® bricks</strong>Bought new from LEGO&rsquo;s own
+        <a href="https://www.lego.com/en-us/pick-and-build/pick-a-brick" target="_blank" rel="noopener">Pick a Brick shop</a>
+        &mdash; never clone brands, or second-hand lots of unknown provenance. Voxeloom is an
+        independent family workshop, not part of the LEGO Group.</li>
+      <li><strong>A preview is a starting point</strong>The design studio&rsquo;s pictures are AI
+        impressions. Your design is worked out in real parts, so its details will differ.</li>
+      <li><strong>Your approval comes first</strong>You see your design and its price before you
+        pay anything, and we order nothing until you say yes.</li>
+      <li><strong>Only as many as we can do well</strong>Requests are taken first come, first
+        served. If your gift has a date, count on it once we have confirmed it to you in writing.</li>
+      <li><strong>Nothing we could not make</strong>Every model in our gallery is a design that
+        has been checked and priced, and could be ordered this afternoon.</li>
+    </ul>
+  </div>
+</section>
 
-    <h3 style="margin-top:44px">Where</h3>
-    <p class="muted" style="max-width:62ch">
-      In the suburbs of Providence, Rhode Island.
-    </p>
-    <p class="muted" style="max-width:62ch">
-      Five of the models in the gallery are within an hour of the workbench:
-      the <a href="/gallery/rhode-island-state-house/">State House</a> on its
-      hill, Brown's <a href="/gallery/carrie-tower/">Carrie Tower</a>,
-      <a href="/gallery/warwick-neck-light/">Warwick Neck Light</a> on its bluff,
-      <a href="/gallery/beavertail-light/">Beavertail Light</a> at the southern
-      end of Conanicut Island, and
-      <a href="/gallery/the-towers/">the Towers</a> over Ocean Road in
-      Narragansett; a little farther out, <a href="/gallery/rose-island-light/">Rose
-      Island Light</a> keeps its old fort in the bay, a short ferry ride from Newport.
-      They were designed partly because they were there to look at,
-      and partly because a building you have walked past a thousand times is
-      the hardest thing to model. You know immediately when it is wrong.
-    </p>
-    <p class="muted" style="max-width:62ch">
-      If the place you want is in Rhode Island, say so — it is easier to get
-      the details right when we can go and stand in front of it.
-    </p>
+<section>
+  <div class="wrap about-story">
+    <div>
+      <p class="eyebrow">Made near Providence</p>
+      <h2>Inspired by places <span class="vox">close to home.</span></h2>
+    </div>
+    <div class="muted">
+      <p>
+        Five of the models in the gallery are within an hour of the workbench:
+        the <a href="/gallery/rhode-island-state-house/">State House</a> on its
+        hill, Brown's <a href="/gallery/carrie-tower/">Carrie Tower</a>,
+        <a href="/gallery/warwick-neck-light/">Warwick Neck Light</a> on its bluff,
+        <a href="/gallery/beavertail-light/">Beavertail Light</a> at the southern
+        end of Conanicut Island, and
+        <a href="/gallery/the-towers/">the Towers</a> over Ocean Road in
+        Narragansett; a little farther out, <a href="/gallery/rose-island-light/">Rose
+        Island Light</a> keeps its old fort in the bay, a short ferry ride from Newport.
+      </p>
+      <p>
+        They were designed partly because they were there to look at, and partly because a
+        building you have walked past a thousand times is the hardest thing to model. You
+        know immediately when it is wrong.
+      </p>
+      <p>
+        If the place you want is in Rhode Island, say so &mdash; it is easier to get the
+        details right when we can go and stand in front of it.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <div class="actions" style="margin-top:34px">
-      <a class="btn primary" href="https://studio.voxeloom.com/studio">See your place in LEGO® bricks</a>
-      <a class="btn" href="/gallery">Visit our gallery</a>
+<section>
+  <div class="wrap">
+    <div class="card about-cta">
+      <div>
+        <p class="eyebrow">Your place comes next</p>
+        <h2>What place would you keep?</h2>
+        <p class="muted" style="margin:10px 0 0">A photograph, an address or a few words is enough to start.</p>
+      </div>
+      <div class="actions" style="margin-top:0">
+        <a class="btn primary" href="https://studio.voxeloom.com/quote">Talk to us</a>
+        <a class="btn gold" href="https://studio.voxeloom.com/studio">Try the design studio</a>
+      </div>
     </div>
   </div>
 </section>

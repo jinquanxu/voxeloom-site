@@ -24,7 +24,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=b079d98ecc">
+<link rel="stylesheet" href="/assets/app.css?v=0686bc9366">
 </head>
 <body>
 
@@ -55,15 +55,27 @@
 <main>
 <section>
   <div class="wrap">
-    <p class="eyebrow">Gallery</p>
-    <h1 class="page-title">Sets we have designed, <span class="vox">in LEGO® bricks</span></h1>
-    <p class="tagline">Made to build. Meant to keep.</p>
-    <p class="lead">
-      Each is a digital design, worked out from photographs in parts LEGO sells today
-      and checked piece by piece so it stands up; the pictures are renders of the design.
-      Open one to turn it, peel it apart
-      course by course, see it lit at night, and read every piece and every step.
-    </p>
+    <!-- The opening beside the workshop's cartoon (tools/gift_cartoons.py,
+         about-workshop), moved here from the About page on 10 Oct 2026 when
+         the family's cartoon took its place there. -->
+    <div class="intro-art">
+      <div>
+        <p class="eyebrow">Gallery</p>
+        <h1 class="page-title">Sets we have designed, <span class="vox">in LEGO® bricks</span></h1>
+        <p class="tagline">Made to build. Meant to keep.</p>
+        <p class="lead">
+          Each is a digital design, worked out from photographs in parts LEGO sells today
+          and checked piece by piece so it stands up; the pictures are renders of the design.
+          Open one to turn it, peel it apart
+          course by course, see it lit at night, and read every piece and every step.
+        </p>
+      </div>
+      <figure>
+        <img src="/assets/gifts/about-workshop.webp" width="720" height="480"
+          alt="A boy at a workbench presses a brick onto a half-built model house, with drawers of sorted bricks, its picture on a laptop and an instruction booklet around him.">
+        <figcaption>A cartoon of our workshop.</figcaption>
+      </figure>
+    </div>
 
     <div class="grid two" id="samples" style="margin-top:30px">
       <p class="muted">Loading…</p>
