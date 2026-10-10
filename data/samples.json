@@ -202,5 +202,19 @@
    "/img/the-stone-farmhouse/turn-2.webp",
    "/img/the-stone-farmhouse/turn-3.webp"
   ]
+ },
+ {
+  "name": "Rose Island Light",
+  "slug": "rose-island-light",
+  "summary": "Rose Island Light in real LEGO parts: the white clapboard keeper's house of 1870 under a grey slate mansard with two rust-red bands and arched white dormers, its brick chimney, and the square white tower rising from the roof to a black gallery and lantern, the lens inside under a domed cap. The house stands on the old fort's stone wall, railed in white, with the flag and deck chairs on top; below it the brick fog-signal house and its wooden steps, rock ledges, a strip of sand and the water of Narragansett Bay. Inside, as it was about 1912: the parlour with its player piano, the kitchen with the range and the cat, the pantry pump, bedrooms under the mansard, a ladder up the tower through the watch room to the lens, and the keeper's son at the engine in the fog-signal house.",
+  "width": 72,
+  "depth": 50,
+  "courses": 43,
+  "shots": [
+   "/img/rose-island-light/turn-0.webp",
+   "/img/rose-island-light/turn-1.webp",
+   "/img/rose-island-light/turn-2.webp",
+   "/img/rose-island-light/turn-3.webp"
+  ]
  }
 ]
