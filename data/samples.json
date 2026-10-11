@@ -11,7 +11,8 @@
    "/img/rhode-island-state-house/turn-1.webp",
    "/img/rhode-island-state-house/turn-2.webp",
    "/img/rhode-island-state-house/turn-3.webp"
-  ]
+  ],
+  "kind": "Landmarks"
  },
  {
   "name": "Beavertail Light",
@@ -25,7 +26,8 @@
    "/img/beavertail-light/turn-1.webp",
    "/img/beavertail-light/turn-2.webp",
    "/img/beavertail-light/turn-3.webp"
-  ]
+  ],
+  "kind": "Lighthouses"
  },
  {
   "name": "The Towers",
@@ -39,7 +41,8 @@
    "/img/the-towers/turn-1.webp",
    "/img/the-towers/turn-2.webp",
    "/img/the-towers/turn-3.webp"
-  ]
+  ],
+  "kind": "Landmarks"
  },
  {
   "name": "Warwick Neck Light",
@@ -53,7 +56,8 @@
    "/img/warwick-neck-light/turn-1.webp",
    "/img/warwick-neck-light/turn-2.webp",
    "/img/warwick-neck-light/turn-3.webp"
-  ]
+  ],
+  "kind": "Lighthouses"
  },
  {
   "name": "Carrie Tower",
@@ -78,7 +82,8 @@
     "slug": "carrie-tower-small",
     "size": "Small"
    }
-  ]
+  ],
+  "kind": "Landmarks"
  },
  {
   "name": "Carrie Tower (Small)",
@@ -103,7 +108,8 @@
     "slug": "carrie-tower-small",
     "size": "Small"
    }
-  ]
+  ],
+  "kind": "Landmarks"
  },
  {
   "name": "The Stone and Cedar House",
@@ -117,7 +123,8 @@
    "/img/the-stone-and-cedar-house/turn-1.webp",
    "/img/the-stone-and-cedar-house/turn-2.webp",
    "/img/the-stone-and-cedar-house/turn-3.webp"
-  ]
+  ],
+  "kind": "Homes"
  },
  {
   "name": "The Brick Colonial",
@@ -131,7 +138,8 @@
    "/img/the-brick-colonial/turn-1.webp",
    "/img/the-brick-colonial/turn-2.webp",
    "/img/the-brick-colonial/turn-3.webp"
-  ]
+  ],
+  "kind": "Homes"
  },
  {
   "name": "The Old Workings",
@@ -145,7 +153,8 @@
    "/img/the-old-workings/turn-1.webp",
    "/img/the-old-workings/turn-2.webp",
    "/img/the-old-workings/turn-3.webp"
-  ]
+  ],
+  "kind": "Farms & country"
  },
  {
   "name": "Corner Cottage",
@@ -159,7 +168,8 @@
    "/img/corner-cottage/turn-1.webp",
    "/img/corner-cottage/turn-2.webp",
    "/img/corner-cottage/turn-3.webp"
-  ]
+  ],
+  "kind": "Homes"
  },
  {
   "name": "The Red Barn",
@@ -173,7 +183,8 @@
    "/img/the-red-barn/turn-1.webp",
    "/img/the-red-barn/turn-2.webp",
    "/img/the-red-barn/turn-3.webp"
-  ]
+  ],
+  "kind": "Farms & country"
  },
  {
   "name": "The Red Gables",
@@ -187,7 +198,8 @@
    "/img/the-red-gables/turn-1.webp",
    "/img/the-red-gables/turn-2.webp",
    "/img/the-red-gables/turn-3.webp"
-  ]
+  ],
+  "kind": "Homes"
  },
  {
   "name": "The Stone Farmhouse",
@@ -201,7 +213,8 @@
    "/img/the-stone-farmhouse/turn-1.webp",
    "/img/the-stone-farmhouse/turn-2.webp",
    "/img/the-stone-farmhouse/turn-3.webp"
-  ]
+  ],
+  "kind": "Farms & country"
  },
  {
   "name": "Rose Island Light",
@@ -215,6 +228,22 @@
    "/img/rose-island-light/turn-1.webp",
    "/img/rose-island-light/turn-2.webp",
    "/img/rose-island-light/turn-3.webp"
-  ]
+  ],
+  "kind": "Lighthouses"
+ },
+ {
+  "name": "Block Island Southeast Light",
+  "slug": "block-island-southeast-light",
+  "summary": "Block Island Southeast Light in real LEGO parts: the Victorian light station on Mohegan Bluffs. The keeper's house of orange-red brick on a granite foundation, its very steep front gable edged in tan stone, white sash windows under curved stone hoods, tall corbelled chimneys, the kitchen wing, and a white entry porch hung with bunting; joined to it, the eight-sided brick tower with its black iron gallery, the lantern and its lens under a domed cap. A lawn with flowering shrubs, the path to the porch steps and the sea behind. Inside, an evening in the 1880s: the parlour with its fire and organ, the dining room laid for supper, the kitchen range, bedrooms and an attic under the steep roof, the keeper writing up the log, and a spiral stair up the tower to the watch room and the lens.",
+  "width": 64,
+  "depth": 46,
+  "courses": 50,
+  "shots": [
+   "/img/block-island-southeast-light/turn-0.webp",
+   "/img/block-island-southeast-light/turn-1.webp",
+   "/img/block-island-southeast-light/turn-2.webp",
+   "/img/block-island-southeast-light/turn-3.webp"
+  ],
+  "kind": "Lighthouses"
  }
 ]

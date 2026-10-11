@@ -236,6 +236,12 @@ section + section { border-top: 1px solid var(--line); }
   border-radius: 10px; background: var(--paper); display: block;
 }
 
+/* The gallery's buttons that sort the sets by kind; the one showing is
+   green, and each says how many sets it holds. */
+.kinds { display: flex; flex-wrap: wrap; gap: 8px; margin: 30px 0 0; }
+.kinds + #samples { margin-top: 18px !important; }
+.kinds .count { font-weight: 400; opacity: .7; }
+
 /* A whole card is a link to the design; underlining the title as well just
    makes the card look like a list of links. */
 figure.card a { text-decoration: none; }

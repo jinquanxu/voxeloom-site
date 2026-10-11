@@ -24,10 +24,13 @@
   var calm = window.matchMedia
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // The gallery page sorts its cards by the kind of place, in this order.
+  var KINDS = ["Homes", "Lighthouses", "Landmarks", "Farms & country"];
+
   fetch('/data/samples.json').then(function (r) { return r.json(); }).then(function (all) {
     var shown = featured ? all.slice(0, 3) : all;
     target.innerHTML = shown.map(function (s, i) {
-      return '<figure class="card" style="margin:0">'
+      return '<figure class="card" data-kind="' + key(s.kind || '') + '" style="margin:0">'
         + '<a href="/gallery/' + s.slug + '/">'
         + '<img class="shot" loading="' + (i < 2 && !featured ? 'eager' : 'lazy') + '"'
         + ' data-slug="' + s.slug + '" data-turn="0" src="' + s.shots[0] + '"'
@@ -52,6 +55,8 @@
         img.src = s.shots[turn];
       });
     });
+
+    if (!featured) sorter(all);
 
     var turners = calm || !featured ? [] : shown.filter(function (s) {
       return AUTOTURN.indexOf(s.slug) >= 0
@@ -102,6 +107,51 @@
           ? '<strong>' + esc(x.size) + '</strong>'
           : '<a href="/gallery/' + x.slug + '/">' + esc(x.size) + '</a>';
       }).join(' · ') + '</p>';
+  }
+
+  // A row of buttons over the gallery's cards: All, and each kind of place
+  // with how many there are. The address keeps the choice (#lighthouses), so
+  // it can be sent to someone and survives going back.
+  function sorter(all) {
+    var kinds = KINDS.filter(function (k) { return all.some(function (s) { return s.kind === k; }); });
+    if (kinds.length < 2) return;
+    var choices = [['', 'All', all.length]].concat(kinds.map(function (k) {
+      return [key(k), k, all.filter(function (s) { return s.kind === k; }).length];
+    }));
+    var bar = document.createElement('div');
+    bar.className = 'kinds';
+    bar.setAttribute('role', 'group');
+    bar.setAttribute('aria-label', 'Show sets');
+    bar.innerHTML = choices.map(function (c) {
+      return '<button type="button" class="btn small" data-kind="' + c[0] + '">'
+        + esc(c[1]) + ' <span class="count">' + c[2] + '</span></button>';
+    }).join('');
+    target.parentNode.insertBefore(bar, target);
+
+    function show(k) {
+      if (!choices.some(function (c) { return c[0] === k; })) k = '';
+      bar.querySelectorAll('button').forEach(function (b) {
+        var on = b.dataset.kind === k;
+        b.classList.toggle('primary', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      target.querySelectorAll('figure.card').forEach(function (f) {
+        f.style.display = k && f.dataset.kind !== k ? 'none' : '';
+      });
+    }
+
+    bar.addEventListener('click', function (e) {
+      var b = e.target.closest('button');
+      if (!b) return;
+      show(b.dataset.kind);
+      history.replaceState(null, '', b.dataset.kind ? '#' + b.dataset.kind : location.pathname + location.search);
+    });
+    window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
+    show(location.hash.slice(1));
+  }
+
+  function key(kind) {
+    return kind.toLowerCase().replace(/&/g, 'and').replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
   }
 
   function whenNear(node, go) {
