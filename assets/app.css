@@ -242,6 +242,25 @@ section + section { border-top: 1px solid var(--line); }
 .kinds + #samples { margin-top: 18px !important; }
 .kinds .count { font-weight: 400; opacity: .7; }
 
+/* Turning a gallery card, right under its picture: an arrow either side and
+   a dot for each side of the model, the one showing filled in green. The
+   dots are small, but each is a finger-sized button. */
+.turner { display: flex; align-items: center; justify-content: center; gap: 2px; margin: 10px 0 0; }
+.turner button { border: 0; background: none; padding: 0; cursor: pointer; color: var(--ink); }
+.turner .arrow {
+  width: 36px; height: 36px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--card); display: inline-flex; align-items: center; justify-content: center;
+  margin: 0 8px;
+}
+.turner .arrow:hover { border-color: var(--muted); }
+.turner .dot { width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; }
+.turner .dot::before {
+  content: ""; width: 10px; height: 10px; border-radius: 50%;
+  background: var(--line); box-shadow: inset 0 0 0 1px var(--muted);
+}
+.turner .dot[aria-current="true"]::before { background: var(--accent); box-shadow: none; }
+.turner button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 999px; }
+
 /* A whole card is a link to the design; underlining the title as well just
    makes the card look like a list of links. */
 figure.card a { text-decoration: none; }

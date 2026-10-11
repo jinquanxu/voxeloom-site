@@ -35,6 +35,7 @@
         + '<img class="shot" loading="' + (i < 2 && !featured ? 'eager' : 'lazy') + '"'
         + ' data-slug="' + s.slug + '" data-turn="0" src="' + s.shots[0] + '"'
         + ' alt="A brick model: ' + esc(s.summary.slice(0, 120)) + '"></a>'
+        + turner(s)
         + '<figcaption>'
         + '<h3 style="margin:16px 0 4px"><a href="/gallery/' + s.slug + '/">' + esc(s.name) + '</a></h3>'
         + sizes(s)
@@ -42,17 +43,37 @@
         + '<p class="small muted">' + s.width + ' × ' + s.depth + ' studs · ' + s.courses + ' courses</p>'
         + '<div class="actions" style="margin-top:14px">'
         + '<a class="btn small primary" href="/gallery/' + s.slug + '/">Open it</a>'
-        + '<button class="btn small turn" type="button">Turn it around</button>'
         + '</div></figcaption></figure>';
     }).join('');
 
-    target.querySelectorAll('.turn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        var img = button.closest('figure').querySelector('img');
-        var s = shown.filter(function (x) { return x.slug === img.dataset.slug; })[0];
-        var turn = (Number(img.dataset.turn) + 1) % s.shots.length;
-        img.dataset.turn = String(turn);
-        img.src = s.shots[turn];
+    // Turning a card: the arrows step round it, a dot goes straight to that
+    // side, and the dot for the side showing is filled. They sit right under
+    // the picture, so the picture turning is always in sight of the hand
+    // turning it. The other sides are fetched the first time a hand comes
+    // near, so the first turn does not wait.
+    target.querySelectorAll('.turner').forEach(function (bar) {
+      var img = bar.closest('figure').querySelector('img');
+      var s = shown.filter(function (x) { return x.slug === img.dataset.slug; })[0];
+      var fetched = false;
+      function ready() {
+        if (fetched) return;
+        fetched = true;
+        preload(s.shots, function () {});
+      }
+      bar.addEventListener('pointerenter', ready);
+      bar.addEventListener('focusin', ready);
+      bar.addEventListener('click', function (e) {
+        var b = e.target.closest('button');
+        if (!b) return;
+        var n = s.shots.length;
+        var at = b.dataset.at !== undefined ? Number(b.dataset.at)
+          : (Number(img.dataset.turn) + Number(b.dataset.step) + n) % n;
+        img.dataset.turn = String(at);
+        img.src = s.shots[at];
+        bar.querySelectorAll('.dot').forEach(function (d, k) {
+          if (k === at) d.setAttribute('aria-current', 'true');
+          else d.removeAttribute('aria-current');
+        });
       });
     });
 
@@ -64,10 +85,10 @@
     });
 
     turners.forEach(function (s) {
-      var button = target
+      var bar = target
         .querySelector('img[data-slug="' + s.slug + '"]')
-        .closest('figure').querySelector('.turn');
-      if (button) button.parentNode.removeChild(button);
+        .closest('figure').querySelector('.turner');
+      if (bar) bar.parentNode.removeChild(bar);
     });
 
     // Every angle of every card is fetched before any of them turns. Waiting
@@ -107,6 +128,25 @@
           ? '<strong>' + esc(x.size) + '</strong>'
           : '<a href="/gallery/' + x.slug + '/">' + esc(x.size) + '</a>';
       }).join(' · ') + '</p>';
+  }
+
+  // The sides of a model, in the order its pictures are drawn.
+  var SIDES = ['Front', 'Right side', 'Back', 'Left side'];
+  var LEFT = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" '
+    + 'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var RIGHT = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" '
+    + 'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  function turner(s) {
+    if (!s.shots || s.shots.length < 2) return '';
+    return '<div class="turner" role="group" aria-label="Turn ' + esc(s.name) + ' around">'
+      + '<button class="arrow" type="button" data-step="-1" aria-label="Previous side">' + LEFT + '</button>'
+      + s.shots.map(function (_, k) {
+        return '<button class="dot" type="button" data-at="' + k + '" aria-label="'
+          + (SIDES[k] || 'Side ' + (k + 1)) + '"' + (k === 0 ? ' aria-current="true"' : '') + '></button>';
+      }).join('')
+      + '<button class="arrow" type="button" data-step="1" aria-label="Next side">' + RIGHT + '</button>'
+      + '</div>';
   }
 
   // A row of buttons over the gallery's cards: All, and each kind of place
