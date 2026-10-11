@@ -260,5 +260,20 @@
    "/img/conimicut-light/turn-3.webp"
   ],
   "kind": "Lighthouses"
+ },
+ {
+  "name": "Briarstone Hall",
+  "slug": "briarstone-hall",
+  "summary": "Briarstone Hall in real LEGO parts: a Gothic Revival house of tan stone, its steep gables edged in grey under slate roofs with iron cresting along the top, white quoins and arched windows in pairs, a long arched verandah to the left, a carriage arch to the right, ivy on the corner and a pale boulder on the lawn. Behind it, a summer afternoon about 1890: tea on the terrace, a rose arbour, a lily pond with its footbridge, a tree swing, a game of croquet, the glasshouse and the vegetable beds. Inside, the verandah as a garden room among palms, the drawing room with its piano, the library, the dining room laid for dinner and the kitchen; upstairs the nursery and the schoolroom; and under the great gable, an artist's studio.",
+  "width": 80,
+  "depth": 72,
+  "courses": 32,
+  "shots": [
+   "/img/briarstone-hall/turn-0.webp",
+   "/img/briarstone-hall/turn-1.webp",
+   "/img/briarstone-hall/turn-2.webp",
+   "/img/briarstone-hall/turn-3.webp"
+  ],
+  "kind": "Homes"
  }
 ]
