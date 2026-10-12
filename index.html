@@ -25,7 +25,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=652c01a221">
+<link rel="stylesheet" href="/assets/app.css?v=0e3a40df08">
 </head>
 <body>
 
@@ -147,11 +147,14 @@
                alt="The Brick Colonial being built a course at a time: a baseplate with the floor plan on it, then furnished rooms, then the upper floor, then the roof.">
         </picture>
         <!-- Anything that moves by itself can be stopped: the button puts the
-             still back, and plays the animation again. -->
-        <button type="button" class="hero-pause" id="heroPause" aria-pressed="false" hidden>
+             still back, and plays the animation again. Its icon says which;
+             the label and the tooltip say it in words. -->
+        <button type="button" class="hero-pause" id="heroPause" aria-pressed="false"
+                aria-label="Pause the animation" title="Pause" hidden>
           <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path class="pause" d="M5 3.5v9M11 3.5v9"/><path class="play" d="M5 3.2v9.6L12.6 8z"/></svg>
-          <span>Pause</span>
         </button>
+        <!-- Beside it, the way to see one's own place like this one. -->
+        <a class="hero-try" href="https://studio.voxeloom.com/studio">See your place as a LEGO® set</a>
         <script>
           addEventListener('load', function () {
             if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -163,7 +166,7 @@
                 source.srcset = on ? source.dataset.animated : source.dataset.still;
               });
               button.setAttribute('aria-pressed', String(!on));
-              button.querySelector('span').textContent = on ? 'Pause' : 'Play';
+              button.title = on ? 'Pause' : 'Play';
             }
             var button = document.getElementById('heroPause');
             button.addEventListener('click', function () {
@@ -174,7 +177,7 @@
           });
         </script>
       </div>
-      <p class="journey-note" id="journey-note">Pixel, Voxel, Heirloom: illustrations of design processes. Click one to zoom in.</p>
+      <p class="journey-note" id="journey-note">Pixel, Voxel, Heirloom: illustrations of design processes.</p>
     </div>
   </div>
 </section>
