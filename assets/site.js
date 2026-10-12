@@ -25,11 +25,11 @@
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // The gallery page sorts its cards by the kind of place, in this order.
-  var KINDS = ["Homes", "Lighthouses", "Churches", "Landmarks", "Farms & country"];
+  var KINDS = ["Homes", "Lighthouses", "Churches", "Landmarks", "Farms & country", "Fa\u00e7ades"];
 
   fetch('/data/samples.json').then(function (r) { return r.json(); }).then(function (all) {
     var shown = featured ? all.slice(0, 3) : all;
-    target.innerHTML = shown.map(function (s, i) {
+    var cards = shown.map(function (s, i) {
       return '<figure class="card" data-kind="' + key(s.kind || '') + '" style="margin:0">'
         + '<a href="/gallery/' + s.slug + '/">'
         + '<img class="shot" loading="' + (i < 2 && !featured ? 'eager' : 'lazy') + '"'
@@ -45,7 +45,21 @@
         + '<div class="actions">'
         + '<a class="btn small primary" href="/gallery/' + s.slug + '/">Open it</a>'
         + '</div></figcaption></figure>';
-    }).join('');
+    });
+
+    // The gallery keeps a place's versions together -- Carrie Tower big and
+    // small, The Towers whole and its façade -- in a pair that takes a row
+    // of its own on a computer, so they are always seen side by side. The
+    // homepage's three cards stay as they are.
+    var html = '';
+    for (var i = 0; i < shown.length; i++) {
+      var group = featured ? 0 : together(shown, i);
+      html += group > 1
+        ? '<div class="pair">' + cards.slice(i, i + group).join('') + '</div>'
+        : cards[i];
+      i += Math.max(group, 1) - 1;
+    }
+    target.innerHTML = html;
 
     // Each card's summary is held to five lines, so the cards line up and
     // "Open it" sits at the same height on every one. Where the summary runs
@@ -134,7 +148,7 @@
   function sizes(s) {
     if (!s.sizes) return '';
     var count = ['', '', 'Two', 'Three'][s.sizes.length] || String(s.sizes.length);
-    return '<p class="small"><span class="badge gold">' + count + ' sizes</span> '
+    return '<p class="small"><span class="badge gold">' + count + ' ' + (s.choice || 'sizes') + '</span> '
       + s.sizes.map(function (x) {
         return x.slug === s.slug
           ? '<strong>' + esc(x.size) + '</strong>'
@@ -187,6 +201,17 @@
     });
   }
 
+  // How many sets from the i-th on are versions of the same place, listed
+  // one after another: 1 for a set that comes in one version only.
+  function together(list, i) {
+    var s = list[i];
+    if (!s.sizes) return 1;
+    var mine = s.sizes.map(function (x) { return x.slug; });
+    var n = 1;
+    while (i + n < list.length && mine.indexOf(list[i + n].slug) >= 0) n++;
+    return n;
+  }
+
   // The sides of a model, in the order its pictures are drawn.
   var SIDES = ['Front', 'Right side', 'Back', 'Left side'];
   var LEFT = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" '
@@ -235,6 +260,12 @@
       target.querySelectorAll('figure.card').forEach(function (f) {
         f.style.display = k && f.dataset.kind !== k ? 'none' : '';
       });
+      // A pair with only one of its sets showing lets it take its place in
+      // the grid like any other card.
+      target.querySelectorAll('.pair').forEach(function (p) {
+        var showing = [].filter.call(p.children, function (f) { return f.style.display !== 'none'; });
+        p.classList.toggle('split', showing.length < 2);
+      });
       trim();
     }
 
@@ -248,8 +279,10 @@
     show(location.hash.slice(1));
   }
 
+  // "Farms & country" is #farms-and-country, and "Façades" #facades.
   function key(kind) {
-    return kind.toLowerCase().replace(/&/g, 'and').replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+    return kind.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/&/g, 'and').replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
   }
 
   function whenNear(node, go) {

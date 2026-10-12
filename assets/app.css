@@ -269,7 +269,15 @@ figure.card h3 a:hover { text-decoration: underline; }
 /* The gallery's cards all one height, row after row, with "Open it" at the
    foot of each. The size goes on the name's row while there is room beside
    it, and under the name when there is not. */
-#samples { grid-auto-rows: 1fr; }
+#samples { grid-auto-rows: 1fr; grid-auto-flow: row dense; }
+/* A place's versions side by side -- big and small, or whole and façade.
+   On a computer the pair takes a row of its own and holds its two cards in
+   the grid's two columns; a single card further on fills any gap it leaves.
+   On a phone, or when a kind button shows only one of the two, the cards
+   simply take their places like the rest. */
+.pair { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.pair.split { display: contents; }
+@media (max-width: 860px) { .pair { display: contents; } }
 #samples figure.card { display: flex; flex-direction: column; }
 #samples figcaption { flex: 1; display: flex; flex-direction: column; }
 #samples .actions { margin-top: auto; padding-top: 16px; }

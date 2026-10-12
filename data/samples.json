@@ -42,7 +42,46 @@
    "/img/the-towers/turn-2.webp",
    "/img/the-towers/turn-3.webp"
   ],
+  "size": "Full model",
+  "sizes": [
+   {
+    "slug": "the-towers",
+    "size": "Full model"
+   },
+   {
+    "slug": "the-towers-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
   "kind": "Landmarks"
+ },
+ {
+  "name": "The Towers (Fa\u00e7ade)",
+  "slug": "the-towers-facade",
+  "summary": "The Towers (Fa\u00e7ade) in real LEGO parts: the street front of the Narragansett Towers on a shallow base, at the full model's scale with the rooms behind left out. Two round granite towers under slate cones; between them the arch that carries Ocean Road, a car in its passage and another coming out; over it the great room's ribbon of sage windows under a steep dormered roof, the open belfry with its gold bell, and the chimney; beside them the stone wing with its green door. In front, the road and its crossing, a granite wall with a hedge of hydrangeas, two lamp posts and a tree. The back is a plain granite wall, so it sits neatly on a shelf or against a wall.",
+  "width": 86,
+  "depth": 23,
+  "courses": 31,
+  "shots": [
+   "/img/the-towers-facade/turn-0.webp",
+   "/img/the-towers-facade/turn-1.webp",
+   "/img/the-towers-facade/turn-2.webp",
+   "/img/the-towers-facade/turn-3.webp"
+  ],
+  "size": "Fa\u00e7ade",
+  "sizes": [
+   {
+    "slug": "the-towers",
+    "size": "Full model"
+   },
+   {
+    "slug": "the-towers-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
+  "kind": "Fa\u00e7ades"
  },
  {
   "name": "Warwick Neck Light",
