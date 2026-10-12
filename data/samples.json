@@ -178,7 +178,46 @@
    "/img/the-brick-colonial/turn-2.webp",
    "/img/the-brick-colonial/turn-3.webp"
   ],
+  "size": "Full model",
+  "sizes": [
+   {
+    "slug": "the-brick-colonial",
+    "size": "Full model"
+   },
+   {
+    "slug": "the-brick-colonial-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
   "kind": "Homes"
+ },
+ {
+  "name": "The Brick Colonial (Fa\u00e7ade)",
+  "slug": "the-brick-colonial-facade",
+  "summary": "The Brick Colonial (Fa\u00e7ade) in real LEGO parts: the front of the brick colonial on a shallow base, at the full model's scale with the rooms behind left out. Warm taupe brick with cream sills, lintels and cornice under a grey hip roof; the entry stands forward under its pediment, the black door with its wreath under a fanlight in a cream arch between two lanterns, the arched window over it; the bay under its own little roof, white double-hung windows in pairs, and the lower wing with its dormer. In front, a lawn mown in stripes, the walk with its lamp post and mailbox, beds of boxwood, hydrangeas and arborvitae, two small round trees and a shade tree at the corner. The back is a plain wall, so it sits neatly on a shelf or against a wall.",
+  "width": 72,
+  "depth": 23,
+  "courses": 25,
+  "shots": [
+   "/img/the-brick-colonial-facade/turn-0.webp",
+   "/img/the-brick-colonial-facade/turn-1.webp",
+   "/img/the-brick-colonial-facade/turn-2.webp",
+   "/img/the-brick-colonial-facade/turn-3.webp"
+  ],
+  "size": "Fa\u00e7ade",
+  "sizes": [
+   {
+    "slug": "the-brick-colonial",
+    "size": "Full model"
+   },
+   {
+    "slug": "the-brick-colonial-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
+  "kind": "Fa\u00e7ades"
  },
  {
   "name": "The Old Workings",
