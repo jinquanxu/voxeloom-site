@@ -25,7 +25,7 @@
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // The gallery page sorts its cards by the kind of place, in this order.
-  var KINDS = ["Homes", "Lighthouses", "Landmarks", "Farms & country"];
+  var KINDS = ["Homes", "Lighthouses", "Churches", "Landmarks", "Farms & country"];
 
   fetch('/data/samples.json').then(function (r) { return r.json(); }).then(function (all) {
     var shown = featured ? all.slice(0, 3) : all;
@@ -37,14 +37,26 @@
         + ' alt="A brick model: ' + esc(s.summary.slice(0, 120)) + '"></a>'
         + turner(s)
         + '<figcaption>'
-        + '<h3 style="margin:16px 0 4px"><a href="/gallery/' + s.slug + '/">' + esc(s.name) + '</a></h3>'
+        + '<div class="card-head"><h3><a href="/gallery/' + s.slug + '/">' + esc(s.name) + '</a></h3>'
+        + '<span class="size muted">' + s.width + ' × ' + s.depth + ' studs · ' + s.courses + ' courses</span></div>'
         + sizes(s)
-        + '<p class="small muted">' + esc(s.summary) + '</p>'
-        + '<p class="small muted">' + s.width + ' × ' + s.depth + ' studs · ' + s.courses + ' courses</p>'
-        + '<div class="actions" style="margin-top:14px">'
+        + '<div class="blurb small muted"><p>' + esc(s.summary) + '</p>'
+        + '<button class="more" type="button" aria-expanded="false">more …</button></div>'
+        + '<div class="actions">'
         + '<a class="btn small primary" href="/gallery/' + s.slug + '/">Open it</a>'
         + '</div></figcaption></figure>';
     }).join('');
+
+    // Each card's summary is held to five lines, so the cards line up and
+    // "Open it" sits at the same height on every one. Where the summary runs
+    // longer it ends in "more …", and the rest opens over the card while the
+    // pointer rests there -- or on a tap, on a phone, or Enter, from the
+    // keyboard. The whole summary is in the page all along, for a screen
+    // reader and for search.
+    target.querySelectorAll('.blurb').forEach(blurb);
+    trim();
+    if (document.fonts) document.fonts.ready.then(trim);
+    window.addEventListener('resize', trim);
 
     // Turning a card: the arrows step round it, a dot goes straight to that
     // side, and the dot for the side showing is filled. They sit right under
@@ -130,6 +142,51 @@
       }).join(' · ') + '</p>';
   }
 
+  // "more …" shows only on a summary the five lines cut short. A card the
+  // kind buttons have hidden has no size to measure, so it is measured again
+  // when it is shown.
+  function trim() {
+    target.querySelectorAll('.blurb').forEach(function (box) {
+      var p = box.querySelector('p');
+      if (!p.clientHeight || box.classList.contains('open')) return;
+      box.classList.toggle('cut', p.scrollHeight > p.clientHeight + 1);
+    });
+  }
+
+  function blurb(box) {
+    var more = box.querySelector('.more');
+    var resting = false;              // the mouse is on it, and opened it
+    function set(open) {
+      box.classList.toggle('open', open);
+      more.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    more.addEventListener('pointerenter', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      resting = true;
+      set(true);
+    });
+    box.addEventListener('pointerleave', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      resting = false;
+      set(false);
+    });
+    // A tap or Enter opens and closes it; a click while the mouse rests on
+    // it leaves it open rather than shutting what the hover just opened.
+    more.addEventListener('click', function () {
+      if (!resting) set(!box.classList.contains('open'));
+    });
+    document.addEventListener('click', function (e) {
+      if (resting || !box.classList.contains('open')) return;
+      if (e.target !== more) set(false);
+    });
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && box.classList.contains('open')) { set(false); more.focus(); }
+    });
+    box.addEventListener('focusout', function (e) {
+      if (!resting && !box.contains(e.relatedTarget)) set(false);
+    });
+  }
+
   // The sides of a model, in the order its pictures are drawn.
   var SIDES = ['Front', 'Right side', 'Back', 'Left side'];
   var LEFT = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" '
@@ -178,6 +235,7 @@
       target.querySelectorAll('figure.card').forEach(function (f) {
         f.style.display = k && f.dataset.kind !== k ? 'none' : '';
       });
+      trim();
     }
 
     bar.addEventListener('click', function (e) {

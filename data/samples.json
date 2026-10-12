@@ -275,5 +275,50 @@
    "/img/briarstone-hall/turn-3.webp"
   ],
   "kind": "Homes"
+ },
+ {
+  "name": "Cathedral of Saints Peter and Paul",
+  "slug": "cathedral-of-saints-peter-and-paul",
+  "summary": "The Cathedral of Saints Peter and Paul in real LEGO parts: the brownstone cathedral in Providence, here in a warm reddish-brown with Tan string courses and trim under dark slate roofs. Two square towers stand either side of the front, crenellated, with gold clock dials on every face and tall louvred belfries; between them the rose window under its gable and gold cross, the triple doorway under its dark canopy, and wide steps with black rails down to the plaza. Down the side, buttressed walls with two tiers of windows and the transept with its own rose and cross; bare winter trees, flowering shrubs and an iron fence round it. Inside, a wedding: the bride on her father's arm halfway up the red carpet, the groom waiting at the sanctuary step, guests in the pews between green columns, the organ and choir in the gallery, Bishop Hendricken's tomb in the transept, and the bells and clock works up in the towers.",
+  "width": 70,
+  "depth": 96,
+  "courses": 53,
+  "shots": [
+   "/img/cathedral-of-saints-peter-and-paul/turn-0.webp",
+   "/img/cathedral-of-saints-peter-and-paul/turn-1.webp",
+   "/img/cathedral-of-saints-peter-and-paul/turn-2.webp",
+   "/img/cathedral-of-saints-peter-and-paul/turn-3.webp"
+  ],
+  "kind": "Churches"
+ },
+ {
+  "name": "Historic St. Luke\u2019s Church",
+  "slug": "st-lukes-east-greenwich",
+  "summary": "Historic St. Luke\u2019s Church in real LEGO parts: the stone Episcopal church in East Greenwich, Rhode Island, in grey masonry with Tan dressings under steep slate roofs. At the corner the square tower rises to its louvred belfry and a tall slate spire with small gabled lights; beside it the round baptistery under its own low roof, and behind them the long nave, with a lower aisle under a lean-to roof and its buttresses down the side. A path turns the corner of the lawn between low stone walls, lamp posts and tall bare trees in early bud. Inside, a christening: the rector at the stone font with the baby, the parents and godparents, parishioners in the oak pews, choristers in the chancel, the brass eagle lectern, the altar with its candles, the organist at the organ and a ringer at the bell rope in the tower.",
+  "width": 48,
+  "depth": 72,
+  "courses": 49,
+  "shots": [
+   "/img/st-lukes-east-greenwich/turn-0.webp",
+   "/img/st-lukes-east-greenwich/turn-1.webp",
+   "/img/st-lukes-east-greenwich/turn-2.webp",
+   "/img/st-lukes-east-greenwich/turn-3.webp"
+  ],
+  "kind": "Churches"
+ },
+ {
+  "name": "Trinity Church, Newport",
+  "slug": "trinity-church-newport",
+  "summary": "Trinity Church, Newport in real LEGO parts: the white wooden church of 1726, two tiers of tall round-headed windows down its long side under a grey roof, on a granite base. Its steeple rises in tiers: the clock tower with its black octagonal dial, a balustrade with slender pinnacles, the arched belfry and the lantern with their urns, and the slim white spire with gold balls and a gilded vane at the top. Round it, a brick-edged path, a hedge, the pine in its planter, old headstones and two tall bare trees. Inside, a Sunday service: white box pews, the three-decker wineglass pulpit in the middle aisle with the rector at the top, galleries on three sides with the organ and choir over the entrance, brass chandeliers, and the bell and clock works up in the tower.",
+  "width": 88,
+  "depth": 56,
+  "courses": 70,
+  "shots": [
+   "/img/trinity-church-newport/turn-0.webp",
+   "/img/trinity-church-newport/turn-1.webp",
+   "/img/trinity-church-newport/turn-2.webp",
+   "/img/trinity-church-newport/turn-3.webp"
+  ],
+  "kind": "Churches"
  }
 ]

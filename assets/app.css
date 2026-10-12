@@ -266,6 +266,43 @@ section + section { border-top: 1px solid var(--line); }
 figure.card a { text-decoration: none; }
 figure.card h3 a:hover { text-decoration: underline; }
 
+/* The gallery's cards all one height, row after row, with "Open it" at the
+   foot of each. The size goes on the name's row while there is room beside
+   it, and under the name when there is not. */
+#samples { grid-auto-rows: 1fr; }
+#samples figure.card { display: flex; flex-direction: column; }
+#samples figcaption { flex: 1; display: flex; flex-direction: column; }
+#samples .actions { margin-top: auto; padding-top: 16px; }
+.card-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 14px; row-gap: 2px;
+  margin: 16px 0 8px;
+}
+.card-head h3 { margin: 0; flex: 1 1 10em; min-width: 0; }
+.card-head .size { flex: none; white-space: nowrap; font-size: 14px; }
+
+/* Each summary held to five lines. Where it runs on, "more …" ends the
+   fifth, and the whole of it opens over the card, above what is below. */
+.blurb { position: relative; height: calc(5 * 1.6em); line-height: 1.6; }
+.blurb p {
+  margin: 0; overflow: hidden;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5;
+}
+.blurb .more {
+  display: none; position: absolute; right: 0; bottom: 0;
+  border: 0; padding: 0 0 0 2.4em; margin: 0; cursor: pointer;
+  font: inherit; font-weight: 600; line-height: 1.6; color: var(--accent);
+  background: linear-gradient(to right, transparent, var(--card) 2em);
+}
+.blurb.cut .more { display: block; }
+.blurb .more:hover { text-decoration: underline; }
+.blurb .more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.blurb.open p {
+  position: absolute; z-index: 5; top: -11px; left: -13px; right: -13px;
+  display: block; -webkit-line-clamp: none; line-clamp: none; overflow: visible;
+  padding: 10px 12px; background: var(--card); color: var(--ink);
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow);
+}
+
 .badge {
   display: inline-block; padding: 3px 10px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent);
