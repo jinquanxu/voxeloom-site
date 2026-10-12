@@ -391,31 +391,48 @@ figure.card h3 a:hover { text-decoration: underline; }
   margin: 10px 0 0; text-align: center;
   font-size: 14px; color: var(--muted);
 }
-/* The headline and the eyebrow over it are each two phrases, and a line
-   should never break inside one: "memories live, pixel / to voxel to
-   heirloom" splits the chain it is about, "LEGO brick / keepsakes" the thing we
-   make. Each phrase moves to the next line whole, and wraps within itself
-   only when the screen is too narrow to hold it. "One-of-a-kind" never
-   splits at a hyphen. */
-.hero h1, .hero .eyebrow { text-wrap: balance; }
+/* The headline, the motto under it and the eyebrow over it are each made
+   of phrases, and a line should never break inside one: "memories live,
+   pixel / to voxel to heirloom" splits the chain it is about, "LEGO brick /
+   keepsakes" the thing we make. Each phrase moves to the next line whole,
+   and wraps within itself only when the screen is too narrow to hold it.
+   "One-of-a-kind" never splits at a hyphen. */
+.hero h1, .hero .eyebrow, .hero .motto { text-wrap: balance; }
 .hero .unit { display: inline-block; }
 .nowrap { white-space: nowrap; }
-@media (min-width: 861px) {
-  /* Beside the picture the column is about 510px, and the longer phrase
-     needs 12 times the type size -- so 42px is the most that keeps it to
-     one line. */
-  .hero h1 { font-size: clamp(34px, 3.3vw, 42px); }
+/* The headline says what we do in three phrases, one to a line. Beside the
+   picture the column is about 510px and the longest phrase needs 15.4 times
+   the type size, so 31px keeps each to one line with room to spare. */
+.hero h1 { font-size: clamp(26px, 2.35vw, 31px); line-height: 1.2; margin-bottom: 14px; }
+/* The owner's motto under it, in the wordmark's green and gold: smaller,
+   in italic, so the eye reads what we do first and the name's story next.
+   Its two phrases need 21.5 times the type size, so 23px keeps it to one
+   line beside the picture. */
+.hero .motto {
+  font: italic 600 clamp(19px, 1.7vw, 23px)/1.25 var(--serif); color: var(--ink);
+  margin: 0 0 18px;
 }
+.hero-studio { margin: 14px 0 0; }
 @media (max-width: 860px) {
-  /* On a phone the column is the screen less 40px of gutter, and the usual
-     34px floor is too big for either phrase -- "pixel to voxel to heirloom"
-     split in two on every iPhone. Here the type is sized to the screen, so
-     each phrase keeps to one line: about 27px at 375px wide, 31px at 430. */
-  .hero h1 {
-    font-size: min(clamp(34px, 5vw, 54px), max(22px, calc((100vw - 40px) / 12.3)));
-  }
+  /* On a phone the column is the screen less 40px of gutter, and both are
+     sized to it: the headline's phrases one to a line (about 21px at 375px
+     wide, 25px at 430), the motto a little smaller, a phrase to a line. */
+  .hero h1 { font-size: max(20px, calc((100vw - 40px) / 15.6)); }
+  .hero .motto { font-size: max(17px, calc((100vw - 40px) / 18.5)); }
 }
 .hero .grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 44px; }
+@media (max-width: 860px) {
+  /* On a phone the picture comes straight after the headline and motto --
+     photograph, voxels, the set -- then the buttons, and the poem after
+     them, so the first screen shows what we make and the next how to ask. */
+  .hero .grid { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .hero .grid > div { display: contents; }
+  .hero .showcase, .hero .journey-note { order: 1; }
+  .hero .actions, .hero .hero-studio, .hero .assurances { order: 2; }
+  .hero .lead { order: 3; margin: 28px 0 0; }
+  .hero .journey-note { margin-bottom: 4px; }
+  .hero .actions { margin-top: 18px; }
+}
 .hero picture { display: block; }
 .hero img {
   width: 100%; height: auto; max-height: 460px; object-fit: contain;
