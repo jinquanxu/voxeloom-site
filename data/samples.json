@@ -406,7 +406,46 @@
    "/img/cathedral-of-saints-peter-and-paul/turn-2.webp",
    "/img/cathedral-of-saints-peter-and-paul/turn-3.webp"
   ],
+  "size": "Full model",
+  "sizes": [
+   {
+    "slug": "cathedral-of-saints-peter-and-paul",
+    "size": "Full model"
+   },
+   {
+    "slug": "cathedral-of-saints-peter-and-paul-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
   "kind": "Churches"
+ },
+ {
+  "name": "Cathedral of Saints Peter and Paul (Fa\u00e7ade)",
+  "slug": "cathedral-of-saints-peter-and-paul-facade",
+  "summary": "The Cathedral of Saints Peter and Paul (Fa\u00e7ade) in real LEGO parts: the west front of the Providence cathedral on a shallow base, at the full model's scale with the nave and transept behind left out. Two square crenellated towers at their full height, in warm reddish-brown with Tan string courses, gold clock dials and tall louvred belfries; between them the rose window in its Tan ring with a roundel either side, the row of five round-headed windows and the gable with its gold cross; at the foot the triple doorway under its dark canopy and the wide steps with black rails down to the plaza, with people on them, flowering shrubs and two bare winter trees. The back is a plain wall, so it sits neatly on a shelf or against a wall.",
+  "width": 60,
+  "depth": 28,
+  "courses": 53,
+  "shots": [
+   "/img/cathedral-of-saints-peter-and-paul-facade/turn-0.webp",
+   "/img/cathedral-of-saints-peter-and-paul-facade/turn-1.webp",
+   "/img/cathedral-of-saints-peter-and-paul-facade/turn-2.webp",
+   "/img/cathedral-of-saints-peter-and-paul-facade/turn-3.webp"
+  ],
+  "size": "Fa\u00e7ade",
+  "sizes": [
+   {
+    "slug": "cathedral-of-saints-peter-and-paul",
+    "size": "Full model"
+   },
+   {
+    "slug": "cathedral-of-saints-peter-and-paul-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
+  "kind": "Fa\u00e7ades"
  },
  {
   "name": "Historic St. Luke\u2019s Church",
