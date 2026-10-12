@@ -262,7 +262,46 @@
    "/img/the-red-barn/turn-2.webp",
    "/img/the-red-barn/turn-3.webp"
   ],
+  "size": "Full model",
+  "sizes": [
+   {
+    "slug": "the-red-barn",
+    "size": "Full model"
+   },
+   {
+    "slug": "the-red-barn-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
   "kind": "Farms & country"
+ },
+ {
+  "name": "The Red Barn (Fa\u00e7ade)",
+  "slug": "the-red-barn-facade",
+  "summary": "The Red Barn (Fa\u00e7ade) in real LEGO parts: the gable end of the red gambrel barn on a shallow base, at the full model's scale with the stalls and hayloft behind left out. Barn-red board siding with white corner boards on a concrete foundation, under the white roof, steep below and gentler above; the hay hood over the white-framed hayloft door, the cupola on the ridge, and the wide doorway between two barn lights and two white windows. The workshop wing on the left, the hen house under the eave on the right. In front, the board fence, a track through a meadow of wild flowers, milk cans, three hens and a shade tree. The back is a plain wall, so it sits neatly on a shelf or against a wall.",
+  "width": 68,
+  "depth": 23,
+  "courses": 45,
+  "shots": [
+   "/img/the-red-barn-facade/turn-0.webp",
+   "/img/the-red-barn-facade/turn-1.webp",
+   "/img/the-red-barn-facade/turn-2.webp",
+   "/img/the-red-barn-facade/turn-3.webp"
+  ],
+  "size": "Fa\u00e7ade",
+  "sizes": [
+   {
+    "slug": "the-red-barn",
+    "size": "Full model"
+   },
+   {
+    "slug": "the-red-barn-facade",
+    "size": "Fa\u00e7ade"
+   }
+  ],
+  "choice": "versions",
+  "kind": "Fa\u00e7ades"
  },
  {
   "name": "The Red Gables",
