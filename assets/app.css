@@ -1031,12 +1031,15 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .about-story, .about-expect { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
 .about-story .muted p:first-child { margin-top: 0; }
 .about-roles .card { border-top: 4px solid var(--gold); }
-/* Each of the family in a square cut from their cartoon, over their name. */
+/* Each of the family in a square cut from their cartoon, their name beside
+   it on the same row. The square gives way first where a card is narrow. */
+.about-roles .who { display: flex; align-items: center; gap: 14px; margin: 0 0 12px; }
+.about-roles .who h3 { margin: 0; flex: none; }
 .about-roles .portrait {
-  display: block; width: 100%; max-width: 240px; height: auto; aspect-ratio: 1;
-  border-radius: 12px; margin: 0 0 14px; background: var(--paper);
+  display: block; flex: 0 1 130px; min-width: 0; height: auto; aspect-ratio: 1;
+  border-radius: 12px; background: var(--paper);
 }
-@media (max-width: 860px) { .about-roles .portrait { max-width: 180px; } }
+@media (max-width: 860px) { .about-roles .portrait { flex-basis: 120px; } }
 .about-roles .role {
   margin: 2px 0 10px; font: 600 12px/1.4 var(--sans); letter-spacing: .08em;
   text-transform: uppercase; color: var(--accent);
