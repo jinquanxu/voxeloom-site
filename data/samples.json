@@ -476,5 +476,20 @@
    "/img/trinity-church-newport/turn-3.webp"
   ],
   "kind": "Churches"
+ },
+ {
+  "name": "The Lantern Church",
+  "slug": "the-lantern-church",
+  "summary": "The Lantern Church in real LEGO parts: a modern church of warm tan stucco, its entrance a tall glass prow over a deep canopy on round columns, three faces of green glass braced in grey rising into a steep glazed gable crowned with a slim white cross. Two-storey wings either side under flat roofs with grey copings, an arched green window in each and glass storefronts below. Around it, a tan entrance court with grey walks, beds of red, yellow and white flowers, and leafy trees at both front corners. Inside, a Sunday morning: a greeter in the bright atrium under a lantern hung from the ridge; the sanctuary three steps up, with a tall white cross in the wall, the communion table, pulpit and font, a grand piano and rows of chairs under hanging lamps; the fellowship hall over coffee, and upstairs a Sunday-school class and the church office.",
+  "width": 68,
+  "depth": 56,
+  "courses": 36,
+  "shots": [
+   "/img/the-lantern-church/turn-0.webp",
+   "/img/the-lantern-church/turn-1.webp",
+   "/img/the-lantern-church/turn-2.webp",
+   "/img/the-lantern-church/turn-3.webp"
+  ],
+  "kind": "Churches"
  }
 ]
