@@ -1048,8 +1048,11 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
   margin: 16px 0 0; padding: 12px 14px; border-radius: 10px;
   background: var(--gold-soft); color: var(--ink); border-left: 4px solid var(--gold);
 }
-.workshop-order { margin: 12px 0 14px; padding-left: 22px; }
-.workshop-order li { margin-bottom: 8px; }
+/* Order, sort, build in the same type as Yours to keep beside it: the
+   checklist's size and ink, with green numbers where it has green ticks. */
+.workshop-order { margin: 14px 0 14px; padding-left: 26px; }
+.workshop-order li { margin-bottom: 8px; font-size: 15px; line-height: 1.45; color: var(--ink); }
+.workshop-order li::marker { color: var(--accent); font-weight: 700; }
 .workshop-host { display: flex; align-items: center; gap: 30px; }
 .workshop-host img {
   flex: none; width: 300px; height: auto; border-radius: 14px;
