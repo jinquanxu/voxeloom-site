@@ -394,6 +394,21 @@
   "kind": "Homes"
  },
  {
+  "name": "The Windmill at Hammersmith Farm",
+  "slug": "hammersmith-farm",
+  "summary": "The Windmill at Hammersmith Farm in real LEGO parts: a guest house in Newport, Rhode Island, built to look like a windmill without its sails. An eight-sided tower of grey shingle with a flared skirt at the second floor, a white balustraded balcony round the windowed room at the top, and a dark bell-shaped cap with its chimney; beside it a square three-storey block with a roof terrace, and a low wing. In front, a dry-stone wall with a bed of yellow flowers, a path across the lawn and big leafy trees. Inside, a summer afternoon: a sitting room with a boy and his toy boat, a bedroom with a girl reading by the window, a study with a telescope trained on the bay, people with binoculars in the room at the top and out on the balcony, deck chairs on the roof terrace, and the cook in the kitchen.",
+  "width": 72,
+  "depth": 52,
+  "courses": 41,
+  "shots": [
+   "/img/hammersmith-farm/turn-0.webp",
+   "/img/hammersmith-farm/turn-1.webp",
+   "/img/hammersmith-farm/turn-2.webp",
+   "/img/hammersmith-farm/turn-3.webp"
+  ],
+  "kind": "Homes"
+ },
+ {
   "name": "Cathedral of Saints Peter and Paul",
   "slug": "cathedral-of-saints-peter-and-paul",
   "summary": "The Cathedral of Saints Peter and Paul in real LEGO parts: the brownstone cathedral in Providence, here in a warm reddish-brown with Tan string courses and trim under dark slate roofs. Two square towers stand either side of the front, crenellated, with gold clock dials on every face and tall louvred belfries; between them the rose window under its gable and gold cross, the triple doorway under its dark canopy, and wide steps with black rails down to the plaza. Down the side, buttressed walls with two tiers of windows and the transept with its own rose and cross; bare winter trees, flowering shrubs and an iron fence round it. Inside, a wedding: the bride on her father's arm halfway up the red carpet, the groom waiting at the sanctuary step, guests in the pews between green columns, the organ and choir in the gallery, Bishop Hendricken's tomb in the transept, and the bells and clock works up in the towers.",
