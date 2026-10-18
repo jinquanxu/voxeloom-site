@@ -1043,6 +1043,13 @@ fieldset { border: 0; padding: 0; margin: 0 0 16px; }
 .workshop-price { border-top: 4px solid var(--gold); }
 .workshop-amount { font: 600 44px/1 var(--serif); color: var(--accent); margin: 4px 0 14px; }
 .workshop-price .actions { margin-top: 18px; }
+/* What the $499 does not buy, in a box of its own under the price. */
+.workshop-not {
+  margin: 16px 0 0; padding: 12px 14px; border-radius: 10px;
+  background: var(--gold-soft); color: var(--ink); border-left: 4px solid var(--gold);
+}
+.workshop-order { margin: 12px 0 14px; padding-left: 22px; }
+.workshop-order li { margin-bottom: 8px; }
 .workshop-host { display: flex; align-items: center; gap: 30px; }
 .workshop-host img {
   flex: none; width: 300px; height: auto; border-radius: 14px;
