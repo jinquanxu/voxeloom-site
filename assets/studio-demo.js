@@ -26,7 +26,7 @@ const STAGES = [
 ];
 
 const CAPTIONS = {
-  pixel: '<strong class="vox">Pixel.</strong> The photographs, read as colour and shape, in the colours of the bricks.',
+  pixel: '<strong class="vox">Pixel.</strong> The photographs, read as color and shape, in the colors of the bricks.',
   voxel: '<strong class="vox">Voxel.</strong> The design as a grid of cubes, each a stud wide and a brick high. Drag to turn it.',
   heirloom: '<strong class="loom">Heirloom.</strong> Every cube made from real LEGO pieces. Turn it, light it, peel it open.',
 };
