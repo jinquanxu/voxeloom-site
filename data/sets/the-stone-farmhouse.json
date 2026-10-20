@@ -1,0 +1,1813 @@
+{
+ "slug": "the-stone-farmhouse",
+ "name": "The Stone Farmhouse",
+ "kind": "Farms & country",
+ "summary": "A two-story stone farmhouse in real LEGO parts: warm tan masonry with white quoins, sills and a stone arch, under low terracotta tile roofs with a tall chimney and black gutters. Dark brown shutters stand open at the upstairs windows, a vine in white flower climbs beside the arched glass doors, and lanterns light the lower wing that steps forward on the right. On the left a vine-covered pergola shades the supper table; in front, a gravel courtyard, a lawn with stepping stones, an olive tree, cypresses and a bed of lavender behind a low stone wall with its lamps. Inside, the kitchen with its range and island, the living room with a lit fireplace and the long table laid for supper, a wine store with barrels and a potting room; upstairs, the main bedroom, a bathroom and the children's room.",
+ "width": 80,
+ "depth": 58,
+ "courses": 28,
+ "shots": {
+  "turn": [
+   "/img/the-stone-farmhouse/turn-0.webp",
+   "/img/the-stone-farmhouse/turn-1.webp",
+   "/img/the-stone-farmhouse/turn-2.webp",
+   "/img/the-stone-farmhouse/turn-3.webp"
+  ],
+  "night": "/img/the-stone-farmhouse/night.webp",
+  "peel": [
+   "/img/the-stone-farmhouse/peel-9.webp",
+   "/img/the-stone-farmhouse/peel-17.webp"
+  ]
+ },
+ "peelCourses": [
+  9,
+  17,
+  28
+ ],
+ "facts": [
+  [
+   "Size",
+   "80 \u00d7 58 studs \u00b7 25.2 \u00d7 18.3 in (64 \u00d7 46 cm)"
+  ],
+  [
+   "Height",
+   "28 courses \u00b7 about 10 in (26 cm)"
+  ],
+  [
+   "Pieces",
+   "5,292"
+  ],
+  [
+   "Different pieces",
+   "292"
+  ],
+  [
+   "Estimate",
+   "About $1,550"
+  ],
+  [
+   "Built from",
+   "Real LEGO parts, every one on Pick a Brick (checked 13 September 2026)"
+  ]
+ ],
+ "parts": [
+  {
+   "count": 594,
+   "piece": "Slope Brick Curved 2x1",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 315,
+   "piece": "Plate 1x1 Round with 3 Leaves",
+   "color": "Dark Green",
+   "swatch": "#00451a"
+  },
+  {
+   "count": 285,
+   "piece": "Brick 1x4 with Embossed Bricks",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 236,
+   "piece": "Brick 1x8",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 226,
+   "piece": "Brick 1x2 with Embossed Bricks",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 181,
+   "piece": "Plate 1x1 Round with 3 Leaves",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 170,
+   "piece": "Brick 1x1",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 157,
+   "piece": "Brick 1x1",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 151,
+   "piece": "Brick 2x4",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 151,
+   "piece": "Brick 1x1",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 149,
+   "piece": "Plant Leaves 4x3",
+   "color": "Dark Green",
+   "swatch": "#00451a"
+  },
+  {
+   "count": 132,
+   "piece": "Brick 1x6",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 109,
+   "piece": "Plant Leaves 4x3",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 103,
+   "piece": "Brick 1x2",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 98,
+   "piece": "Plate 1x1 Round with 3 Leaves",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 76,
+   "piece": "Plant Leaves 4x3",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 65,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Dark Green",
+   "swatch": "#00451a"
+  },
+  {
+   "count": 64,
+   "piece": "Brick 1x6",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 63,
+   "piece": "Plate 1x1",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 60,
+   "piece": "Plate 1x1 with 5 Petals",
+   "color": "Medium Lavender",
+   "swatch": "#a06eb9"
+  },
+  {
+   "count": 55,
+   "piece": "Brick 1x4",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 53,
+   "piece": "Plant Leaves 4x3",
+   "color": "Olive Green",
+   "swatch": "#77774e"
+  },
+  {
+   "count": 53,
+   "piece": "Plate 1x1 Round with 3 Leaves",
+   "color": "Olive Green",
+   "swatch": "#77774e"
+  },
+  {
+   "count": 46,
+   "piece": "Brick 1x2",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 44,
+   "piece": "Brick 1x8",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 40,
+   "piece": "Plate 1x1 with 5 Petals",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 37,
+   "piece": "Tile 1x8",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 36,
+   "piece": "Plate 1x2",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 36,
+   "piece": "Slope Brick 45 2x2 Double",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 35,
+   "piece": "Plate 1x1 with 5 Petals",
+   "color": "Yellow",
+   "swatch": "#fac80a"
+  },
+  {
+   "count": 34,
+   "piece": "Plate 1x1 Round",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 32,
+   "piece": "Brick 2x2",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 30,
+   "piece": "Brick 2x4",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 30,
+   "piece": "Window 1x2x3 without Sill",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 30,
+   "piece": "Glass for Window 1x2x3",
+   "color": "Trans-Clear",
+   "swatch": "#fcfcfc"
+  },
+  {
+   "count": 29,
+   "piece": "Plate 1x1 Round with 3 Leaves",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 29,
+   "piece": "Plate 1x4",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 26,
+   "piece": "Brick 1x4 with Embossed Bricks",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 25,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 24,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 23,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 22,
+   "piece": "Brick 1x4",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 22,
+   "piece": "Brick 1x4",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 22,
+   "piece": "Plate 1x1",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 22,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Olive Green",
+   "swatch": "#77774e"
+  },
+  {
+   "count": 21,
+   "piece": "Plate 1x2",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 21,
+   "piece": "Plate 1x4",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 21,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Dark Green",
+   "swatch": "#00451a"
+  },
+  {
+   "count": 20,
+   "piece": "Plant Leaves 6x5",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 20,
+   "piece": "Brick 2x3",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 20,
+   "piece": "Plate 1x1 Round",
+   "color": "Pearl Gold",
+   "swatch": "#aa7f2e"
+  },
+  {
+   "count": 19,
+   "piece": "Plate 1x2",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 19,
+   "piece": "Plate 4x4 Round with Hole and Snapstud",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 19,
+   "piece": "Brick 1x2 with Embossed Bricks",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 17,
+   "piece": "Plate 1x1",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 17,
+   "piece": "Brick 1x3",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 16,
+   "piece": "Brick 1x1x3",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 16,
+   "piece": "Plate 1x1",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 15,
+   "piece": "Plate 16x16 with Underside Ribs",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 14,
+   "piece": "Plate 1x6",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 13,
+   "piece": "Brick 1x1",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 13,
+   "piece": "Plate 2x2",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 12,
+   "piece": "Brick 2x2 Round with Pin Holes",
+   "color": "Nougat",
+   "swatch": "#bb805a"
+  },
+  {
+   "count": 12,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 12,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 12,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 11,
+   "piece": "Tile 1x1 with Groove",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 11,
+   "piece": "Tile 1x1 Round with Groove",
+   "color": "Pearl Gold",
+   "swatch": "#aa7f2e"
+  },
+  {
+   "count": 11,
+   "piece": "Plate 1x1 Round",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 11,
+   "piece": "Plate 16x16 with Underside Ribs",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 10,
+   "piece": "Brick 1x2 Log",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 10,
+   "piece": "Plate 1x2",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 10,
+   "piece": "Plate 4x10",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 10,
+   "piece": "Plate 1x3",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 10,
+   "piece": "Plate 1x12",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 10,
+   "piece": "Plate 1x1 Round",
+   "color": "Yellow",
+   "swatch": "#fac80a"
+  },
+  {
+   "count": 10,
+   "piece": "Plate 1x1 Round",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 10,
+   "piece": "Tile 2x4",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 9,
+   "piece": "Tile 1x1 with Groove",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 9,
+   "piece": "Plate 1x8",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 9,
+   "piece": "Plate 1x3",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 9,
+   "piece": "Tile 2x4",
+   "color": "Light Bluish Gray",
+   "swatch": "#969696"
+  },
+  {
+   "count": 8,
+   "piece": "Brick 1x1",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 8,
+   "piece": "Plate 1x1",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 8,
+   "piece": "Plate 1x4",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 8,
+   "piece": "Plate 1x4",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 7,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 7,
+   "piece": "Brick 1x2",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 7,
+   "piece": "Brick 1x1",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 7,
+   "piece": "Plate 2x4",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 7,
+   "piece": "Plate 1x2",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 6,
+   "piece": "Tile 2x2 Round with Round Underside Stud",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 6,
+   "piece": "Brick 2x4",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 6,
+   "piece": "Brick 1x8",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 6,
+   "piece": "Brick 1x4",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 2x3",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 6,
+   "piece": "Tile 2x2 with Groove",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 6,
+   "piece": "Tile 1x1 with Groove",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 6x14",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 1x3",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 1x6",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 1x4",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 2x6",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 1x10",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 6,
+   "piece": "Plate 1x12",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 5,
+   "piece": "Plant Leaves 6x5",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 5,
+   "piece": "Plate 1x1 with 5 Petals",
+   "color": "Bright Pink",
+   "swatch": "#ff9ecd"
+  },
+  {
+   "count": 5,
+   "piece": "Brick 2x2",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 5,
+   "piece": "Brick 1x1",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 5,
+   "piece": "Plate 2x4",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 5,
+   "piece": "Plate 1x2",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 5,
+   "piece": "Plate 1x1",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 5,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Trans-Clear",
+   "swatch": "#fcfcfc"
+  },
+  {
+   "count": 5,
+   "piece": "Tile 1x2 with Groove",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 5,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 5,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 5,
+   "piece": "Brick 1x3",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 5,
+   "piece": "Plate 2x16",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 5,
+   "piece": "Cone 1x1 with Stop",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 5,
+   "piece": "Plate 8x16",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 4,
+   "piece": "Plant Leaves 6x5",
+   "color": "Dark Green",
+   "swatch": "#00451a"
+  },
+  {
+   "count": 4,
+   "piece": "Plate 2x12",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 1x1x5 with Hollow Stud",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 2x4",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 2x4",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 2x2",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 1x2",
+   "color": "Trans-Clear",
+   "swatch": "#fcfcfc"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 1x2",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 4,
+   "piece": "Plate 2x4",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 4,
+   "piece": "Plate 1x1",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 4,
+   "piece": "Plate 4x8",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 4,
+   "piece": "Tile 1x1 with Groove",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 1x3",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 1x3",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 4,
+   "piece": "Tile 1x8",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 4,
+   "piece": "Plate 2x16",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 4,
+   "piece": "Plate 1x10",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 4,
+   "piece": "Tile 1x6",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 4,
+   "piece": "Tile 2x4",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 4,
+   "piece": "Brick 1x1 with Stud on 1 Side",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x4 with Groove",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 3,
+   "piece": "Brick 1x1",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 3,
+   "piece": "Brick 1x6",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 2x3",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 2x2",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 6x12",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 4x12",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 4x12",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 2x8",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 4x8",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 3,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 3,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Dark Bluish Gray",
+   "swatch": "#646464"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x1 with Groove",
+   "color": "Medium Azure",
+   "swatch": "#68c3e2"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 1x8",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x1 Round with Groove",
+   "color": "Light Bluish Gray",
+   "swatch": "#969696"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x1 Round with Groove",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 1x3",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 1x3",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 1x6",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 1x12",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x3",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 3,
+   "piece": "Tile 1x6",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 8x8 Round with Hole and Snapstud",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 3,
+   "piece": "Plate 8x16",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Pearl Gold",
+   "swatch": "#aa7f2e"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Medium Azure",
+   "swatch": "#68c3e2"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x12",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 2x4",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x2",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x1",
+   "color": "Red",
+   "swatch": "#b40000"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x1",
+   "color": "Dark Blue",
+   "swatch": "#19325a"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x6",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x6",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x4",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x4",
+   "color": "Dark Bluish Gray",
+   "swatch": "#646464"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x3",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x2",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 6x16",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 6x16",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 6x12",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 4x4",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 4x4",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 4x6",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x8",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 4x8",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x4 with Studs on Side",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 2,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 2x2 with Groove",
+   "color": "Light Bluish Gray",
+   "swatch": "#969696"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 2x2 with Groove",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Bright Pink",
+   "swatch": "#ff9ecd"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x8",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x1 Round with Groove",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x6",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x6",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x4",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 2,
+   "piece": "Minifig Candle Flame",
+   "color": "Trans-Orange",
+   "swatch": "#999999"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x6",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x6",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x10",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 2x2 Round with Reduced Axlehole",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 4x4 Round with Hole and Snapstud",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x12",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 2,
+   "piece": "Window 1x2x2 without Sill",
+   "color": "Dark Brown",
+   "swatch": "#352100"
+  },
+  {
+   "count": 2,
+   "piece": "Glass for Window 1x2x2 without Sill",
+   "color": "Trans-Clear",
+   "swatch": "#fcfcfc"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x1 Round",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x1 Round",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x1 Round",
+   "color": "Dark Blue",
+   "swatch": "#19325a"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x1 Round",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 1x3",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 1x1 Round with Open Stud",
+   "color": "Red",
+   "swatch": "#b40000"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 2x4",
+   "color": "Medium Azure",
+   "swatch": "#68c3e2"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 2x4",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 2,
+   "piece": "Tile 2x4",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 2,
+   "piece": "Plate 8x16",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Arch 1x6x2 with Thin Top",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x2 Grille with Groove",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x4 with Groove",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x12",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 2x4",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x2",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x1",
+   "color": "Blue",
+   "swatch": "#1e5aa8"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x1",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x1",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x8",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x4",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x4",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x4",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x4",
+   "color": "Bright Green",
+   "swatch": "#58ab41"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x4",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x4",
+   "color": "Sand Green",
+   "swatch": "#708e7c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x3",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x2",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x2",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x2",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x1",
+   "color": "Black",
+   "swatch": "#1b2a34"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x1",
+   "color": "Red",
+   "swatch": "#b40000"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x12",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x12",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 4x12",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 4x4",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 4x4",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 4x4",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 4x6",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x10",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x10",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x8",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 2x8",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x8",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Blue",
+   "swatch": "#1e5aa8"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Red",
+   "swatch": "#b40000"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x1 Round with Hollow Stud",
+   "color": "Orange",
+   "swatch": "#d67923"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 2x2 with Groove",
+   "color": "Blue",
+   "swatch": "#1e5aa8"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 2x2 with Groove",
+   "color": "Bright Pink",
+   "swatch": "#ff9ecd"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Blue",
+   "swatch": "#1e5aa8"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Light Bluish Gray",
+   "swatch": "#969696"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x2 with Groove",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x1 with Groove",
+   "color": "Bright Pink",
+   "swatch": "#ff9ecd"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x1 with Groove",
+   "color": "Dark Bluish Gray",
+   "swatch": "#646464"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x14",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x8",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x8",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x1 Round with Groove",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x3",
+   "color": "Red",
+   "swatch": "#b40000"
+  },
+  {
+   "count": 1,
+   "piece": "Brick 1x3",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x6",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x4",
+   "color": "Medium Nougat",
+   "swatch": "#aa7d55"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 6x6",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Minifig Seat 2x2",
+   "color": "Yellow",
+   "swatch": "#fac80a"
+  },
+  {
+   "count": 1,
+   "piece": "Minifig Seat 2x2",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 8x8",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 8x8",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 1,
+   "piece": "Slope Brick 31 1x1x0.667",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Slope Brick 31 1x1x0.667",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Cone 1x1 with Stop",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x1 Round",
+   "color": "Orange",
+   "swatch": "#d67923"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 1x1 Round",
+   "color": "Dark Red",
+   "swatch": "#720012"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x3",
+   "color": "Blue",
+   "swatch": "#1e5aa8"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x3",
+   "color": "Tan",
+   "swatch": "#d7ba8c"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x3",
+   "color": "Dark Bluish Gray",
+   "swatch": "#646464"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x3",
+   "color": "Sand Blue",
+   "swatch": "#70819a"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 1x6",
+   "color": "Reddish Brown",
+   "swatch": "#5f3109"
+  },
+  {
+   "count": 1,
+   "piece": "Tile 2x4",
+   "color": "White",
+   "swatch": "#f4f4f4"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 16x16 with Underside Ribs",
+   "color": "Green",
+   "swatch": "#00852b"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 16x16 with Underside Ribs",
+   "color": "Dark Orange",
+   "swatch": "#91501c"
+  },
+  {
+   "count": 1,
+   "piece": "Plate 8x16",
+   "color": "Green",
+   "swatch": "#00852b"
+  }
+ ],
+ "notes": [
+  "A light kit is planned for this design when it is ordered.",
+  "The farmhouse is hollow, room by room on both floors, so there is room inside to run the wiring to the windows, the lanterns and the garden lamps.",
+  "A light kit is bought separately and never appears in the parts list. Press Lights on to see the model after dark."
+ ],
+ "ask": "https://studio.voxeloom.com/quote?subject=The%20Stone%20Farmhouse%2C%20as%20in%20your%20gallery&size=house"
+}

@@ -1,0 +1,269 @@
+{
+ "ideas": [
+  {
+   "id": "for-grandparents",
+   "group": "For family",
+   "title": "For parents and grandparents",
+   "line": "The house that holds the stories.",
+   "verse": [
+    "The front steps where everyone gathered.",
+    "The garden they tended, season after season.",
+    "The kitchen window, lit for you coming home."
+   ],
+   "paragraphs": [
+    "Give it back to them in bricks, for a milestone birthday, an anniversary, or the move to somewhere smaller.",
+    "And if they are settling into a new room, in assisted living or a care home, let a little of home go too: a familiar roofline on the windowsill, and a place to begin when you visit. Build it together, a few bags at a time, or let us build it for them."
+   ],
+   "think": "the family home, their childhood house, a favorite vacation cottage, the house they are moving out of.",
+   "image": "/assets/gifts/grandparents.webp",
+   "alt": "A granddaughter kneels by her grandmother's armchair and hands her a brick model of the family house."
+  },
+  {
+   "id": "for-grandchildren",
+   "group": "For family",
+   "title": "For children and grandchildren",
+   "line": "A piece of where they come from.",
+   "verse": [
+    "Grandma\u2019s house, a story in every window.",
+    "The farm where every summer began.",
+    "The home a grown child takes with them to college."
+   ],
+   "paragraphs": [
+    "For the youngest, make it a family project, and share as much of the building as suits them. For the eldest, it is a little piece of home to carry along."
+   ],
+   "think": "the house they came home to as a baby, Grandma\u2019s house, the family farm, the home they are leaving for college.",
+   "image": "/assets/gifts/grandchildren.webp",
+   "alt": "A grandfather and his young grandchild build a brick model of a house together at the kitchen table."
+  },
+  {
+   "id": "for-siblings",
+   "group": "For family",
+   "title": "For siblings and the whole family",
+   "line": "One place. A dozen versions of the story.",
+   "verse": [
+    "The kitchen everyone remembers differently.",
+    "The porch in every summer photograph.",
+    "The vacation house where the cousins grew up together."
+   ],
+   "paragraphs": [
+    "Give it together: for a reunion, a parent\u2019s birthday, or one last gathering before the house is sold. Choosing the details becomes part of the gift."
+   ],
+   "think": "the childhood home, a shared summer cottage, the family\u2019s first house in a new country.",
+   "image": "/assets/gifts/siblings.webp",
+   "alt": "Grown-up siblings and their parents laugh around a brick model of their childhood home."
+  },
+  {
+   "id": "for-new-baby",
+   "group": "For family",
+   "title": "For a new baby",
+   "line": "The home they will grow up in.",
+   "verse": [
+    "The door they were first carried through.",
+    "The room where the first steps happened.",
+    "The place the christening, or the naming, was held."
+   ],
+   "paragraphs": [
+    "A keepsake for the parents, for a birth or a first birthday. It is made of small pieces, so it waits on a high shelf until little hands are ready to help build it."
+   ],
+   "think": "the house they came home to, the grandparents\u2019 house, the church or chapel of a christening.",
+   "image": "/assets/gifts/new-baby.webp",
+   "alt": "In a sunlit nursery, new parents set a brick model of their house on a high shelf while one cradles their sleeping newborn."
+  },
+  {
+   "id": "for-partner",
+   "group": "For partners",
+   "title": "For your partner",
+   "line": "Somewhere only the two of you would choose.",
+   "verse": [
+    "The caf\u00e9 where an hour felt like a minute.",
+    "The first apartment, and its one good window.",
+    "The bench, the bridge, the place you said yes."
+   ],
+   "paragraphs": [
+    "For an anniversary, or an ordinary Tuesday worth celebrating: build it side by side, and tell the story one more time."
+   ],
+   "think": "where you met, your first shared home, where you got engaged, a honeymoon hotel.",
+   "image": "/assets/gifts/partner.webp",
+   "alt": "On a sofa, one partner surprises the other with a brick model of the seaside cafe where they met."
+  },
+  {
+   "id": "for-newlyweds",
+   "group": "For partners",
+   "title": "For newlyweds",
+   "line": "Where they said \u201cI do\u201d.",
+   "verse": [
+    "The church, the chapel, the barn, the ballroom \u2014",
+    "the one room that held everyone they love, at once."
+   ],
+   "paragraphs": [
+    "Give it as a wedding gift, or save it for the first anniversary, when the day has become their favorite story. And if you are the one just married, it is a lovely way to say it all again."
+   ],
+   "think": "the wedding venue, the church where their parents married too, the first home they share.",
+   "image": "/assets/gifts/newlyweds.webp",
+   "alt": "A bride and groom hold a brick model of a white chapel as petals fall around them and their guests."
+  },
+  {
+   "id": "for-homeowners",
+   "group": "For milestones",
+   "title": "For new homeowners",
+   "line": "The first key, kept for good.",
+   "verse": [
+    "A first house. A long-awaited move.",
+    "A place to put down roots, and paint the front door."
+   ],
+   "paragraphs": [
+    "Celebrate the housewarming, or the first anniversary of the keys, with the home itself in bricks."
+   ],
+   "think": "a first home, a forever home, the house they built or restored.",
+   "image": "/assets/gifts/homeowners.webp",
+   "alt": "A couple in the doorway of their first home hold up the key, beside a brick model of the same house."
+  },
+  {
+   "id": "for-graduates",
+   "group": "For milestones",
+   "title": "For graduates and lifelong friends",
+   "line": "The place that stands for the years.",
+   "verse": [
+    "The residence hall. The library at midnight.",
+    "A campus tower like Brown\u2019s Carrie Tower, keeping the hours."
+   ],
+   "paragraphs": [
+    "For a graduation or a reunion \u2014 or for an old friend, the school where you met, the apartment you once shared."
+   ],
+   "think": "a school, a university landmark, a first shared apartment, a favorite campus building.",
+   "image": "/assets/gifts/graduates.webp",
+   "alt": "Friends in graduation gowns gather around a brick model of a campus clock tower."
+  },
+  {
+   "id": "for-far-from-home",
+   "group": "For milestones",
+   "title": "For someone far from home",
+   "line": "Home, wherever life takes them.",
+   "verse": [
+    "Across the country, across an ocean,",
+    "for work, for love, for a posting far away \u2014",
+    "the smallest details of home grow larger."
+   ],
+   "paragraphs": [
+    "Give them a building they know by heart."
+   ],
+   "think": "a hometown library, a family house abroad, a cherished place of worship, the State House on its hill.",
+   "image": "/assets/gifts/far-from-home.webp",
+   "alt": "In a city apartment, a young person smiles at a brick model of the family farmhouse on the windowsill."
+  },
+  {
+   "id": "for-adventures",
+   "group": "For milestones",
+   "title": "For the people you share adventures with",
+   "line": "Keep a favorite escape close.",
+   "verse": [
+    "The cabin you return to every summer.",
+    "The lighthouse from that unforgettable trip \u2014 Beavertail, perhaps, in the wind.",
+    "The little hotel everyone still talks about."
+   ],
+   "paragraphs": [
+    "A reminder of time well spent, and a reason to plan the next one."
+   ],
+   "think": "a lakeside cottage, a mountain lodge, a beach house, a favorite landmark.",
+   "image": "/assets/gifts/adventures.webp",
+   "alt": "Two hikers admire a brick model of a lakeside cabin, with mountains behind them."
+  },
+  {
+   "id": "for-business",
+   "group": "For milestones",
+   "title": "For a business anniversary or grand opening",
+   "line": "The doors where it all began.",
+   "verse": [
+    "The first day the sign went up.",
+    "Ten years of regulars. Twenty-five of the family name over the door."
+   ],
+   "paragraphs": [
+    "From family and friends on opening day, or from staff, customers and neighbors when the anniversary comes round: the place itself, for the counter or the window, where everyone who comes in can see it."
+   ],
+   "think": "a first storefront, a family business, a new restaurant, a new office, a workshop or a farm stand.",
+   "image": "/assets/gifts/business.webp",
+   "alt": "On opening day, a shop owner cuts the ribbon as a friend holds out a brick model of the same corner shop, and neighbors cheer."
+  },
+  {
+   "id": "for-estate-agents",
+   "group": "To say thank you",
+   "title": "From real estate agents",
+   "line": "A closing gift they will keep.",
+   "verse": [
+    "For the buyers, the house they have just been handed the keys to.",
+    "For the sellers, the home they are saying goodbye to."
+   ],
+   "paragraphs": [
+    "Either way, it says you understood what the move meant.",
+    "Ordering for clients? See For business: 10% off from your third set in a year."
+   ],
+   "think": "a first home, a forever home, a family home passing to new owners.",
+   "image": "/assets/gifts/estate-agents.webp",
+   "alt": "On the front steps, an estate agent hands new owners a brick model of their house, tied with a bow."
+  },
+  {
+   "id": "for-builders",
+   "group": "To say thank you",
+   "title": "From builders and architects",
+   "line": "Hand over the keys, and the house in miniature.",
+   "verse": [
+    "The custom home. The careful restoration.",
+    "The building you drew from nothing."
+   ],
+   "paragraphs": [
+    "The thank-you a client keeps long after the paperwork is filed.",
+    "Ordering for clients? See For business: 10% off from your third set in a year."
+   ],
+   "think": "a custom home, a restored farmhouse, a new chapel or library.",
+   "image": "/assets/gifts/builders.webp",
+   "alt": "An architect and a builder present a brick model of a family's new house on their driveway."
+  },
+  {
+   "id": "for-retiring",
+   "group": "To say thank you",
+   "title": "For someone retiring or moving on",
+   "line": "Honor what they helped build.",
+   "verse": [
+    "The office they are leaving. The classroom where they taught.",
+    "The fire station they answered calls from.",
+    "The corner restaurant that became a neighborhood\u2019s kitchen."
+   ],
+   "paragraphs": [
+    "A gift from colleagues, customers or family, for the years someone gave to a place: on the last day before retiring, or when they move on to a new job or a new city."
+   ],
+   "think": "a long-time workplace, the office they are leaving, a school, a fire station, a family business.",
+   "image": "/assets/gifts/retiring.webp",
+   "alt": "Colleagues applaud as a colleague receives a brick model of the shop where they worked for years."
+  },
+  {
+   "id": "for-community",
+   "group": "To say thank you",
+   "title": "For churches, schools and clubs",
+   "line": "A building the whole community knows.",
+   "verse": [
+    "A centenary. A new building.",
+    "A farewell to an old one."
+   ],
+   "paragraphs": [
+    "A model can mark the day, thank someone who served for years, or be the prize everyone hopes to carry home from the fundraiser."
+   ],
+   "think": "a parish church, a school\u2019s oldest building, a clubhouse, a town library.",
+   "image": "/assets/gifts/community.webp",
+   "alt": "A community gathers in a village hall around a brick model of a white church with a steeple."
+  },
+  {
+   "id": "for-remembrance",
+   "group": "In remembrance",
+   "title": "A place that holds someone you love",
+   "line": "",
+   "verse": [
+    "Some places keep a person in them \u2014",
+    "a porch, a workshop, a kitchen table."
+   ],
+   "paragraphs": [],
+   "think": "a parent\u2019s home, a grandparent\u2019s workshop, a place where you spent time together.",
+   "image": "/assets/gifts/remembrance.webp",
+   "alt": "By a lamp-lit window at dusk, an older person holds a brick model of a small cottage, beside a framed photograph and a candle."
+  }
+ ]
+}

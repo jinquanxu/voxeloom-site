@@ -1,0 +1,39 @@
+{
+ "kinds": [
+  "Homes",
+  "Lighthouses",
+  "Churches",
+  "Landmarks",
+  "Farms & country",
+  "Fa\u00e7ades"
+ ],
+ "sets": [
+  "rhode-island-state-house",
+  "beavertail-light",
+  "the-towers",
+  "the-towers-facade",
+  "warwick-neck-light",
+  "carrie-tower",
+  "carrie-tower-small",
+  "the-stone-and-cedar-house",
+  "the-brick-colonial",
+  "the-brick-colonial-facade",
+  "the-old-workings",
+  "corner-cottage",
+  "the-red-barn",
+  "the-red-barn-facade",
+  "the-red-gables",
+  "the-stone-farmhouse",
+  "rose-island-light",
+  "block-island-southeast-light",
+  "conimicut-light",
+  "briarstone-hall",
+  "hammersmith-farm",
+  "cathedral-of-saints-peter-and-paul",
+  "cathedral-of-saints-peter-and-paul-facade",
+  "st-lukes-east-greenwich",
+  "trinity-church-newport",
+  "the-lantern-church"
+ ],
+ "checked": "13 September 2026"
+}
