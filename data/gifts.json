@@ -3,6 +3,7 @@
   {
    "id": "for-grandparents",
    "group": "For family",
+   "hue": "family",
    "title": "For parents and grandparents",
    "line": "The house that holds the stories.",
    "verse": [
@@ -21,6 +22,7 @@
   {
    "id": "for-grandchildren",
    "group": "For family",
+   "hue": "family",
    "title": "For children and grandchildren",
    "line": "A piece of where they come from.",
    "verse": [
@@ -38,6 +40,7 @@
   {
    "id": "for-siblings",
    "group": "For family",
+   "hue": "family",
    "title": "For siblings and the whole family",
    "line": "One place. A dozen versions of the story.",
    "verse": [
@@ -55,6 +58,7 @@
   {
    "id": "for-new-baby",
    "group": "For family",
+   "hue": "family",
    "title": "For a new baby",
    "line": "The home they will grow up in.",
    "verse": [
@@ -72,6 +76,7 @@
   {
    "id": "for-partner",
    "group": "For partners",
+   "hue": "partners",
    "title": "For your partner",
    "line": "Somewhere only the two of you would choose.",
    "verse": [
@@ -89,6 +94,7 @@
   {
    "id": "for-newlyweds",
    "group": "For partners",
+   "hue": "partners",
    "title": "For newlyweds",
    "line": "Where they said \u201cI do\u201d.",
    "verse": [
@@ -105,6 +111,7 @@
   {
    "id": "for-homeowners",
    "group": "For milestones",
+   "hue": "milestones",
    "title": "For new homeowners",
    "line": "The first key, kept for good.",
    "verse": [
@@ -121,6 +128,7 @@
   {
    "id": "for-graduates",
    "group": "For milestones",
+   "hue": "milestones",
    "title": "For graduates and lifelong friends",
    "line": "The place that stands for the years.",
    "verse": [
@@ -137,6 +145,7 @@
   {
    "id": "for-far-from-home",
    "group": "For milestones",
+   "hue": "milestones",
    "title": "For someone far from home",
    "line": "Home, wherever life takes them.",
    "verse": [
@@ -154,6 +163,7 @@
   {
    "id": "for-adventures",
    "group": "For milestones",
+   "hue": "milestones",
    "title": "For the people you share adventures with",
    "line": "Keep a favorite escape close.",
    "verse": [
@@ -171,6 +181,7 @@
   {
    "id": "for-business",
    "group": "For milestones",
+   "hue": "milestones",
    "title": "For a business anniversary or grand opening",
    "line": "The doors where it all began.",
    "verse": [
@@ -187,6 +198,7 @@
   {
    "id": "for-estate-agents",
    "group": "To say thank you",
+   "hue": "thanks",
    "title": "From real estate agents",
    "line": "A closing gift they will keep.",
    "verse": [
@@ -204,6 +216,7 @@
   {
    "id": "for-builders",
    "group": "To say thank you",
+   "hue": "thanks",
    "title": "From builders and architects",
    "line": "Hand over the keys, and the house in miniature.",
    "verse": [
@@ -221,6 +234,7 @@
   {
    "id": "for-retiring",
    "group": "To say thank you",
+   "hue": "thanks",
    "title": "For someone retiring or moving on",
    "line": "Honor what they helped build.",
    "verse": [
@@ -238,6 +252,7 @@
   {
    "id": "for-community",
    "group": "To say thank you",
+   "hue": "thanks",
    "title": "For churches, schools and clubs",
    "line": "A building the whole community knows.",
    "verse": [
@@ -254,6 +269,7 @@
   {
    "id": "for-remembrance",
    "group": "In remembrance",
+   "hue": "remembrance",
    "title": "A place that holds someone you love",
    "line": "",
    "verse": [
@@ -265,5 +281,259 @@
    "image": "/assets/gifts/remembrance.webp",
    "alt": "By a lamp-lit window at dusk, an older person holds a brick model of a small cottage, beside a framed photograph and a candle."
   }
- ]
+ ],
+ "groups": [
+  {
+   "key": "family",
+   "label": "Family"
+  },
+  {
+   "key": "partners",
+   "label": "Partners"
+  },
+  {
+   "key": "milestones",
+   "label": "Milestones"
+  },
+  {
+   "key": "thanks",
+   "label": "To say thank you"
+  },
+  {
+   "key": "remembrance",
+   "label": "In remembrance"
+  }
+ ],
+ "giving": {
+  "eyebrow": "Giving it",
+  "title": "Make the giving part of the memory",
+  "ways": [
+   {
+    "image": "/assets/gifts/giving-afternoon.webp",
+    "alt": "A woman and her elderly father build a brick model of the family home at the kitchen table, old photographs spread around them.",
+    "title": "Give an afternoon",
+    "text": "A numbered kit, the old photographs spread on the table, and time for the stories."
+   },
+   {
+    "image": "/assets/gifts/giving-shelf.webp",
+    "alt": "An older man lifts a finished brick model of a house from its gift box onto his bookshelf.",
+    "title": "Give a place on the shelf",
+    "text": "For someone who would rather look than build, we build it and box it, ready to stand."
+   },
+   {
+    "image": "/assets/gifts/giving-story.webp",
+    "alt": "Hands tuck an old photograph and a handwritten note into a gift box holding the brick model in a display case with a brass plaque.",
+    "title": "Give the story with it",
+    "text": "Tuck in an old photograph and a note on why this place. Ask us about a display case and a plaque."
+   },
+   {
+    "image": "/assets/gifts/giving-surprise.webp",
+    "alt": "A young woman smiles at a brick model of a house on her laptop, a finger to her lips, while her mother waters the plants nearby.",
+    "title": "Keep it a surprise",
+    "text": "Preview their place in the studio and keep the pictures to yourself; we reply only to you."
+   }
+  ]
+ },
+ "occasions": {
+  "eyebrow": "Occasions",
+  "title": "For the days that matter",
+  "days": [
+   {
+    "name": "Christmas",
+    "when": "Ask by 20 November",
+    "day": "christmas",
+    "hue": "christmas",
+    "to": "family",
+    "icon": [
+     "M12 3l-5 7h3l-4 6h12l-4-6h3z",
+     "M12 16v4"
+    ]
+   },
+   {
+    "name": "Valentine\u2019s Day",
+    "when": "14 February",
+    "day": "valentine",
+    "hue": "partners",
+    "to": "for-partner",
+    "icon": [
+     "M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"
+    ]
+   },
+   {
+    "name": "Mother\u2019s Day",
+    "when": "The second Sunday in May",
+    "day": "mother",
+    "hue": "family",
+    "to": "for-grandparents",
+    "icon": [
+     "M10 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+     "M9.6 4.6a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0",
+     "M13.8 7.6a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0",
+     "M12.2 12.4a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0",
+     "M7 12.4a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0",
+     "M5.4 7.6a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0",
+     "M12 14.8V21"
+    ]
+   },
+   {
+    "name": "Father\u2019s Day",
+    "when": "The third Sunday in June",
+    "day": "father",
+    "hue": "family",
+    "to": "for-grandparents",
+    "icon": [
+     "M10 3h4l-1 3 2.2 10L12 20l-3.2-4L11 6z"
+    ]
+   },
+   {
+    "name": "Grandparents Day",
+    "when": "The Sunday after Labor Day",
+    "day": "grandparents",
+    "hue": "family",
+    "to": "for-grandparents",
+    "icon": [
+     "M4 11l8-7 8 7",
+     "M6 10v10h12V10",
+     "M10 20v-5h4v5"
+    ]
+   },
+   {
+    "name": "Birthdays",
+    "when": "The big ones most of all",
+    "day": "",
+    "hue": "family",
+    "to": "family",
+    "icon": [
+     "M4 20h16v-7H4z",
+     "M4 16c2 1.5 4 1.5 5.3 0s4-1.5 5.4 0 4 1.5 5.3 0",
+     "M8 13v-3M12 13v-3M16 13v-3",
+     "M8 6.5v.5M12 6.5v.5M16 6.5v.5"
+    ]
+   },
+   {
+    "name": "Anniversaries",
+    "when": "Where it all began",
+    "day": "",
+    "hue": "partners",
+    "to": "for-partner",
+    "icon": [
+     "M6 3h5l-.6 5.5a1.9 1.9 0 0 1-3.8 0z",
+     "M8.5 10.3V18M6.5 18h4",
+     "M13 3h5l-.6 5.5a1.9 1.9 0 0 1-3.8 0z",
+     "M15.5 10.3V18M13.5 18h4"
+    ]
+   },
+   {
+    "name": "Weddings",
+    "when": "Where they said \u201cI do\u201d",
+    "day": "",
+    "hue": "partners",
+    "to": "for-newlyweds",
+    "icon": [
+     "M4 14.5a5 5 0 1 0 10 0a5 5 0 1 0 -10 0",
+     "M10 14.5a5 5 0 1 0 10 0a5 5 0 1 0 -10 0",
+     "M10.6 6l1.4-2.2L13.4 6 12 8z"
+    ]
+   },
+   {
+    "name": "Graduations",
+    "when": "May and June",
+    "day": "",
+    "hue": "milestones",
+    "to": "for-graduates",
+    "icon": [
+     "M2 9l10-5 10 5-10 5z",
+     "M6 11v5c3 2 9 2 12 0v-5",
+     "M22 9v6"
+    ]
+   },
+   {
+    "name": "Housewarmings",
+    "when": "The first key, kept for good",
+    "day": "",
+    "hue": "milestones",
+    "to": "for-homeowners",
+    "icon": [
+     "M4 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0",
+     "M12 12h9M18 12v3M21 12v2"
+    ]
+   },
+   {
+    "name": "Retirements and farewells",
+    "when": "Honor what they built",
+    "day": "",
+    "hue": "thanks",
+    "to": "for-retiring",
+    "icon": [
+     "M4 12a8 8 0 1 0 16 0a8 8 0 1 0 -16 0",
+     "M12 8v4l3 2"
+    ]
+   },
+   {
+    "name": "New babies",
+    "when": "And first birthdays",
+    "day": "",
+    "hue": "family",
+    "to": "for-new-baby",
+    "icon": [
+     "M4 12a8 8 0 0 0 16 0z",
+     "M12 12V4a8 8 0 0 1 8 8",
+     "M6.5 20.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0",
+     "M14.5 20.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0"
+    ]
+   },
+   {
+    "name": "Grand openings",
+    "when": "And business anniversaries",
+    "day": "",
+    "hue": "milestones",
+    "to": "for-business",
+    "icon": [
+     "M3 9l1.5-5h15L21 9",
+     "M3 9c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3",
+     "M5 12v8h14v-8",
+     "M10 20v-5h4v5"
+    ]
+   },
+   {
+    "name": "Reunions",
+    "when": "One place, many stories",
+    "day": "",
+    "hue": "family",
+    "to": "for-siblings",
+    "icon": [
+     "M5.5 8a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0",
+     "M13.5 8a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0",
+     "M3.5 19c0-3 2-5 4.5-5s4.5 2 4.5 5",
+     "M11.5 19c0-3 2-5 4.5-5s4.5 2 4.5 5"
+    ]
+   }
+  ]
+ },
+ "choosing": {
+  "eyebrow": "Choosing",
+  "title": "Not sure which place?",
+  "verse": [
+   "Where do their favorite stories happen?",
+   "Which place would they love to stand in again?",
+   "Which building would they know before you said its name?"
+  ],
+  "start": "Start there.",
+  "certificate": {
+   "title": "Or let them choose",
+   "text": "A gift certificate gives the design and leaves the place to them. Any amount from $400, where our options begin, paid by check; we mail a printed card or email it, as you prefer, and it never expires.",
+   "action": "Ask for a gift certificate",
+   "subject": "A gift certificate"
+  },
+  "ask": {
+   "title": "Tell us about your gift",
+   "text": "Who it is for, what makes the place special, and which details they would notice first. If there is a birthday, a wedding or another date in mind, say so, and we will tell you what is possible. A budget and the space it will stand in help too.",
+   "note": "First come, first served. Every set is designed and checked with care, so we take on only as many as we can do well. If your gift must arrive by a certain date, count on it once we have confirmed that date to you in writing.",
+   "action": "Tell us about your gift"
+  }
+ },
+ "closing": {
+  "title": "Give them a place they love, in LEGO\u00ae bricks.",
+  "lead": "Start with a photograph. We will help you see what it could become."
+ }
 }
