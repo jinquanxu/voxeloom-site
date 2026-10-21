@@ -1,0 +1,290 @@
+{
+ "home": {
+  "quicker": {
+   "eyebrow": "Why we are quicker",
+   "title": "A first look in a minute. A kit in weeks, not seasons.",
+   "intro": [
+    "A custom brick model usually takes months, because a designer is drawing it by hand and you wait in line behind everybody else. We took the drawing out of that line."
+   ],
+   "items": [
+    {
+     "title": "Your design within two working days",
+     "body": [
+      {
+       "label": "",
+       "text": "The studio shows you the set while you watch. Then one of our designers works out the real design with our own design tools, and sends it to you with a fixed price within two working days \u2014 not after months of drawing by hand.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "The instructions write themselves",
+     "body": [
+      {
+       "label": "",
+       "text": "Every step and every numbered bag comes out of the model itself \u2014 nineteen thousand bricks sorted into build order in seconds. Nobody draws a booklet by hand here.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Every piece is a piece LEGO sells",
+     "body": [
+      {
+       "label": "",
+       "text": "The design is checked against LEGO's own shop while it is being made, so ordering the bricks is one upload rather than a hunt through substitutes. Nothing gets designed that cannot be bought.",
+       "list": false
+      }
+     ]
+    }
+   ],
+   "note": {
+    "label": "Which leaves LEGO\u2019s delivery as the longest wait.",
+    "text": "Once you are happy with the design, the bricks are ordered from LEGO's Pick a Brick shop and their delivery is the long pole \u2014 usually a week or two. Large models take longer, because LEGO caps how many of one piece you may buy at a time and the order has to go in more than once."
+   },
+   "image": null
+  },
+  "faq": {
+   "eyebrow": "Questions",
+   "title": "Before you ask",
+   "intro": [],
+   "items": [
+    {
+     "title": "How long does it take?",
+     "body": [
+      {
+       "label": "",
+       "text": "Typically three to five weeks from the day you say yes:",
+       "list": false
+      },
+      {
+       "label": "A first look:",
+       "text": "about a minute in the studio.",
+       "list": true
+      },
+      {
+       "label": "Your design and price:",
+       "text": "within two working days of asking.",
+       "list": true
+      },
+      {
+       "label": "Changes:",
+       "text": "as many as you like, at your pace.",
+       "list": true
+      },
+      {
+       "label": "Payment:",
+       "text": "by check, which usually clears in three to five working days.",
+       "list": true
+      },
+      {
+       "label": "The bricks:",
+       "text": "ordered from LEGO\u2019s Pick a Brick shop once it clears; LEGO usually delivers in one to two weeks. A very large model takes longer, because LEGO limits how many of one piece you may buy at once.",
+       "list": true
+      },
+      {
+       "label": "Sorting, bagging and packing:",
+       "text": "two to three days.",
+       "list": true
+      },
+      {
+       "label": "Shipping:",
+       "text": "two to five days in the US, longer to Canada.",
+       "list": true
+      },
+      {
+       "label": "",
+       "text": "We take on only as many as we can do well, first come, first served. If your gift must arrive by a date, tell us when you ask, and count on that date once we have confirmed it to you in writing. For Christmas, ask by 20 November.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "What do you need from me?",
+     "body": [
+      {
+       "label": "",
+       "text": "At least one photograph if you can, and up to ten: the front straight on, each side, the back, and a bird\u2019s-eye view from above \u2014 the only way to get a roof right. If you have none to hand, the address is enough and we will look up the map views ourselves.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "How do I reach you?",
+     "body": [
+      {
+       "label": "",
+       "text": "On the Talk to us page, send photographs and a few words, ask us to call you back, or leave your email and we will write to you. Or write to orders@voxeloom.com. Our Customer Care team reads every message and replies within two working days.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Do you keep my photographs?",
+     "body": [
+      {
+       "label": "",
+       "text": "The photographs you send us are kept only while your request is open, so your designer can see them: they are deleted when it is closed or declined, or once it has gone 60 days without a reply. The studio sends its photograph to our AI providers to render your pictures and does not store it; the pictures it makes are kept for 14 days, or longer if you share them, sign in or ask us for a quote. The privacy page has the details.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Why Voxeloom?",
+     "body": [
+      {
+       "label": "",
+       "text": "A voxel is a pixel with depth \u2014 the grid of colored cells every model begins as, before a single brick is chosen. The loom is from heirloom: a thing made well enough to be handed down. A house makes the whole journey here: photographs on Monday, a grid on a screen that afternoon, a box of numbered bags a few weeks later.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Are these real LEGO bricks?",
+     "body": [
+      {
+       "label": "",
+       "text": "Yes. Every part is ordered from LEGO's own Pick a Brick shop, so your model is built from genuine LEGO\u00ae bricks and can be repaired with them years from now. We are an independent workshop, not part of the LEGO Group.",
+       "list": false
+      }
+     ]
+    }
+   ],
+   "note": null,
+   "image": null
+  }
+ },
+ "workshop": {
+  "who": {
+   "eyebrow": "Who it is for",
+   "title": "For anyone who wants to make it personal",
+   "intro": [],
+   "items": [
+    {
+     "title": "A gift, designed by you",
+     "body": [
+      {
+       "label": "",
+       "text": "The family home or a place that means something to someone you love, designed with your own choices and built with your own hands.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "For LEGO\u00ae fans",
+     "body": [
+      {
+       "label": "",
+       "text": "For anyone who loves building with LEGO\u00ae bricks and has always wondered how a set is designed: see it done, from photograph to instructions.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "A family project",
+     "body": [
+      {
+       "label": "",
+       "text": "Design it together on a Sunday afternoon, then build your LEGO\u00ae set together, bag by bag. It is how our own family works.",
+       "list": false
+      }
+     ]
+    }
+   ],
+   "note": null,
+   "image": null
+  },
+  "hosts": {
+   "eyebrow": "Your sessions are with us",
+   "title": "A family at the workbench",
+   "intro": [
+    "We are the family behind Voxeloom. We built our design studio ourselves, and every set we design is checked piece by piece before it leaves us. Bring your photographs, your questions and the small details that make the place yours; you make the choices, and we work them out in real LEGO pieces with you. Meet the family."
+   ],
+   "items": [],
+   "note": null,
+   "image": {
+    "src": "/assets/gifts/about-family-720.webp",
+    "alt": "A cartoon of the Voxeloom family at their workbench, designing and building a model house."
+   }
+  },
+  "faq": {
+   "eyebrow": "Questions",
+   "title": "Before you book",
+   "intro": [],
+   "items": [
+    {
+     "title": "Do I need experience or software?",
+     "body": [
+      {
+       "label": "",
+       "text": "No. You need a computer or tablet with Zoom, your photographs and an idea of what you would like. We do the designing on our side, with you watching and choosing.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Can I design any building?",
+     "body": [
+      {
+       "label": "",
+       "text": "Anything up to about 5,000 pieces: the front of a house, a whole cottage, a small church or a lighthouse. A larger landmark, or a fully furnished interior of a big house, needs more design time, and we will tell you the price before you book.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Are the bricks included?",
+     "body": [
+      {
+       "label": "",
+       "text": "No. The $499 covers the three sessions and your design\u2019s files only. You order the LEGO\u00ae bricks yourself from LEGO\u2019s Pick a Brick shop with your Upload List, and pay LEGO for them, their shipping and any tax, when you are ready. LEGO sets the prices, the stock and the delivery, and limits how many of one piece you may buy at once. We do not sell or ship bricks for the workshop, unless you order a full set of your design from us.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "How do I book and pay?",
+     "body": [
+      {
+       "label": "",
+       "text": "Tell us about your place. No payment is taken on this page. We reply within two working days to confirm what fits and send the Zoom link; you pay by check, and once it clears we book your three sessions, all within one week.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Are the sessions recorded?",
+     "body": [
+      {
+       "label": "",
+       "text": "Not unless you ask us to. Your photographs are used only for your design. See our privacy page.",
+       "list": false
+      }
+     ]
+    },
+    {
+     "title": "Can I give it as a gift?",
+     "body": [
+      {
+       "label": "",
+       "text": "Yes. Tell us who it is for, and we will arrange the sessions with them.",
+       "list": false
+      }
+     ]
+    }
+   ],
+   "note": null,
+   "image": null
+  },
+  "closing": {
+   "eyebrow": "Be your own designer",
+   "title": "What would you design in LEGO\u00ae bricks?",
+   "intro": [
+    "A photograph and a few words are enough to start."
+   ],
+   "items": [],
+   "note": null,
+   "image": null
+  }
+ }
+}
