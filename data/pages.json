@@ -198,13 +198,17 @@
    "eyebrow": "Your sessions are with us",
    "title": "A family at the workbench",
    "intro": [
-    "We are the family behind Voxeloom. We built our design studio ourselves, and every set we design is checked piece by piece before it leaves us. Bring your photographs, your questions and the small details that make the place yours; you make the choices, and we work them out in real LEGO pieces with you. Meet the family."
+    "We are the family behind Voxeloom. We built our design studio ourselves, and every set we design is checked piece by piece before it leaves us. Bring your photographs, your questions and the small details that make the place yours; you make the choices, and we work them out in real LEGO pieces with you."
    ],
    "items": [],
    "note": null,
    "image": {
     "src": "/assets/gifts/about-family-720.webp",
     "alt": "A cartoon of the Voxeloom family at their workbench, designing and building a model house."
+   },
+   "link": {
+    "href": "/about/",
+    "text": "Meet the family"
    }
   },
   "faq": {
