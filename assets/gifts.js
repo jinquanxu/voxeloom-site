@@ -30,15 +30,15 @@
   document.querySelectorAll('[data-day]').forEach(function (el) {
     var day = el.getAttribute('data-day');
     if (day === 'christmas') {
-      // The owner's date for Christmas is 20 November; after it, the day itself.
+      // The owner's date for Christmas is November 20; after it, the day itself.
       var askBy = new Date(today.getFullYear(), 10, 20);
-      el.textContent = today <= askBy || today.getMonth() < 10 ? 'Ask by 20 November' : '25 December';
+      el.textContent = today <= askBy || today.getMonth() < 10 ? 'Ask by November 20' : 'December 25';
       return;
     }
     if (!DAYS[day]) return;
     var next = DAYS[day](today.getFullYear());
     if (next < today) next = DAYS[day](today.getFullYear() + 1);
-    el.textContent = next.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    el.textContent = next.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
   });
 
   // ---- the chooser and the dialog -----------------------------------------

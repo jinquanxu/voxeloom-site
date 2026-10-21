@@ -340,7 +340,7 @@
   "days": [
    {
     "name": "Christmas",
-    "when": "Ask by 20 November",
+    "when": "Ask by November 20",
     "day": "christmas",
     "hue": "christmas",
     "to": "family",
@@ -351,7 +351,7 @@
    },
    {
     "name": "Valentine\u2019s Day",
-    "when": "14 February",
+    "when": "February 14",
     "day": "valentine",
     "hue": "partners",
     "to": "for-partner",
