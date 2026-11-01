@@ -2,6 +2,9 @@
  "slug": "trinity-church-newport",
  "name": "Trinity Church, Newport",
  "kind": "Churches",
+ "kinds": [
+  "Churches"
+ ],
  "summary": "Trinity Church, Newport in real LEGO parts: the white wooden church of 1726, two tiers of tall round-headed windows down its long side under a gray roof, on a granite base. Its steeple rises in tiers: the clock tower with its black octagonal dial, a balustrade with slender pinnacles, the arched belfry and the lantern with their urns, and the slim white spire with gold balls and a gilded vane at the top. Round it, a brick-edged path, a hedge, the pine in its planter, old headstones and two tall bare trees. Inside, a Sunday service: white box pews, the three-decker wineglass pulpit in the middle aisle with the rector at the top, galleries on three sides with the organ and choir over the entrance, brass chandeliers, and the bell and clock works up in the tower.",
  "width": 88,
  "depth": 56,

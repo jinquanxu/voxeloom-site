@@ -2,6 +2,9 @@
  "slug": "beavertail-aquarium",
  "name": "The Fog Signal House at Beavertail",
  "kind": "Lighthouses",
+ "kinds": [
+  "Lighthouses"
+ ],
  "summary": "The Fog Signal House at Beavertail in real LEGO parts: the old fog-signal house beside Beavertail Light in Jamestown, Rhode Island, which is now the aquarium. White walls on a plinth under a low red hip roof, a little gable on the long side, and the two black fog horns back where they once called out to sea. In front, shrubs and flower planters, a post-and-rail fence, the signboard and a path curving down to a corner of the bay with its buoy. Inside, the aquarium: four lit tanks of fish, starfish and anemones along the back wall, a touch tank with children round it and a naturalist, a jellyfish column, and the front desk by the door.",
  "width": 72,
  "depth": 46,

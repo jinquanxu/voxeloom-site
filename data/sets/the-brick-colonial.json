@@ -2,6 +2,9 @@
  "slug": "the-brick-colonial",
  "name": "The Brick Colonial",
  "kind": "Homes",
+ "kinds": [
+  "Homes"
+ ],
  "summary": "A brick colonial in real LEGO parts: warm taupe brick with cream sills, lintels and cornices under a gray hip roof; the entry stands forward under a pediment, its black door under a fanlight in a cream arch between two lanterns, the arched window over it; a bay under its own little roof, white double-hung windows in pairs, and the wing with its dormer and a two-car garage facing the drive at the side. A lawn mown in stripes, beds of boxwood, white hydrangeas and arborvitae along the house, a shade tree at the corner and tall trees behind, a lamp post at the walk, a patio at the back and two air-conditioning condensers by the house. Inside, the two-story foyer and stair, the dining room with the children at their homework, the living room, the kitchen and the family room by the fire, three bedrooms and two baths upstairs, a bonus room over the garage, and the attic under the roof: insulation between the joists, the air handler and its ducts, and a technician at work on it.",
  "width": 78,
  "depth": 53,

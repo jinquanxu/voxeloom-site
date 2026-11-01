@@ -2,6 +2,9 @@
  "slug": "the-stone-and-cedar-house",
  "name": "The Stone and Cedar House",
  "kind": "Homes",
+ "kinds": [
+  "Homes"
+ ],
  "summary": "The Stone and Cedar House in real LEGO parts: fieldstone and vertical cedar, the wing's roof climbing to a monitor of six windows beside the stone chimney, the two-story center proud under a shallow gable, the front door up steps under its own little gable, the garage bent back at an angle, rooms inside, and the drive looping round a planted island.",
  "width": 90,
  "depth": 50,

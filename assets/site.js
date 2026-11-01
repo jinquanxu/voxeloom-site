@@ -25,12 +25,12 @@
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // The gallery page sorts its cards by the kind of place, in this order.
-  var KINDS = ["Homes", "Lighthouses", "Churches", "Landmarks", "Farms & country", "Fa\u00e7ades"];
+  var KINDS = ["Homes", "Lighthouses", "Churches", "Landmarks", "Schools & colleges", "Farms & country", "Fa\u00e7ades"];
 
   fetch('/data/samples.json').then(function (r) { return r.json(); }).then(function (all) {
     var shown = featured ? all.slice(0, 3) : all;
     var cards = shown.map(function (s, i) {
-      return '<figure class="card" data-kind="' + key(s.kind || '') + '" style="margin:0">'
+      return '<figure class="card" data-kind="' + kindsOf(s).map(key).join(' ') + '" style="margin:0">'
         + '<a href="/gallery/' + s.slug + '/">'
         + '<img class="shot" loading="' + (i < 2 && !featured ? 'eager' : 'lazy') + '"'
         + ' data-slug="' + s.slug + '" data-turn="0" src="' + s.shots[0] + '"'
@@ -235,10 +235,11 @@
   // with how many there are. The address keeps the choice (#lighthouses), so
   // it can be sent to someone and survives going back.
   function sorter(all) {
-    var kinds = KINDS.filter(function (k) { return all.some(function (s) { return s.kind === k; }); });
+    function under(k) { return function (s) { return kindsOf(s).indexOf(k) >= 0; }; }
+    var kinds = KINDS.filter(function (k) { return all.some(under(k)); });
     if (kinds.length < 2) return;
     var choices = [['', 'All', all.length]].concat(kinds.map(function (k) {
-      return [key(k), k, all.filter(function (s) { return s.kind === k; }).length];
+      return [key(k), k, all.filter(under(k)).length];
     }));
     var bar = document.createElement('div');
     bar.className = 'kinds';
@@ -258,7 +259,7 @@
         b.setAttribute('aria-pressed', on ? 'true' : 'false');
       });
       target.querySelectorAll('figure.card').forEach(function (f) {
-        f.style.display = k && f.dataset.kind !== k ? 'none' : '';
+        f.style.display = k && f.dataset.kind.split(' ').indexOf(k) < 0 ? 'none' : '';
       });
       // A pair with only one of its sets showing lets it take its place in
       // the grid like any other card.
@@ -277,6 +278,11 @@
     });
     window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
     show(location.hash.slice(1));
+  }
+
+  // Every kind a set is found under: a façade of a school is both.
+  function kindsOf(s) {
+    return s.kinds || [s.kind || ''];
   }
 
   // "Farms & country" is #farms-and-country, and "Façades" #facades.

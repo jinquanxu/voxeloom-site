@@ -12,7 +12,10 @@
    "/img/rhode-island-state-house/turn-2.webp",
    "/img/rhode-island-state-house/turn-3.webp"
   ],
-  "kind": "Landmarks"
+  "kind": "Landmarks",
+  "kinds": [
+   "Landmarks"
+  ]
  },
  {
   "name": "Beavertail Light",
@@ -27,7 +30,10 @@
    "/img/beavertail-light/turn-2.webp",
    "/img/beavertail-light/turn-3.webp"
   ],
-  "kind": "Lighthouses"
+  "kind": "Lighthouses",
+  "kinds": [
+   "Lighthouses"
+  ]
  },
  {
   "name": "The Fog Signal House at Beavertail",
@@ -42,7 +48,10 @@
    "/img/beavertail-aquarium/turn-2.webp",
    "/img/beavertail-aquarium/turn-3.webp"
   ],
-  "kind": "Lighthouses"
+  "kind": "Lighthouses",
+  "kinds": [
+   "Lighthouses"
+  ]
  },
  {
   "name": "The Towers",
@@ -69,7 +78,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Landmarks"
+  "kind": "Landmarks",
+  "kinds": [
+   "Landmarks"
+  ]
  },
  {
   "name": "The Towers (Fa\u00e7ade)",
@@ -96,7 +108,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Fa\u00e7ades"
+  "kind": "Fa\u00e7ades",
+  "kinds": [
+   "Fa\u00e7ades"
+  ]
  },
  {
   "name": "Warwick Neck Light",
@@ -111,7 +126,10 @@
    "/img/warwick-neck-light/turn-2.webp",
    "/img/warwick-neck-light/turn-3.webp"
   ],
-  "kind": "Lighthouses"
+  "kind": "Lighthouses",
+  "kinds": [
+   "Lighthouses"
+  ]
  },
  {
   "name": "Carrie Tower",
@@ -137,7 +155,10 @@
     "size": "Small"
    }
   ],
-  "kind": "Landmarks"
+  "kind": "Landmarks",
+  "kinds": [
+   "Landmarks"
+  ]
  },
  {
   "name": "Carrie Tower (Small)",
@@ -163,7 +184,10 @@
     "size": "Small"
    }
   ],
-  "kind": "Landmarks"
+  "kind": "Landmarks",
+  "kinds": [
+   "Landmarks"
+  ]
  },
  {
   "name": "Richardsonian Romanesque Stone Hall",
@@ -178,7 +202,47 @@
    "/img/stone-civic-hall/turn-2.webp",
    "/img/stone-civic-hall/turn-3.webp"
   ],
-  "kind": "Landmarks"
+  "kind": "Landmarks",
+  "kinds": [
+   "Landmarks"
+  ]
+ },
+ {
+  "name": "The Performing Arts Hall",
+  "slug": "performing-arts-hall",
+  "summary": "The Performing Arts Hall in real LEGO parts: a college's center for music, theater and dance. Five granite columns stand before warm yellow brick and two tall arched glass doorways, under a stone entablature and a square brick tower with a gray-shingled belvedere. A long wing with five gabled dormers runs off to one side and a big gabled wing to the other, with dark green window frames, globe lamps, young trees and red shrubs in front. Around back, the stage door, a loading dock and the parking lot. Inside, an evening of performances: a recital hall with a concert grand, a violinist and a cellist on stage before raked rows of listeners; a black-box theater mid-rehearsal under its lighting rig; a dance studio with its mirror wall, barre and dancers; practice rooms and a green room; and in the lobby the box office beside a glass case of relics from the college's first building. The roofs, the upper floors and the tower lift off to show the rooms.",
+  "width": 88,
+  "depth": 58,
+  "courses": 40,
+  "shots": [
+   "/img/performing-arts-hall/turn-0.webp",
+   "/img/performing-arts-hall/turn-1.webp",
+   "/img/performing-arts-hall/turn-2.webp",
+   "/img/performing-arts-hall/turn-3.webp"
+  ],
+  "kind": "Schools & colleges",
+  "kinds": [
+   "Schools & colleges"
+  ]
+ },
+ {
+  "name": "The Granite Auditorium (Fa\u00e7ade)",
+  "slug": "granite-auditorium-facade",
+  "summary": "The Granite Auditorium (Fa\u00e7ade) in real LEGO parts: the curved back wall of a 1920s college auditorium on a shallow base, in rough-faced gray granite with warm tan stones mixed in. Paired pilasters divide the curve into three bays under a cornice and a tall parapet, with two plain tablets high up, a narrow door under a small gabled hood, and ivy climbing over much of it. At either end stands a square pavilion: an arched louvered window over a white sash and a glass door on one, a raised white door with its steel stair and rail on the other. In front, a lawn, a path to both doors, shrubs, two slender trees and two students. The back is a plain wall, so it sits neatly on a shelf or against a wall.",
+  "width": 88,
+  "depth": 24,
+  "courses": 27,
+  "shots": [
+   "/img/granite-auditorium-facade/turn-0.webp",
+   "/img/granite-auditorium-facade/turn-1.webp",
+   "/img/granite-auditorium-facade/turn-2.webp",
+   "/img/granite-auditorium-facade/turn-3.webp"
+  ],
+  "kind": "Schools & colleges",
+  "kinds": [
+   "Schools & colleges",
+   "Fa\u00e7ades"
+  ]
  },
  {
   "name": "The Stone and Cedar House",
@@ -193,7 +257,10 @@
    "/img/the-stone-and-cedar-house/turn-2.webp",
    "/img/the-stone-and-cedar-house/turn-3.webp"
   ],
-  "kind": "Homes"
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
  },
  {
   "name": "The Brick Colonial",
@@ -220,7 +287,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Homes"
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
  },
  {
   "name": "The Brick Colonial (Fa\u00e7ade)",
@@ -247,7 +317,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Fa\u00e7ades"
+  "kind": "Fa\u00e7ades",
+  "kinds": [
+   "Fa\u00e7ades"
+  ]
  },
  {
   "name": "The Old Workings",
@@ -262,7 +335,10 @@
    "/img/the-old-workings/turn-2.webp",
    "/img/the-old-workings/turn-3.webp"
   ],
-  "kind": "Farms & country"
+  "kind": "Farms & country",
+  "kinds": [
+   "Farms & country"
+  ]
  },
  {
   "name": "Corner Cottage",
@@ -277,7 +353,10 @@
    "/img/corner-cottage/turn-2.webp",
    "/img/corner-cottage/turn-3.webp"
   ],
-  "kind": "Homes"
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
  },
  {
   "name": "The Red Barn",
@@ -304,7 +383,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Farms & country"
+  "kind": "Farms & country",
+  "kinds": [
+   "Farms & country"
+  ]
  },
  {
   "name": "The Red Barn (Fa\u00e7ade)",
@@ -331,7 +413,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Fa\u00e7ades"
+  "kind": "Fa\u00e7ades",
+  "kinds": [
+   "Fa\u00e7ades"
+  ]
  },
  {
   "name": "The Red Gables",
@@ -346,7 +431,10 @@
    "/img/the-red-gables/turn-2.webp",
    "/img/the-red-gables/turn-3.webp"
   ],
-  "kind": "Homes"
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
  },
  {
   "name": "The Stone Farmhouse",
@@ -361,7 +449,10 @@
    "/img/the-stone-farmhouse/turn-2.webp",
    "/img/the-stone-farmhouse/turn-3.webp"
   ],
-  "kind": "Farms & country"
+  "kind": "Farms & country",
+  "kinds": [
+   "Farms & country"
+  ]
  },
  {
   "name": "Rose Island Light",
@@ -376,7 +467,10 @@
    "/img/rose-island-light/turn-2.webp",
    "/img/rose-island-light/turn-3.webp"
   ],
-  "kind": "Lighthouses"
+  "kind": "Lighthouses",
+  "kinds": [
+   "Lighthouses"
+  ]
  },
  {
   "name": "Block Island Southeast Light",
@@ -391,7 +485,10 @@
    "/img/block-island-southeast-light/turn-2.webp",
    "/img/block-island-southeast-light/turn-3.webp"
   ],
-  "kind": "Lighthouses"
+  "kind": "Lighthouses",
+  "kinds": [
+   "Lighthouses"
+  ]
  },
  {
   "name": "Conimicut Light",
@@ -406,7 +503,10 @@
    "/img/conimicut-light/turn-2.webp",
    "/img/conimicut-light/turn-3.webp"
   ],
-  "kind": "Lighthouses"
+  "kind": "Lighthouses",
+  "kinds": [
+   "Lighthouses"
+  ]
  },
  {
   "name": "Briarstone Hall",
@@ -421,7 +521,10 @@
    "/img/briarstone-hall/turn-2.webp",
    "/img/briarstone-hall/turn-3.webp"
   ],
-  "kind": "Homes"
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
  },
  {
   "name": "The Windmill at Hammersmith Farm",
@@ -436,7 +539,10 @@
    "/img/hammersmith-farm/turn-2.webp",
    "/img/hammersmith-farm/turn-3.webp"
   ],
-  "kind": "Farms & country"
+  "kind": "Farms & country",
+  "kinds": [
+   "Farms & country"
+  ]
  },
  {
   "name": "Cathedral of Saints Peter and Paul",
@@ -463,7 +569,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Churches"
+  "kind": "Churches",
+  "kinds": [
+   "Churches"
+  ]
  },
  {
   "name": "Cathedral of Saints Peter and Paul (Fa\u00e7ade)",
@@ -490,7 +599,10 @@
    }
   ],
   "choice": "versions",
-  "kind": "Fa\u00e7ades"
+  "kind": "Fa\u00e7ades",
+  "kinds": [
+   "Fa\u00e7ades"
+  ]
  },
  {
   "name": "Historic St. Luke\u2019s Church",
@@ -505,7 +617,10 @@
    "/img/st-lukes-east-greenwich/turn-2.webp",
    "/img/st-lukes-east-greenwich/turn-3.webp"
   ],
-  "kind": "Churches"
+  "kind": "Churches",
+  "kinds": [
+   "Churches"
+  ]
  },
  {
   "name": "Trinity Church, Newport",
@@ -520,7 +635,10 @@
    "/img/trinity-church-newport/turn-2.webp",
    "/img/trinity-church-newport/turn-3.webp"
   ],
-  "kind": "Churches"
+  "kind": "Churches",
+  "kinds": [
+   "Churches"
+  ]
  },
  {
   "name": "The Lantern Church",
@@ -535,6 +653,9 @@
    "/img/the-lantern-church/turn-2.webp",
    "/img/the-lantern-church/turn-3.webp"
   ],
-  "kind": "Churches"
+  "kind": "Churches",
+  "kinds": [
+   "Churches"
+  ]
  }
 ]

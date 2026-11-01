@@ -2,6 +2,9 @@
  "slug": "stone-civic-hall",
  "name": "Richardsonian Romanesque Stone Hall",
  "kind": "Landmarks",
+ "kinds": [
+  "Landmarks"
+ ],
  "summary": "Richardsonian Romanesque Stone Hall in real LEGO parts: a town hall of gray rough-faced stone with white string courses and arches. A steep stepped gable with three round-arched windows over three square ones, a lower wing with its tall chimney and an arched doorway up stone steps, and the square corner tower with its round window, louvered belfry, four pinnacles and a steep green pyramid under a gold finial. Round the back, a rose window, a small porch and a garden with a stone memorial, a flagpole and a crab apple in blossom. Inside, a town meeting on a winter evening: the moderator on the stage and benches of townspeople in the hall upstairs, the clerk's office with its safe, the selectmen's room, a small library, a memorial room, and the ringer at the bell rope in the tower.",
  "width": 80,
  "depth": 60,

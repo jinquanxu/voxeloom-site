@@ -2,6 +2,9 @@
  "slug": "the-old-workings",
  "name": "The Old Workings",
  "kind": "Farms & country",
+ "kinds": [
+  "Farms & country"
+ ],
  "summary": "A mine nobody has worked in a long time: a propped adit into the hillside and an open cut beside it, ore still showing in both walls, the tramway out of the mouth going to rust and then to nothing, a cart on its side in the dirt, the headframe over the shaft with a brace missing, and weeds through the sleepers.",
  "width": 48,
  "depth": 40,
