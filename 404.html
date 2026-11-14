@@ -12,7 +12,7 @@
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eee3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16140f">
-<link rel="stylesheet" href="/assets/app.css?v=a5acf2f8a7">
+<link rel="stylesheet" href="/assets/app.css?v=f318e76f03">
 </head>
 <body>
 
@@ -96,68 +96,73 @@
         <!-- The headline's three words as pictures: the photograph, the grid,
              the finished model, labelled in the headline's inks. The poem
              beside them has no labels of its own; these carry them.
-             The strip floats over the empty top of the animation's card.
-             They are illustrations, not photographs of a model we have built,
-             and the caption under the card says so. -->
+             The strip sits over the film's card. All three are of the film's
+             own set, the Corner Cottage, drawn from one spot. All three are
+             illustrations (tools/video), not photographs of the place or of
+             a model we have built, and the caption under the card says so. -->
         <ol class="journey" aria-label="From photograph to heirloom" aria-describedby="journey-note">
           <!-- Each picture links to its largest copy: the zoom below opens
                it in place, and without script the link simply opens it. -->
           <li>
-            <div class="pic"><a href="/assets/journey-pixel.webp"><img src="/assets/journey-pixel.webp" width="245" height="164"
-                 alt="A photograph of a two-story brick house with a gray roof, in evening light."></a></div>
+            <div class="pic"><a href="/assets/journey-pixel-large.webp"><img src="/assets/journey-pixel.webp" width="360" height="240"
+                 alt="A stone gate lodge with a square tower and steep slate roofs, among autumn trees in low sun."></a></div>
             <span data-line="a memory">Pixel</span>
           </li>
           <li>
             <div class="pic"><a href="/assets/journey-voxel-large.webp"><img src="/assets/journey-voxel.webp" width="360" height="240"
-                 alt="The same house as a grid of colored blocks: brick walls, a gray roof, trees, hedges and a lawn."></a></div>
+                 alt="The same lodge as a grid of colored blocks: stone walls, stepped gray roofs, golden trees and a lawn."></a></div>
             <span class="vox" data-line="given depth">Voxel</span>
           </li>
           <li>
-            <div class="pic"><a href="/assets/journey-heirloom-large.webp"><img src="/assets/journey-heirloom.webp" width="304" height="203"
-                 alt="The house built in bricks, on a black display base with a small brass plaque."></a></div>
+            <div class="pic"><a href="/assets/journey-heirloom-large.webp"><img src="/assets/journey-heirloom.webp" width="360" height="240"
+                 alt="The lodge built in bricks, on a black display base with a small brass plaque."></a></div>
             <span class="loom" data-line="in LEGO® bricks">Heirloom</span>
           </li>
         </ol>
 
-        <!-- The model going up a course at a time: an animated WebP rather
-             than a video, so it needs no player and no autoplay permission.
-             The finished model shows first -- a still of the animation's last
-             frame, a twentieth of its weight, so the page is ready at once --
-             and the animation takes its place when the page has loaded (the
-             script below). Anyone who has asked their system for less
-             movement, or to save data, keeps the finished model. -->
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="/assets/hero-still.webp" type="image/webp">
-          <!-- A phone shows the card about 340 pixels wide: the 640-pixel copies
-               are as sharp there and lighter on a mobile connection. -->
-          <source media="(max-width: 600px)" srcset="/assets/hero-still-640.webp" data-animated="/assets/hero-build-640.webp" type="image/webp">
-          <source srcset="/assets/hero-still.webp" data-animated="/assets/hero-build.webp" type="image/webp">
-          <img src="/assets/hero-build.png"
-               alt="The Brick Colonial being built a course at a time: a baseplate with the floor plan on it, then furnished rooms, then the upper floor, then the roof.">
-        </picture>
-        <!-- Anything that moves by itself can be stopped: the button puts the
-             still back, and plays the animation again. Its icon says which;
-             the label and the tooltip say it in words. -->
-        <button type="button" class="hero-pause" id="heroPause" aria-pressed="false"
-                aria-label="Pause the animation" title="Pause" hidden>
-          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path class="pause" d="M5 3.5v9M11 3.5v9"/><path class="play" d="M5 3.2v9.6L12.6 8z"/></svg>
-        </button>
-        <!-- Beside it, the way to see one's own place like this one. -->
-        <a class="hero-try" href="https://studio.voxeloom.com/studio">See your place as a LEGO® set</a>
+        <!-- The Corner Cottage being built, piece by piece: twelve seconds of
+             film, silent, played over and over. The finished model shows
+             first -- a still, a sixtieth of the film's weight, so the page is
+             ready at once -- and the film takes its place when the page has
+             loaded (the script below). Anyone who has asked their system for
+             less movement, or to save data, keeps the finished model. -->
+        <video class="hero-film" id="heroFilm" muted loop playsinline preload="none"
+               poster="/assets/hero-still.webp" width="1280" height="720"
+               data-film="/assets/hero-build.mp4" data-film-small="/assets/hero-build-640.mp4"
+               aria-label="The Corner Cottage being built from LEGO bricks: the base plates land, the bricks fly in and click down from the garden up to the tower's roof, and at the end its windows light."></video>
+        <div class="hero-bar">
+          <!-- Anything that moves by itself can be stopped: the button holds
+               the film where it is, and plays it again. Its icon says which;
+               the label and the tooltip say it in words. -->
+          <button type="button" class="hero-pause" id="heroPause" aria-pressed="false"
+                  aria-label="Pause the film" title="Pause" hidden>
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path class="pause" d="M5 3.5v9M11 3.5v9"/><path class="play" d="M5 3.2v9.6L12.6 8z"/></svg>
+          </button>
+          <!-- Beside it, the way to see one's own place like this one. -->
+          <a class="hero-try" href="https://studio.voxeloom.com/studio">See your place as a LEGO® set</a>
+        </div>
         <script>
           addEventListener('load', function () {
             if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
             if (navigator.connection && navigator.connection.saveData) return;
-            var sources = document.querySelectorAll('source[data-animated]');
-            function play(on) {
-              sources.forEach(function (source) {
-                if (!source.dataset.still) source.dataset.still = source.srcset;
-                source.srcset = on ? source.dataset.animated : source.dataset.still;
-              });
-              button.setAttribute('aria-pressed', String(!on));
-              button.title = on ? 'Pause' : 'Play';
-            }
+            var film = document.getElementById('heroFilm');
             var button = document.getElementById('heroPause');
+            // A phone shows the card about 340 pixels wide: the 640-pixel
+            // copy is as sharp there and lighter on a mobile connection.
+            film.src = matchMedia('(max-width: 600px)').matches ? film.dataset.filmSmall : film.dataset.film;
+            function shown(playing) {
+              button.setAttribute('aria-pressed', String(!playing));
+              button.title = playing ? 'Pause' : 'Play';
+              button.setAttribute('aria-label', playing ? 'Pause the film' : 'Play the film');
+            }
+            function play(on) {
+              if (!on) { film.pause(); shown(false); return; }
+              var started = film.play();
+              shown(true);
+              // A browser that will not start a film by itself leaves the
+              // still, with Play beside it.
+              if (started && started.catch) started.catch(function () { shown(false); });
+            }
             button.addEventListener('click', function () {
               play(button.getAttribute('aria-pressed') === 'true');
             });
