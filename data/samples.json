@@ -361,6 +361,42 @@
   ]
  },
  {
+  "name": "President Clinton's First Home",
+  "slug": "clinton-first-home",
+  "summary": "President Clinton's first home in Hope, Arkansas, in real LEGO parts: a 1917 American Foursquare in white clapboard with dark green trim, under a low pale green hipped roof with wide white eaves and a dormer over the front. The full-width front porch stands on white columns over brick piers, with two rocking chairs, a bench, the porch light by the door and the grandfather sitting out. A black iron fence with a gate at the walk turns down the side street, with flowers by the path and shade trees behind. Inside, a summer afternoon in the late 1940s: the living room with its stair, sofa and radio, the dining table under a white cloth, and the kitchen, where the grandmother teaches the little boy his numbers with playing cards; upstairs, the front bedroom, the grandparents' room, the bathroom with its claw-foot tub and the child's room with a wooden train on the rug.",
+  "width": 48,
+  "depth": 56,
+  "courses": 22,
+  "shots": [
+   "/img/clinton-first-home/turn-0.webp",
+   "/img/clinton-first-home/turn-1.webp",
+   "/img/clinton-first-home/turn-2.webp",
+   "/img/clinton-first-home/turn-3.webp"
+  ],
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
+ },
+ {
+  "name": "President Clinton's First Home (Large)",
+  "slug": "clinton-first-home-large",
+  "summary": "President Clinton's first home in Hope, Arkansas, in real LEGO parts, at a larger size: a 1917 American Foursquare in white clapboard with dark green corner boards and window frames, under a tall pale green hipped roof with wide white eaves and a dormer over the front. The full-width front porch stands on four square white columns, with the front door under its transom, a hanging porch light and two black rocking chairs. A low black iron fence runs along the sidewalk, with a back door on its stoop and two tall shade trees behind. Inside, the late 1940s: the grandfather in the parlor by the floor radio, the mother on the living room sofa with the little boy at his blocks on the rug, the dining table laid for six, and the grandmother at the kitchen stove; upstairs, the grandparents' room, the mother's room, the nursery with its crib and toy train, a sewing room and a tiled bathroom with a claw-foot tub.",
+  "width": 52,
+  "depth": 66,
+  "courses": 29,
+  "shots": [
+   "/img/clinton-first-home-large/turn-0.webp",
+   "/img/clinton-first-home-large/turn-1.webp",
+   "/img/clinton-first-home-large/turn-2.webp",
+   "/img/clinton-first-home-large/turn-3.webp"
+  ],
+  "kind": "Homes",
+  "kinds": [
+   "Homes"
+  ]
+ },
+ {
   "name": "The Old Workings",
   "slug": "the-old-workings",
   "summary": "A mine nobody has worked in a long time: a propped adit into the hillside and an open cut beside it, ore still showing in both walls, the tramway out of the mouth going to rust and then to nothing, a cart on its side in the dirt, the headframe over the shaft with a brace missing, and weeds through the sleepers.",
